@@ -3,6 +3,7 @@ data/raw/
 data/interim/
 data/processed/
 reports/validation/*.json
+reports/acquisition.json
 
 # Python
 __pycache__/
@@ -14,4 +15,7 @@ __pycache__/
 # Local configuration and secrets
 .env
 *.local
+
+# Keep the shareable template; the active manifest may contain private URLs
+config/datasets.json
 

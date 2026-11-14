@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-11-14T18:42:51.804170+00:00",
+  "manifest": "config/datasets.json",
+  "mode": "discovery",
+  "datasets": [
+    {
+      "dataset_id": "global_geopolitical_risk",
+      "url": "https://www.matteoiacoviello.com/gpr_files/data_gpr_export.xls",
+      "format": "xls",
+      "filename": "data_gpr_export.xls",
+      "requested_start": "2004-01-01",
+      "requested_end": "2026-09-30",
+      "estimated_bytes": null,
+      "requires_authentication": false,
+      "availability": "available",
+      "publication_date": null,
+      "status": "discovered"
+    }
+  ]
+}

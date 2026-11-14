@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-11-14T19:15:29.678749+00:00",
+  "manifest": "config/datasets.json",
+  "mode": "download",
+  "datasets": [
+    {
+      "id": "fred_global_supply_chain_pressure",
+      "url": "https://www.newyorkfed.org/medialibrary/research/interactives/gscpi/downloads/gscpi_data.xlsx",
+      "path": "data/raw/fred_global_supply_chain_pressure/gscpi_data.xls",
+      "bytes": 252416,
+      "sha256": "b3f8104551277c1fdbef99187d650cb1739d8d4d6d4dcd8279457e36b9e1e3a1",
+      "status": "downloaded",
+      "format": "xls",
+      "publication_date": null,
+      "actual_start": null,
+      "actual_end": null,
+      "revised_history_candidate": false
+    }
+  ]
+}

@@ -1,0 +1,3579 @@
+{
+  "created_at": "2026-11-14T19:15:34.292244+00:00",
+  "phase": "1B",
+  "artifacts": [
+    {
+      "dataset_id": "eia_monthly_electricity_sales",
+      "source_url": "https://www.eia.gov/electricity/data/eia861m/archive/xls/HS861M 1990-2009.xlsx",
+      "local_path": "data/raw/eia_monthly_electricity_sales/HS861M 1990-2009.xlsx",
+      "file_size": 2650368,
+      "sha256": "f051468ed500f3d086b16f97e7f2ae70fed39508251b21ef56fbc0e9829ab201",
+      "row_count": 12240,
+      "column_definitions": [
+        {
+          "name": "year",
+          "types": [
+            "integer"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "month",
+          "types": [
+            "integer"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "state",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "data_status",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "RESIDENTIAL_Revenue_Thousand Dollars",
+          "types": [
+            "integer"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "RESIDENTIAL_Sales_Megawatthours",
+          "types": [
+            "integer"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "RESIDENTIAL_Customers_Count",
+          "types": [
+            "integer"
+          ],
+          "missing": 10404
+        },
+        {
+          "name": "RESIDENTIAL_Price_Cents/kWh",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "COMMERCIAL_Revenue_Thousand Dollars",
+          "types": [
+            "integer"
+          ],
+          "missing": 13
+        },
+        {
+          "name": "COMMERCIAL_Sales_Megawatthours",
+          "types": [
+            "integer"
+          ],
+          "missing": 13
+        },
+        {
+          "name": "COMMERCIAL_Customers_Count",
+          "types": [
+            "integer"
+          ],
+          "missing": 10404
+        },
+        {
+          "name": "COMMERCIAL_Price_Cents/kWh",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 13
+        },
+        {
+          "name": "INDUSTRIAL_Revenue_Thousand Dollars",
+          "types": [
+            "integer"
+          ],
+          "missing": 13
+        },
+        {
+          "name": "INDUSTRIAL_Sales_Megawatthours",
+          "types": [
+            "integer"
+          ],
+          "missing": 13
+        },
+        {
+          "name": "INDUSTRIAL_Customers_Count",
+          "types": [
+            "integer"
+          ],
+          "missing": 10404
+        },
+        {
+          "name": "INDUSTRIAL_Price_Cents/kWh",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 13
+        },
+        {
+          "name": "TRANSPORTATION_Revenue_Thousand Dollars",
+          "types": [
+            "integer"
+          ],
+          "missing": 7956
+        },
+        {
+          "name": "TRANSPORTATION_Sales_Megawatthours",
+          "types": [
+            "integer"
+          ],
+          "missing": 7956
+        },
+        {
+          "name": "TRANSPORTATION_Customers_Count",
+          "types": [
+            "integer"
+          ],
+          "missing": 10404
+        },
+        {
+          "name": "TRANSPORTATION_Price_Cents/kWh",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 9480
+        },
+        {
+          "name": "OTHER_Revenue_Thousand Dollars",
+          "types": [
+            "integer"
+          ],
+          "missing": 4284
+        },
+        {
+          "name": "OTHER_Sales_Megawatthours",
+          "types": [
+            "integer"
+          ],
+          "missing": 4284
+        },
+        {
+          "name": "OTHER_Customers_Count",
+          "types": [],
+          "missing": 12240
+        },
+        {
+          "name": "OTHER_Price_Cents/kWh",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 4284
+        },
+        {
+          "name": "TOTAL_Revenue_Thousand Dollars",
+          "types": [
+            "integer"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "TOTAL_Sales_Megawatthours",
+          "types": [
+            "integer"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "TOTAL_Customers_Count",
+          "types": [
+            "integer"
+          ],
+          "missing": 10404
+        },
+        {
+          "name": "TOTAL_Price_Cents/kWh",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 0
+        }
+      ],
+      "missing_values": {
+        "year": 0,
+        "month": 0,
+        "state": 0,
+        "data_status": 0,
+        "RESIDENTIAL_Revenue_Thousand Dollars": 0,
+        "RESIDENTIAL_Sales_Megawatthours": 0,
+        "RESIDENTIAL_Customers_Count": 10404,
+        "RESIDENTIAL_Price_Cents/kWh": 0,
+        "COMMERCIAL_Revenue_Thousand Dollars": 13,
+        "COMMERCIAL_Sales_Megawatthours": 13,
+        "COMMERCIAL_Customers_Count": 10404,
+        "COMMERCIAL_Price_Cents/kWh": 13,
+        "INDUSTRIAL_Revenue_Thousand Dollars": 13,
+        "INDUSTRIAL_Sales_Megawatthours": 13,
+        "INDUSTRIAL_Customers_Count": 10404,
+        "INDUSTRIAL_Price_Cents/kWh": 13,
+        "TRANSPORTATION_Revenue_Thousand Dollars": 7956,
+        "TRANSPORTATION_Sales_Megawatthours": 7956,
+        "TRANSPORTATION_Customers_Count": 10404,
+        "TRANSPORTATION_Price_Cents/kWh": 9480,
+        "OTHER_Revenue_Thousand Dollars": 4284,
+        "OTHER_Sales_Megawatthours": 4284,
+        "OTHER_Customers_Count": 12240,
+        "OTHER_Price_Cents/kWh": 4284,
+        "TOTAL_Revenue_Thousand Dollars": 0,
+        "TOTAL_Sales_Megawatthours": 0,
+        "TOTAL_Customers_Count": 10404,
+        "TOTAL_Price_Cents/kWh": 0
+      },
+      "duplicate_observations": 0,
+      "actual_start": "1990-01-01",
+      "actual_end": "2009-12-01",
+      "units": {
+        "year": "identifier",
+        "month": "identifier",
+        "state": "identifier",
+        "data_status": "identifier",
+        "RESIDENTIAL_Revenue_Thousand Dollars": "Thousand Dollars",
+        "RESIDENTIAL_Sales_Megawatthours": "Megawatthours",
+        "RESIDENTIAL_Customers_Count": "Count",
+        "RESIDENTIAL_Price_Cents/kWh": "Cents/kWh",
+        "COMMERCIAL_Revenue_Thousand Dollars": "Thousand Dollars",
+        "COMMERCIAL_Sales_Megawatthours": "Megawatthours",
+        "COMMERCIAL_Customers_Count": "Count",
+        "COMMERCIAL_Price_Cents/kWh": "Cents/kWh",
+        "INDUSTRIAL_Revenue_Thousand Dollars": "Thousand Dollars",
+        "INDUSTRIAL_Sales_Megawatthours": "Megawatthours",
+        "INDUSTRIAL_Customers_Count": "Count",
+        "INDUSTRIAL_Price_Cents/kWh": "Cents/kWh",
+        "TRANSPORTATION_Revenue_Thousand Dollars": "Thousand Dollars",
+        "TRANSPORTATION_Sales_Megawatthours": "Megawatthours",
+        "TRANSPORTATION_Customers_Count": "Count",
+        "TRANSPORTATION_Price_Cents/kWh": "Cents/kWh",
+        "OTHER_Revenue_Thousand Dollars": "Thousand Dollars",
+        "OTHER_Sales_Megawatthours": "Megawatthours",
+        "OTHER_Customers_Count": "Count",
+        "OTHER_Price_Cents/kWh": "Cents/kWh",
+        "TOTAL_Revenue_Thousand Dollars": "Thousand Dollars",
+        "TOTAL_Sales_Megawatthours": "Megawatthours",
+        "TOTAL_Customers_Count": "Count",
+        "TOTAL_Price_Cents/kWh": "Cents/kWh"
+      },
+      "geographic_identifiers": [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CA",
+        "CO",
+        "CT",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "HI",
+        "IA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "MD",
+        "ME",
+        "MI",
+        "MN",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NE",
+        "NH",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "OR",
+        "PA",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "VT",
+        "WA",
+        "WI",
+        "WV",
+        "WY"
+      ],
+      "time_zone": null,
+      "publication_date": null,
+      "reporting_delay_days": null,
+      "validation_status": "warning",
+      "issues": [
+        "inventory uses primary sheet Monthly; YTD and territory sheets are retained but not counted"
+      ]
+    },
+    {
+      "dataset_id": "eia_monthly_electricity_sales",
+      "source_url": "https://www.eia.gov/electricity/data/eia861m/xls/sales_revenue.xlsx",
+      "local_path": "data/raw/eia_monthly_electricity_sales/sales_revenue.xlsx",
+      "file_size": 2280162,
+      "sha256": "c7963ad7c9bd2020cc7472f100a9c5330a4dff97a62be95407137a14b9c4044e",
+      "row_count": 10200,
+      "column_definitions": [
+        {
+          "name": "year",
+          "types": [
+            "integer"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "month",
+          "types": [
+            "integer"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "state",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "data_status",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "RESIDENTIAL_Revenue_Thousand Dollars",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "RESIDENTIAL_Sales_Megawatthours",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "RESIDENTIAL_Customers_Count",
+          "types": [
+            "integer"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "RESIDENTIAL_Price_Cents/kWh",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "COMMERCIAL_Revenue_Thousand Dollars",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "COMMERCIAL_Sales_Megawatthours",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "COMMERCIAL_Customers_Count",
+          "types": [
+            "integer"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "COMMERCIAL_Price_Cents/kWh",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "INDUSTRIAL_Revenue_Thousand Dollars",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "INDUSTRIAL_Sales_Megawatthours",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "INDUSTRIAL_Customers_Count",
+          "types": [
+            "integer"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "INDUSTRIAL_Price_Cents/kWh",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "TRANSPORTATION_Revenue_Thousand Dollars",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "TRANSPORTATION_Sales_Megawatthours",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "TRANSPORTATION_Customers_Count",
+          "types": [
+            "integer"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "TRANSPORTATION_Price_Cents/kWh",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "TOTAL_Revenue_Thousand Dollars",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "TOTAL_Sales_Megawatthours",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "TOTAL_Customers_Count",
+          "types": [
+            "integer"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "TOTAL_Price_Cents/kWh",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 0
+        }
+      ],
+      "missing_values": {
+        "year": 0,
+        "month": 0,
+        "state": 0,
+        "data_status": 0,
+        "RESIDENTIAL_Revenue_Thousand Dollars": 0,
+        "RESIDENTIAL_Sales_Megawatthours": 0,
+        "RESIDENTIAL_Customers_Count": 0,
+        "RESIDENTIAL_Price_Cents/kWh": 0,
+        "COMMERCIAL_Revenue_Thousand Dollars": 0,
+        "COMMERCIAL_Sales_Megawatthours": 0,
+        "COMMERCIAL_Customers_Count": 0,
+        "COMMERCIAL_Price_Cents/kWh": 0,
+        "INDUSTRIAL_Revenue_Thousand Dollars": 0,
+        "INDUSTRIAL_Sales_Megawatthours": 0,
+        "INDUSTRIAL_Customers_Count": 0,
+        "INDUSTRIAL_Price_Cents/kWh": 0,
+        "TRANSPORTATION_Revenue_Thousand Dollars": 0,
+        "TRANSPORTATION_Sales_Megawatthours": 0,
+        "TRANSPORTATION_Customers_Count": 0,
+        "TRANSPORTATION_Price_Cents/kWh": 0,
+        "TOTAL_Revenue_Thousand Dollars": 0,
+        "TOTAL_Sales_Megawatthours": 0,
+        "TOTAL_Customers_Count": 0,
+        "TOTAL_Price_Cents/kWh": 0
+      },
+      "duplicate_observations": 0,
+      "actual_start": "2010-01-01",
+      "actual_end": "2026-08-01",
+      "units": {
+        "year": "identifier",
+        "month": "identifier",
+        "state": "identifier",
+        "data_status": "identifier",
+        "RESIDENTIAL_Revenue_Thousand Dollars": "Thousand Dollars",
+        "RESIDENTIAL_Sales_Megawatthours": "Megawatthours",
+        "RESIDENTIAL_Customers_Count": "Count",
+        "RESIDENTIAL_Price_Cents/kWh": "Cents/kWh",
+        "COMMERCIAL_Revenue_Thousand Dollars": "Thousand Dollars",
+        "COMMERCIAL_Sales_Megawatthours": "Megawatthours",
+        "COMMERCIAL_Customers_Count": "Count",
+        "COMMERCIAL_Price_Cents/kWh": "Cents/kWh",
+        "INDUSTRIAL_Revenue_Thousand Dollars": "Thousand Dollars",
+        "INDUSTRIAL_Sales_Megawatthours": "Megawatthours",
+        "INDUSTRIAL_Customers_Count": "Count",
+        "INDUSTRIAL_Price_Cents/kWh": "Cents/kWh",
+        "TRANSPORTATION_Revenue_Thousand Dollars": "Thousand Dollars",
+        "TRANSPORTATION_Sales_Megawatthours": "Megawatthours",
+        "TRANSPORTATION_Customers_Count": "Count",
+        "TRANSPORTATION_Price_Cents/kWh": "Cents/kWh",
+        "TOTAL_Revenue_Thousand Dollars": "Thousand Dollars",
+        "TOTAL_Sales_Megawatthours": "Megawatthours",
+        "TOTAL_Customers_Count": "Count",
+        "TOTAL_Price_Cents/kWh": "Cents/kWh"
+      },
+      "geographic_identifiers": [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CA",
+        "CO",
+        "CT",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "HI",
+        "IA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "MD",
+        "ME",
+        "MI",
+        "MN",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NE",
+        "NH",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "OR",
+        "PA",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "VT",
+        "WA",
+        "WI",
+        "WV",
+        "WY"
+      ],
+      "time_zone": null,
+      "publication_date": null,
+      "reporting_delay_days": null,
+      "validation_status": "warning",
+      "issues": [
+        "inventory uses primary sheet Monthly-States; YTD and territory sheets are retained but not counted"
+      ]
+    },
+    {
+      "dataset_id": "ercot_hourly_load",
+      "source_url": "https://www.ercot.com/files/docs/2015/10/22/2004_ercot_hourly_load_data.xls",
+      "local_path": "data/raw/ercot_hourly_load/2004_ercot_hourly_load_data.xls",
+      "file_size": 1804288,
+      "sha256": "aa3f4f0bb0255452a2dd8aa2af0e1925160054674a590e502b1f4b706c97b2ce",
+      "row_count": 8784,
+      "column_definitions": [
+        {
+          "name": "hour_ending",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "COAST",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "EAST",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "FAR_WEST",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "NORTH",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "NORTH_C",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "SOUTHERN",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "SOUTH_C",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "WEST",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "ERCOT",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        }
+      ],
+      "missing_values": {
+        "hour_ending": 0,
+        "COAST": 0,
+        "EAST": 0,
+        "FAR_WEST": 0,
+        "NORTH": 0,
+        "NORTH_C": 0,
+        "SOUTHERN": 0,
+        "SOUTH_C": 0,
+        "WEST": 0,
+        "ERCOT": 0
+      },
+      "duplicate_observations": 1,
+      "actual_start": "2004-01-01",
+      "actual_end": "2004-12-31",
+      "units": {
+        "hour_ending": "timestamp, Central prevailing time",
+        "COAST": "MW",
+        "EAST": "MW",
+        "FAR_WEST": "MW",
+        "NORTH": "MW",
+        "NORTH_C": "MW",
+        "SOUTHERN": "MW",
+        "SOUTH_C": "MW",
+        "WEST": "MW",
+        "ERCOT": "MW"
+      },
+      "geographic_identifiers": [
+        "COAST",
+        "EAST",
+        "FAR_WEST",
+        "NORTH",
+        "NORTH_C",
+        "SOUTHERN",
+        "SOUTH_C",
+        "WEST",
+        "ERCOT"
+      ],
+      "time_zone": "Central prevailing time; DST requires explicit normalization",
+      "publication_date": "2015-10-22",
+      "reporting_delay_days": 3946,
+      "validation_status": "warning",
+      "issues": [
+        "1 repeated local hour-ending label(s) reflect DST fall-back"
+      ]
+    },
+    {
+      "dataset_id": "ercot_hourly_load",
+      "source_url": "https://www.ercot.com/files/docs/2021/01/12/Native_Load_2020.zip",
+      "local_path": "data/raw/ercot_hourly_load/Native_Load_2020.zip",
+      "file_size": 1099986,
+      "sha256": "a02195b9a8b79540d78362039cca30c95922e485828908dcd25c50c2dae4489a",
+      "row_count": 8784,
+      "column_definitions": [
+        {
+          "name": "hour_ending",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "COAST",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "EAST",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "FWEST",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "NORTH",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "NCENT",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "SOUTH",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "SCENT",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "WEST",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "ERCOT",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        }
+      ],
+      "missing_values": {
+        "hour_ending": 0,
+        "COAST": 0,
+        "EAST": 0,
+        "FWEST": 0,
+        "NORTH": 0,
+        "NCENT": 0,
+        "SOUTH": 0,
+        "SCENT": 0,
+        "WEST": 0,
+        "ERCOT": 0
+      },
+      "duplicate_observations": 1,
+      "actual_start": "2020-01-01",
+      "actual_end": "2020-12-31",
+      "units": {
+        "hour_ending": "timestamp, Central prevailing time",
+        "COAST": "MW",
+        "EAST": "MW",
+        "FWEST": "MW",
+        "NORTH": "MW",
+        "NCENT": "MW",
+        "SOUTH": "MW",
+        "SCENT": "MW",
+        "WEST": "MW",
+        "ERCOT": "MW"
+      },
+      "geographic_identifiers": [
+        "COAST",
+        "EAST",
+        "FWEST",
+        "NORTH",
+        "NCENT",
+        "SOUTH",
+        "SCENT",
+        "WEST",
+        "ERCOT"
+      ],
+      "time_zone": "Central prevailing time; DST requires explicit normalization",
+      "publication_date": "2021-01-12",
+      "reporting_delay_days": 11,
+      "validation_status": "warning",
+      "issues": [
+        "1 repeated local hour-ending label(s) reflect DST fall-back"
+      ]
+    },
+    {
+      "dataset_id": "ercot_hourly_load",
+      "source_url": "https://www.ercot.com/files/docs/2025/02/11/Native_Load_2025.zip",
+      "local_path": "data/raw/ercot_hourly_load/Native_Load_2025.zip",
+      "file_size": 1085085,
+      "sha256": "20f6699f4d1f577561e9581ce370a39b0b7af339c2c263c99c7b7fd605580854",
+      "row_count": 8760,
+      "column_definitions": [
+        {
+          "name": "hour_ending",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "COAST",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "EAST",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "FWEST",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "NORTH",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "NCENT",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "SOUTH",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "SCENT",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "WEST",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "ERCOT",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        }
+      ],
+      "missing_values": {
+        "hour_ending": 0,
+        "COAST": 0,
+        "EAST": 0,
+        "FWEST": 0,
+        "NORTH": 0,
+        "NCENT": 0,
+        "SOUTH": 0,
+        "SCENT": 0,
+        "WEST": 0,
+        "ERCOT": 0
+      },
+      "duplicate_observations": 1,
+      "actual_start": "2025-01-01",
+      "actual_end": "2025-12-31",
+      "units": {
+        "hour_ending": "timestamp, Central prevailing time",
+        "COAST": "MW",
+        "EAST": "MW",
+        "FWEST": "MW",
+        "NORTH": "MW",
+        "NCENT": "MW",
+        "SOUTH": "MW",
+        "SCENT": "MW",
+        "WEST": "MW",
+        "ERCOT": "MW"
+      },
+      "geographic_identifiers": [
+        "COAST",
+        "EAST",
+        "FWEST",
+        "NORTH",
+        "NCENT",
+        "SOUTH",
+        "SCENT",
+        "WEST",
+        "ERCOT"
+      ],
+      "time_zone": "Central prevailing time; DST requires explicit normalization",
+      "publication_date": "2025-02-11",
+      "reporting_delay_days": -324,
+      "validation_status": "warning",
+      "issues": [
+        "1 repeated local hour-ending label(s) reflect DST fall-back"
+      ]
+    },
+    {
+      "dataset_id": "ercot_hourly_load",
+      "source_url": "https://www.ercot.com/files/docs/2026/02/10/Native_Load_2026.zip",
+      "local_path": "data/raw/ercot_hourly_load/Native_Load_2026.zip",
+      "file_size": 908024,
+      "sha256": "94e20fa206cffe28d2fe11b4cf27f0b86c160853efa14a7784db2e5fd32dc7a6",
+      "row_count": 7295,
+      "column_definitions": [
+        {
+          "name": "hour_ending",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "COAST",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "EAST",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "FWEST",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "NORTH",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "NCENT",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "SOUTH",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "SCENT",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "WEST",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "ERCOT",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        }
+      ],
+      "missing_values": {
+        "hour_ending": 0,
+        "COAST": 0,
+        "EAST": 0,
+        "FWEST": 0,
+        "NORTH": 0,
+        "NCENT": 0,
+        "SOUTH": 0,
+        "SCENT": 0,
+        "WEST": 0,
+        "ERCOT": 0
+      },
+      "duplicate_observations": 0,
+      "actual_start": "2026-01-01",
+      "actual_end": "2026-10-31",
+      "units": {
+        "hour_ending": "timestamp, Central prevailing time",
+        "COAST": "MW",
+        "EAST": "MW",
+        "FWEST": "MW",
+        "NORTH": "MW",
+        "NCENT": "MW",
+        "SOUTH": "MW",
+        "SCENT": "MW",
+        "WEST": "MW",
+        "ERCOT": "MW"
+      },
+      "geographic_identifiers": [
+        "COAST",
+        "EAST",
+        "FWEST",
+        "NORTH",
+        "NCENT",
+        "SOUTH",
+        "SCENT",
+        "WEST",
+        "ERCOT"
+      ],
+      "time_zone": "Central prevailing time; DST requires explicit normalization",
+      "publication_date": "2026-02-10",
+      "reporting_delay_days": -264,
+      "validation_status": "warning",
+      "issues": [
+        "row count 7295 differs from 24 per represented date (7296); inspect DST/hour-ending convention"
+      ]
+    },
+    {
+      "dataset_id": "ercot_official_long_term_forecast",
+      "source_url": "https://www.ercot.com/files/docs/2025/04/08/2025-ERCOT-Monthly-Peak-Demand-and-Energy-Forecast.xlsx",
+      "local_path": "data/raw/ercot_official_long_term_forecast/2025-ERCOT-Monthly-Peak-Demand-and-Energy-Forecast.xlsx",
+      "file_size": 27202,
+      "sha256": "cf2f50b9f9846f6d378715b7027a58bbeda926ce43626178e0604e48866e2e75",
+      "row_count": 240,
+      "column_definitions": [
+        {
+          "name": "year",
+          "types": [
+            "integer"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "month",
+          "types": [
+            "integer"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "monthly_peak",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "monthly_energy",
+          "types": [
+            "integer",
+            "number"
+          ],
+          "missing": 0
+        }
+      ],
+      "missing_values": {
+        "year": 0,
+        "month": 0,
+        "monthly_peak": 0,
+        "monthly_energy": 0
+      },
+      "duplicate_observations": 0,
+      "actual_start": "2025-01-01",
+      "actual_end": "2044-12-01",
+      "units": {
+        "year": "year",
+        "month": "month",
+        "monthly_peak": "MW (inferred; unit not embedded)",
+        "monthly_energy": "MWh (inferred; unit not embedded)"
+      },
+      "geographic_identifiers": [
+        "ERCOT"
+      ],
+      "time_zone": null,
+      "publication_date": "2025-04-08",
+      "reporting_delay_days": -7177,
+      "validation_status": "warning",
+      "issues": [
+        "peak and energy units are inferred from ERCOT context; workbook cells do not embed units"
+      ]
+    },
+    {
+      "dataset_id": "fred_consumer_price_index",
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCSL",
+      "local_path": "data/raw/fred_consumer_price_index/fredgraph.csv",
+      "file_size": 17782,
+      "sha256": "c9be2d4909ffd28d91f07df5d113151b0fe7ba602144ee6fd453d3bc8426efde",
+      "row_count": 958,
+      "column_definitions": [
+        {
+          "name": "observation_date",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "CPIAUCSL",
+          "types": [
+            "string"
+          ],
+          "missing": 1
+        }
+      ],
+      "missing_values": {
+        "observation_date": 0,
+        "CPIAUCSL": 1
+      },
+      "duplicate_observations": 0,
+      "actual_start": "1947-01-01",
+      "actual_end": "2026-10-01",
+      "units": {
+        "observation_date": "date",
+        "CPIAUCSL": "series-specific unit; not embedded in FRED CSV"
+      },
+      "geographic_identifiers": [
+        "United States"
+      ],
+      "time_zone": null,
+      "publication_date": null,
+      "reporting_delay_days": null,
+      "validation_status": "warning",
+      "issues": [
+        "series unit and seasonal-adjustment metadata are not embedded; retain FRED series metadata during canonical ingestion"
+      ]
+    },
+    {
+      "dataset_id": "fred_crude_oil_prices",
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=MCOILWTICO",
+      "local_path": "data/raw/fred_crude_oil_prices/fredgraph.csv",
+      "file_size": 8390,
+      "sha256": "fee4f983b2e949061982535e4d7a399602ddfdcbd12cb272770364f82fb5f3ab",
+      "row_count": 490,
+      "column_definitions": [
+        {
+          "name": "observation_date",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "MCOILWTICO",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        }
+      ],
+      "missing_values": {
+        "observation_date": 0,
+        "MCOILWTICO": 0
+      },
+      "duplicate_observations": 0,
+      "actual_start": "1986-01-01",
+      "actual_end": "2026-10-01",
+      "units": {
+        "observation_date": "date",
+        "MCOILWTICO": "series-specific unit; not embedded in FRED CSV"
+      },
+      "geographic_identifiers": [
+        "United States"
+      ],
+      "time_zone": null,
+      "publication_date": null,
+      "reporting_delay_days": null,
+      "validation_status": "warning",
+      "issues": [
+        "series unit and seasonal-adjustment metadata are not embedded; retain FRED series metadata during canonical ingestion"
+      ]
+    },
+    {
+      "dataset_id": "fred_economic_policy_uncertainty",
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=USEPUINDXM",
+      "local_path": "data/raw/fred_economic_policy_uncertainty/fredgraph.csv",
+      "file_size": 10375,
+      "sha256": "35eb00f3c33290e0e0e307df720d6cbe8808f72d7061e10eeca07562ee4a4f94",
+      "row_count": 502,
+      "column_definitions": [
+        {
+          "name": "observation_date",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "USEPUINDXM",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        }
+      ],
+      "missing_values": {
+        "observation_date": 0,
+        "USEPUINDXM": 0
+      },
+      "duplicate_observations": 0,
+      "actual_start": "1985-01-01",
+      "actual_end": "2026-10-01",
+      "units": {
+        "observation_date": "date",
+        "USEPUINDXM": "series-specific unit; not embedded in FRED CSV"
+      },
+      "geographic_identifiers": [
+        "United States"
+      ],
+      "time_zone": null,
+      "publication_date": null,
+      "reporting_delay_days": null,
+      "validation_status": "warning",
+      "issues": [
+        "series unit and seasonal-adjustment metadata are not embedded; retain FRED series metadata during canonical ingestion"
+      ]
+    },
+    {
+      "dataset_id": "fred_federal_funds_rate",
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=FEDFUNDS",
+      "local_path": "data/raw/fred_federal_funds_rate/fredgraph.csv",
+      "file_size": 13975,
+      "sha256": "06ded1625e05391a1407f1d7d721e482e8b62916c6c5fe9491b76d74285ddd69",
+      "row_count": 868,
+      "column_definitions": [
+        {
+          "name": "observation_date",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "FEDFUNDS",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        }
+      ],
+      "missing_values": {
+        "observation_date": 0,
+        "FEDFUNDS": 0
+      },
+      "duplicate_observations": 0,
+      "actual_start": "1954-07-01",
+      "actual_end": "2026-10-01",
+      "units": {
+        "observation_date": "date",
+        "FEDFUNDS": "series-specific unit; not embedded in FRED CSV"
+      },
+      "geographic_identifiers": [
+        "United States"
+      ],
+      "time_zone": null,
+      "publication_date": null,
+      "reporting_delay_days": null,
+      "validation_status": "warning",
+      "issues": [
+        "series unit and seasonal-adjustment metadata are not embedded; retain FRED series metadata during canonical ingestion"
+      ]
+    },
+    {
+      "dataset_id": "fred_global_supply_chain_pressure",
+      "source_url": "https://www.newyorkfed.org/medialibrary/research/interactives/gscpi/downloads/gscpi_data.xlsx",
+      "local_path": "data/raw/fred_global_supply_chain_pressure/gscpi_data.xls",
+      "file_size": 252416,
+      "sha256": "b3f8104551277c1fdbef99187d650cb1739d8d4d6d4dcd8279457e36b9e1e3a1",
+      "row_count": 346,
+      "column_definitions": [
+        {
+          "name": "Date",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GSCPI",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        }
+      ],
+      "missing_values": {
+        "Date": 0,
+        "GSCPI": 0
+      },
+      "duplicate_observations": 0,
+      "actual_start": "1998-01-31",
+      "actual_end": "2026-10-31",
+      "units": {
+        "Date": "month",
+        "GSCPI": "standard deviations from historical average"
+      },
+      "geographic_identifiers": [
+        "Global"
+      ],
+      "time_zone": null,
+      "publication_date": null,
+      "reporting_delay_days": null,
+      "validation_status": "warning",
+      "issues": [
+        "official New York Fed workbook used because the FRED CSV endpoint was unavailable"
+      ]
+    },
+    {
+      "dataset_id": "fred_industrial_production",
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=INDPRO",
+      "local_path": "data/raw/fred_industrial_production/fredgraph.csv",
+      "file_size": 24460,
+      "sha256": "0fc53a503386efaf83f17cf0cc6d77b3980830a91c9dfa9ebab97b4cf1aa5feb",
+      "row_count": 1293,
+      "column_definitions": [
+        {
+          "name": "observation_date",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "INDPRO",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        }
+      ],
+      "missing_values": {
+        "observation_date": 0,
+        "INDPRO": 0
+      },
+      "duplicate_observations": 0,
+      "actual_start": "1919-01-01",
+      "actual_end": "2026-09-01",
+      "units": {
+        "observation_date": "date",
+        "INDPRO": "series-specific unit; not embedded in FRED CSV"
+      },
+      "geographic_identifiers": [
+        "United States"
+      ],
+      "time_zone": null,
+      "publication_date": null,
+      "reporting_delay_days": null,
+      "validation_status": "warning",
+      "issues": [
+        "series unit and seasonal-adjustment metadata are not embedded; retain FRED series metadata during canonical ingestion"
+      ]
+    },
+    {
+      "dataset_id": "fred_natural_gas_prices",
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=MHHNGSP",
+      "local_path": "data/raw/fred_natural_gas_prices/fredgraph.csv",
+      "file_size": 5761,
+      "sha256": "ef6d89febefe1207ad1abc25fdf92e0774d9c06bbbe0a760c2a2fb195a9f7f2c",
+      "row_count": 358,
+      "column_definitions": [
+        {
+          "name": "observation_date",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "MHHNGSP",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        }
+      ],
+      "missing_values": {
+        "observation_date": 0,
+        "MHHNGSP": 0
+      },
+      "duplicate_observations": 0,
+      "actual_start": "1997-01-01",
+      "actual_end": "2026-10-01",
+      "units": {
+        "observation_date": "date",
+        "MHHNGSP": "series-specific unit; not embedded in FRED CSV"
+      },
+      "geographic_identifiers": [
+        "United States"
+      ],
+      "time_zone": null,
+      "publication_date": null,
+      "reporting_delay_days": null,
+      "validation_status": "warning",
+      "issues": [
+        "series unit and seasonal-adjustment metadata are not embedded; retain FRED series metadata during canonical ingestion"
+      ]
+    },
+    {
+      "dataset_id": "fred_real_gdp",
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GDPC1",
+      "local_path": "data/raw/fred_real_gdp/fredgraph.csv",
+      "file_size": 6548,
+      "sha256": "1c6c6e9f59e383e20c849dd299175c7a307526c09abdc18f18da9754fc5b3343",
+      "row_count": 319,
+      "column_definitions": [
+        {
+          "name": "observation_date",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GDPC1",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        }
+      ],
+      "missing_values": {
+        "observation_date": 0,
+        "GDPC1": 0
+      },
+      "duplicate_observations": 0,
+      "actual_start": "1947-01-01",
+      "actual_end": "2026-07-01",
+      "units": {
+        "observation_date": "date",
+        "GDPC1": "series-specific unit; not embedded in FRED CSV"
+      },
+      "geographic_identifiers": [
+        "United States"
+      ],
+      "time_zone": null,
+      "publication_date": null,
+      "reporting_delay_days": null,
+      "validation_status": "warning",
+      "issues": [
+        "series unit and seasonal-adjustment metadata are not embedded; retain FRED series metadata during canonical ingestion"
+      ]
+    },
+    {
+      "dataset_id": "fred_texas_employment",
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=TXNA",
+      "local_path": "data/raw/fred_texas_employment/fredgraph.csv",
+      "file_size": 8207,
+      "sha256": "ade5b3ec3ba4581e427c9a8e84c40bbd933451ae6ae2ba10fc514aa7a24027cc",
+      "row_count": 441,
+      "column_definitions": [
+        {
+          "name": "observation_date",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "TXNA",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        }
+      ],
+      "missing_values": {
+        "observation_date": 0,
+        "TXNA": 0
+      },
+      "duplicate_observations": 0,
+      "actual_start": "1990-01-01",
+      "actual_end": "2026-09-01",
+      "units": {
+        "observation_date": "date",
+        "TXNA": "series-specific unit; not embedded in FRED CSV"
+      },
+      "geographic_identifiers": [
+        "Texas"
+      ],
+      "time_zone": null,
+      "publication_date": null,
+      "reporting_delay_days": null,
+      "validation_status": "warning",
+      "issues": [
+        "series unit and seasonal-adjustment metadata are not embedded; retain FRED series metadata during canonical ingestion"
+      ]
+    },
+    {
+      "dataset_id": "fred_texas_population",
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=TXPOP",
+      "local_path": "data/raw/fred_texas_population/fredgraph.csv",
+      "file_size": 2607,
+      "sha256": "08398c9d5210ed88f2dbb0a5770f759c43ec21a143c047df0549a39f94bdcade",
+      "row_count": 126,
+      "column_definitions": [
+        {
+          "name": "observation_date",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "TXPOP",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        }
+      ],
+      "missing_values": {
+        "observation_date": 0,
+        "TXPOP": 0
+      },
+      "duplicate_observations": 0,
+      "actual_start": "1900-01-01",
+      "actual_end": "2025-01-01",
+      "units": {
+        "observation_date": "date",
+        "TXPOP": "series-specific unit; not embedded in FRED CSV"
+      },
+      "geographic_identifiers": [
+        "Texas"
+      ],
+      "time_zone": null,
+      "publication_date": null,
+      "reporting_delay_days": null,
+      "validation_status": "warning",
+      "issues": [
+        "series unit and seasonal-adjustment metadata are not embedded; retain FRED series metadata during canonical ingestion"
+      ]
+    },
+    {
+      "dataset_id": "fred_texas_unemployment_rate",
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=TXUR",
+      "local_path": "data/raw/fred_texas_unemployment_rate/fredgraph.csv",
+      "file_size": 9157,
+      "sha256": "357b7b173691784292f67632c1c2a600fe4d6e9c3287bb9ec717261a87c5a2b8",
+      "row_count": 609,
+      "column_definitions": [
+        {
+          "name": "observation_date",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "TXUR",
+          "types": [
+            "string"
+          ],
+          "missing": 1
+        }
+      ],
+      "missing_values": {
+        "observation_date": 0,
+        "TXUR": 1
+      },
+      "duplicate_observations": 0,
+      "actual_start": "1976-01-01",
+      "actual_end": "2026-09-01",
+      "units": {
+        "observation_date": "date",
+        "TXUR": "series-specific unit; not embedded in FRED CSV"
+      },
+      "geographic_identifiers": [
+        "Texas"
+      ],
+      "time_zone": null,
+      "publication_date": null,
+      "reporting_delay_days": null,
+      "validation_status": "warning",
+      "issues": [
+        "series unit and seasonal-adjustment metadata are not embedded; retain FRED series metadata during canonical ingestion"
+      ]
+    },
+    {
+      "dataset_id": "fred_unemployment_rate",
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=UNRATE",
+      "local_path": "data/raw/fred_unemployment_rate/fredgraph.csv",
+      "file_size": 14226,
+      "sha256": "fb669461abc34e00324b940be6bad1c7f89117652f28587196a7b8bf4a9f56a1",
+      "row_count": 946,
+      "column_definitions": [
+        {
+          "name": "observation_date",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "UNRATE",
+          "types": [
+            "string"
+          ],
+          "missing": 1
+        }
+      ],
+      "missing_values": {
+        "observation_date": 0,
+        "UNRATE": 1
+      },
+      "duplicate_observations": 0,
+      "actual_start": "1948-01-01",
+      "actual_end": "2026-10-01",
+      "units": {
+        "observation_date": "date",
+        "UNRATE": "series-specific unit; not embedded in FRED CSV"
+      },
+      "geographic_identifiers": [
+        "United States"
+      ],
+      "time_zone": null,
+      "publication_date": null,
+      "reporting_delay_days": null,
+      "validation_status": "warning",
+      "issues": [
+        "series unit and seasonal-adjustment metadata are not embedded; retain FRED series metadata during canonical ingestion"
+      ]
+    },
+    {
+      "dataset_id": "global_geopolitical_risk",
+      "source_url": "https://www.matteoiacoviello.com/gpr_files/data_gpr_export.xls",
+      "local_path": "data/raw/global_geopolitical_risk/data_gpr_export.xls",
+      "file_size": 2718208,
+      "sha256": "32e54b08df4cbc2954c3b89970008a7a3a2f2e94ed4184135908248e4d01cd83",
+      "row_count": 1522,
+      "column_definitions": [
+        {
+          "name": "month",
+          "types": [
+            "string"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPR",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRT",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRA",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRH",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHT",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHA",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "SHARE_GPR",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "N10",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "SHARE_GPRH",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "N3H",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRH_NOEW",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPR_NOEW",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRH_AND",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPR_AND",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRH_BASIC",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPR_BASIC",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "SHAREH_CAT_1",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "SHAREH_CAT_2",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "SHAREH_CAT_3",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "SHAREH_CAT_4",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "SHAREH_CAT_5",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "SHAREH_CAT_6",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "SHAREH_CAT_7",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "SHAREH_CAT_8",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRC_ARG",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_AUS",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_BEL",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_BRA",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_CAN",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_CHE",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_CHL",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_CHN",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_COL",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_DEU",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_DNK",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_EGY",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_ESP",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_FIN",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_FRA",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_GBR",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_HKG",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_HUN",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_IDN",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_IND",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_ISR",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_ITA",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_JPN",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_KOR",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_MEX",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_MYS",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_NLD",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_NOR",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_PER",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_PHL",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_POL",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_PRT",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_RUS",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_SAU",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_SWE",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_THA",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_TUN",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_TUR",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_TWN",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_UKR",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_USA",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_VEN",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_VNM",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRC_ZAF",
+          "types": [
+            "number"
+          ],
+          "missing": 1020
+        },
+        {
+          "name": "GPRHC_ARG",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_AUS",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_BEL",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_BRA",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_CAN",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_CHE",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_CHL",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_CHN",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_COL",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_DEU",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_DNK",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_EGY",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_ESP",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_FIN",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_FRA",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_GBR",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_HKG",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_HUN",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_IDN",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_IND",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_ISR",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_ITA",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_JPN",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_KOR",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_MEX",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_MYS",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_NLD",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_NOR",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_PER",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_PHL",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_POL",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_PRT",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_RUS",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_SAU",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_SWE",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_THA",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_TUN",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_TUR",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_TWN",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_UKR",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_USA",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_VEN",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_VNM",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "GPRHC_ZAF",
+          "types": [
+            "number"
+          ],
+          "missing": 0
+        },
+        {
+          "name": "var_name",
+          "types": [
+            "string"
+          ],
+          "missing": 1409
+        },
+        {
+          "name": "var_label",
+          "types": [
+            "string"
+          ],
+          "missing": 1409
+        }
+      ],
+      "missing_values": {
+        "month": 0,
+        "GPR": 1020,
+        "GPRT": 1020,
+        "GPRA": 1020,
+        "GPRH": 0,
+        "GPRHT": 0,
+        "GPRHA": 0,
+        "SHARE_GPR": 1020,
+        "N10": 1020,
+        "SHARE_GPRH": 0,
+        "N3H": 0,
+        "GPRH_NOEW": 0,
+        "GPR_NOEW": 1020,
+        "GPRH_AND": 0,
+        "GPR_AND": 1020,
+        "GPRH_BASIC": 0,
+        "GPR_BASIC": 1020,
+        "SHAREH_CAT_1": 0,
+        "SHAREH_CAT_2": 0,
+        "SHAREH_CAT_3": 0,
+        "SHAREH_CAT_4": 0,
+        "SHAREH_CAT_5": 0,
+        "SHAREH_CAT_6": 0,
+        "SHAREH_CAT_7": 0,
+        "SHAREH_CAT_8": 0,
+        "GPRC_ARG": 1020,
+        "GPRC_AUS": 1020,
+        "GPRC_BEL": 1020,
+        "GPRC_BRA": 1020,
+        "GPRC_CAN": 1020,
+        "GPRC_CHE": 1020,
+        "GPRC_CHL": 1020,
+        "GPRC_CHN": 1020,
+        "GPRC_COL": 1020,
+        "GPRC_DEU": 1020,
+        "GPRC_DNK": 1020,
+        "GPRC_EGY": 1020,
+        "GPRC_ESP": 1020,
+        "GPRC_FIN": 1020,
+        "GPRC_FRA": 1020,
+        "GPRC_GBR": 1020,
+        "GPRC_HKG": 1020,
+        "GPRC_HUN": 1020,
+        "GPRC_IDN": 1020,
+        "GPRC_IND": 1020,
+        "GPRC_ISR": 1020,
+        "GPRC_ITA": 1020,
+        "GPRC_JPN": 1020,
+        "GPRC_KOR": 1020,
+        "GPRC_MEX": 1020,
+        "GPRC_MYS": 1020,
+        "GPRC_NLD": 1020,
+        "GPRC_NOR": 1020,
+        "GPRC_PER": 1020,
+        "GPRC_PHL": 1020,
+        "GPRC_POL": 1020,
+        "GPRC_PRT": 1020,
+        "GPRC_RUS": 1020,
+        "GPRC_SAU": 1020,
+        "GPRC_SWE": 1020,
+        "GPRC_THA": 1020,
+        "GPRC_TUN": 1020,
+        "GPRC_TUR": 1020,
+        "GPRC_TWN": 1020,
+        "GPRC_UKR": 1020,
+        "GPRC_USA": 1020,
+        "GPRC_VEN": 1020,
+        "GPRC_VNM": 1020,
+        "GPRC_ZAF": 1020,
+        "GPRHC_ARG": 0,
+        "GPRHC_AUS": 0,
+        "GPRHC_BEL": 0,
+        "GPRHC_BRA": 0,
+        "GPRHC_CAN": 0,
+        "GPRHC_CHE": 0,
+        "GPRHC_CHL": 0,
+        "GPRHC_CHN": 0,
+        "GPRHC_COL": 0,
+        "GPRHC_DEU": 0,
+        "GPRHC_DNK": 0,
+        "GPRHC_EGY": 0,
+        "GPRHC_ESP": 0,
+        "GPRHC_FIN": 0,
+        "GPRHC_FRA": 0,
+        "GPRHC_GBR": 0,
+        "GPRHC_HKG": 0,
+        "GPRHC_HUN": 0,
+        "GPRHC_IDN": 0,
+        "GPRHC_IND": 0,
+        "GPRHC_ISR": 0,
+        "GPRHC_ITA": 0,
+        "GPRHC_JPN": 0,
+        "GPRHC_KOR": 0,
+        "GPRHC_MEX": 0,
+        "GPRHC_MYS": 0,
+        "GPRHC_NLD": 0,
+        "GPRHC_NOR": 0,
+        "GPRHC_PER": 0,
+        "GPRHC_PHL": 0,
+        "GPRHC_POL": 0,
+        "GPRHC_PRT": 0,
+        "GPRHC_RUS": 0,
+        "GPRHC_SAU": 0,
+        "GPRHC_SWE": 0,
+        "GPRHC_THA": 0,
+        "GPRHC_TUN": 0,
+        "GPRHC_TUR": 0,
+        "GPRHC_TWN": 0,
+        "GPRHC_UKR": 0,
+        "GPRHC_USA": 0,
+        "GPRHC_VEN": 0,
+        "GPRHC_VNM": 0,
+        "GPRHC_ZAF": 0,
+        "var_name": 1409,
+        "var_label": 1409
+      },
+      "duplicate_observations": 0,
+      "actual_start": "1900-01-01",
+      "actual_end": "2026-10-01",
+      "units": {
+        "month": "month",
+        "GPR": "index/share/count; see var_label metadata",
+        "GPRT": "index/share/count; see var_label metadata",
+        "GPRA": "index/share/count; see var_label metadata",
+        "GPRH": "index/share/count; see var_label metadata",
+        "GPRHT": "index/share/count; see var_label metadata",
+        "GPRHA": "index/share/count; see var_label metadata",
+        "SHARE_GPR": "index/share/count; see var_label metadata",
+        "N10": "index/share/count; see var_label metadata",
+        "SHARE_GPRH": "index/share/count; see var_label metadata",
+        "N3H": "index/share/count; see var_label metadata",
+        "GPRH_NOEW": "index/share/count; see var_label metadata",
+        "GPR_NOEW": "index/share/count; see var_label metadata",
+        "GPRH_AND": "index/share/count; see var_label metadata",
+        "GPR_AND": "index/share/count; see var_label metadata",
+        "GPRH_BASIC": "index/share/count; see var_label metadata",
+        "GPR_BASIC": "index/share/count; see var_label metadata",
+        "SHAREH_CAT_1": "index/share/count; see var_label metadata",
+        "SHAREH_CAT_2": "index/share/count; see var_label metadata",
+        "SHAREH_CAT_3": "index/share/count; see var_label metadata",
+        "SHAREH_CAT_4": "index/share/count; see var_label metadata",
+        "SHAREH_CAT_5": "index/share/count; see var_label metadata",
+        "SHAREH_CAT_6": "index/share/count; see var_label metadata",
+        "SHAREH_CAT_7": "index/share/count; see var_label metadata",
+        "SHAREH_CAT_8": "index/share/count; see var_label metadata",
+        "GPRC_ARG": "index/share/count; see var_label metadata",
+        "GPRC_AUS": "index/share/count; see var_label metadata",
+        "GPRC_BEL": "index/share/count; see var_label metadata",
+        "GPRC_BRA": "index/share/count; see var_label metadata",
+        "GPRC_CAN": "index/share/count; see var_label metadata",
+        "GPRC_CHE": "index/share/count; see var_label metadata",
+        "GPRC_CHL": "index/share/count; see var_label metadata",
+        "GPRC_CHN": "index/share/count; see var_label metadata",
+        "GPRC_COL": "index/share/count; see var_label metadata",
+        "GPRC_DEU": "index/share/count; see var_label metadata",
+        "GPRC_DNK": "index/share/count; see var_label metadata",
+        "GPRC_EGY": "index/share/count; see var_label metadata",
+        "GPRC_ESP": "index/share/count; see var_label metadata",
+        "GPRC_FIN": "index/share/count; see var_label metadata",
+        "GPRC_FRA": "index/share/count; see var_label metadata",
+        "GPRC_GBR": "index/share/count; see var_label metadata",
+        "GPRC_HKG": "index/share/count; see var_label metadata",
+        "GPRC_HUN": "index/share/count; see var_label metadata",
+        "GPRC_IDN": "index/share/count; see var_label metadata",
+        "GPRC_IND": "index/share/count; see var_label metadata",
+        "GPRC_ISR": "index/share/count; see var_label metadata",
+        "GPRC_ITA": "index/share/count; see var_label metadata",
+        "GPRC_JPN": "index/share/count; see var_label metadata",
+        "GPRC_KOR": "index/share/count; see var_label metadata",
+        "GPRC_MEX": "index/share/count; see var_label metadata",
+        "GPRC_MYS": "index/share/count; see var_label metadata",
+        "GPRC_NLD": "index/share/count; see var_label metadata",
+        "GPRC_NOR": "index/share/count; see var_label metadata",
+        "GPRC_PER": "index/share/count; see var_label metadata",
+        "GPRC_PHL": "index/share/count; see var_label metadata",
+        "GPRC_POL": "index/share/count; see var_label metadata",
+        "GPRC_PRT": "index/share/count; see var_label metadata",
+        "GPRC_RUS": "index/share/count; see var_label metadata",
+        "GPRC_SAU": "index/share/count; see var_label metadata",
+        "GPRC_SWE": "index/share/count; see var_label metadata",
+        "GPRC_THA": "index/share/count; see var_label metadata",
+        "GPRC_TUN": "index/share/count; see var_label metadata",
+        "GPRC_TUR": "index/share/count; see var_label metadata",
+        "GPRC_TWN": "index/share/count; see var_label metadata",
+        "GPRC_UKR": "index/share/count; see var_label metadata",
+        "GPRC_USA": "index/share/count; see var_label metadata",
+        "GPRC_VEN": "index/share/count; see var_label metadata",
+        "GPRC_VNM": "index/share/count; see var_label metadata",
+        "GPRC_ZAF": "index/share/count; see var_label metadata",
+        "GPRHC_ARG": "index/share/count; see var_label metadata",
+        "GPRHC_AUS": "index/share/count; see var_label metadata",
+        "GPRHC_BEL": "index/share/count; see var_label metadata",
+        "GPRHC_BRA": "index/share/count; see var_label metadata",
+        "GPRHC_CAN": "index/share/count; see var_label metadata",
+        "GPRHC_CHE": "index/share/count; see var_label metadata",
+        "GPRHC_CHL": "index/share/count; see var_label metadata",
+        "GPRHC_CHN": "index/share/count; see var_label metadata",
+        "GPRHC_COL": "index/share/count; see var_label metadata",
+        "GPRHC_DEU": "index/share/count; see var_label metadata",
+        "GPRHC_DNK": "index/share/count; see var_label metadata",
+        "GPRHC_EGY": "index/share/count; see var_label metadata",
+        "GPRHC_ESP": "index/share/count; see var_label metadata",
+        "GPRHC_FIN": "index/share/count; see var_label metadata",
+        "GPRHC_FRA": "index/share/count; see var_label metadata",
+        "GPRHC_GBR": "index/share/count; see var_label metadata",
+        "GPRHC_HKG": "index/share/count; see var_label metadata",
+        "GPRHC_HUN": "index/share/count; see var_label metadata",
+        "GPRHC_IDN": "index/share/count; see var_label metadata",
+        "GPRHC_IND": "index/share/count; see var_label metadata",
+        "GPRHC_ISR": "index/share/count; see var_label metadata",
+        "GPRHC_ITA": "index/share/count; see var_label metadata",
+        "GPRHC_JPN": "index/share/count; see var_label metadata",
+        "GPRHC_KOR": "index/share/count; see var_label metadata",
+        "GPRHC_MEX": "index/share/count; see var_label metadata",
+        "GPRHC_MYS": "index/share/count; see var_label metadata",
+        "GPRHC_NLD": "index/share/count; see var_label metadata",
+        "GPRHC_NOR": "index/share/count; see var_label metadata",
+        "GPRHC_PER": "index/share/count; see var_label metadata",
+        "GPRHC_PHL": "index/share/count; see var_label metadata",
+        "GPRHC_POL": "index/share/count; see var_label metadata",
+        "GPRHC_PRT": "index/share/count; see var_label metadata",
+        "GPRHC_RUS": "index/share/count; see var_label metadata",
+        "GPRHC_SAU": "index/share/count; see var_label metadata",
+        "GPRHC_SWE": "index/share/count; see var_label metadata",
+        "GPRHC_THA": "index/share/count; see var_label metadata",
+        "GPRHC_TUN": "index/share/count; see var_label metadata",
+        "GPRHC_TUR": "index/share/count; see var_label metadata",
+        "GPRHC_TWN": "index/share/count; see var_label metadata",
+        "GPRHC_UKR": "index/share/count; see var_label metadata",
+        "GPRHC_USA": "index/share/count; see var_label metadata",
+        "GPRHC_VEN": "index/share/count; see var_label metadata",
+        "GPRHC_VNM": "index/share/count; see var_label metadata",
+        "GPRHC_ZAF": "index/share/count; see var_label metadata",
+        "var_name": "index/share/count; see var_label metadata",
+        "var_label": "index/share/count; see var_label metadata"
+      },
+      "geographic_identifiers": [
+        "ARG",
+        "AUS",
+        "BEL",
+        "BRA",
+        "CAN",
+        "CHE",
+        "CHL",
+        "CHN",
+        "COL",
+        "DEU",
+        "DNK",
+        "EGY",
+        "ESP",
+        "FIN",
+        "FRA",
+        "GBR",
+        "HKG",
+        "HUN",
+        "IDN",
+        "IND",
+        "ISR",
+        "ITA",
+        "JPN",
+        "KOR",
+        "MEX",
+        "MYS",
+        "NLD",
+        "NOR",
+        "PER",
+        "PHL",
+        "POL",
+        "PRT",
+        "RUS",
+        "SAU",
+        "SWE",
+        "THA",
+        "TUN",
+        "TUR",
+        "TWN",
+        "UKR",
+        "USA",
+        "VEN",
+        "VNM",
+        "ZAF"
+      ],
+      "time_zone": null,
+      "publication_date": null,
+      "reporting_delay_days": null,
+      "validation_status": "pass",
+      "issues": []
+    }
+  ],
+  "updated_at": "2026-11-14T19:27:15.340394+00:00",
+  "phase1c_acquisition": {
+    "created_at": "2026-11-14T19:19:27.440083+00:00",
+    "scope": "Phase 1C approved historical artifacts",
+    "max_artifact_bytes": 67108864,
+    "datasets": [
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2026/02/10/Native_Load_2026.zip",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/Native_Load_2026.zip",
+        "bytes": 908024,
+        "sha256": "94e20fa206cffe28d2fe11b4cf27f0b86c160853efa14a7784db2e5fd32dc7a6",
+        "status": "cached",
+        "format": "zip",
+        "publication_date": "2026-02-10",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2025/02/11/Native_Load_2025.zip",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/Native_Load_2025.zip",
+        "bytes": 1085085,
+        "sha256": "20f6699f4d1f577561e9581ce370a39b0b7af339c2c263c99c7b7fd605580854",
+        "status": "cached",
+        "format": "zip",
+        "publication_date": "2025-02-11",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2024/02/06/Native_Load_2024.zip",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/Native_Load_2024.zip",
+        "bytes": 1088476,
+        "sha256": "fe6dacd721ae66bdef63f9d755c4219ab6bc06361ef2044627fb45424c427198",
+        "status": "downloaded",
+        "format": "zip",
+        "publication_date": "2024-02-06",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2023/02/09/Native_Load_2023.zip",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/Native_Load_2023.zip",
+        "bytes": 1091030,
+        "sha256": "34e7067d3273f56be42ce469e23747cff0db736d668519070ad63674c3ddecd4",
+        "status": "downloaded",
+        "format": "zip",
+        "publication_date": "2023-02-09",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2022/02/08/Native_Load_2022.zip",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/Native_Load_2022.zip",
+        "bytes": 1093481,
+        "sha256": "a90335ab621a5ad719bc885b27d7fd7ed0c90de0ad3f72736c30c26ada89a2ce",
+        "status": "downloaded",
+        "format": "zip",
+        "publication_date": "2022-02-08",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2021/11/12/Native_Load_2021.zip",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/Native_Load_2021.zip",
+        "bytes": 1094567,
+        "sha256": "63d77e711fbcf838aff1666df475cd86a1fa939ad8aecd60a1bfe5039c4e5b91",
+        "status": "downloaded",
+        "format": "zip",
+        "publication_date": "2021-11-12",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2021/01/12/Native_Load_2020.zip",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/Native_Load_2020.zip",
+        "bytes": 1099986,
+        "sha256": "a02195b9a8b79540d78362039cca30c95922e485828908dcd25c50c2dae4489a",
+        "status": "cached",
+        "format": "zip",
+        "publication_date": "2021-01-12",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2020/01/09/Native_Load_2019.zip",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/Native_Load_2019.zip",
+        "bytes": 1092646,
+        "sha256": "f99a5a9ed299523c23935487761f5e446ec4dddf0be0e1da931487be09681654",
+        "status": "downloaded",
+        "format": "zip",
+        "publication_date": "2020-01-09",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2019/01/07/native_load_2018.zip",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/native_load_2018.zip",
+        "bytes": 1093121,
+        "sha256": "c57da4b5927a920eb8e160cf8927ec0e8f6a11f5e02962f4c9850787f13e2474",
+        "status": "downloaded",
+        "format": "zip",
+        "publication_date": "2019-01-07",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2018/01/09/native_load_2017.zip",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/native_load_2017.zip",
+        "bytes": 1119759,
+        "sha256": "6daf8e47e8145a1bce2ad41aecbfcadf59b2d0441f51e1b23c252e19d1e7bd28",
+        "status": "downloaded",
+        "format": "zip",
+        "publication_date": "2018-01-09",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2017/01/10/native_Load_2016.zip",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/native_Load_2016.zip",
+        "bytes": 1122112,
+        "sha256": "419bfd7ddb8a496273febab70e8958c0e6c51fbd638cc300e109d4e9c470d5e3",
+        "status": "downloaded",
+        "format": "zip",
+        "publication_date": "2017-01-10",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2016/01/07/native_load_2015.xls",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/native_load_2015.xls",
+        "bytes": 1799680,
+        "sha256": "d1ceb649236e02bc7ca08a3934c1a5f39bfc1df9c007e4d5288038e753d4dcc3",
+        "status": "downloaded",
+        "format": "xls",
+        "publication_date": "2016-01-07",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2015/10/22/2014_ercot_hourly_load_data.xls",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/2014_ercot_hourly_load_data.xls",
+        "bytes": 1799680,
+        "sha256": "e695f6e739c4dd83e48cb61941d4818ee6b0d90ff9183c8c152ba27a688fd94f",
+        "status": "downloaded",
+        "format": "xls",
+        "publication_date": "2015-10-22",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2015/10/22/2013_ercot_hourly_load_data.xls",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/2013_ercot_hourly_load_data.xls",
+        "bytes": 1799680,
+        "sha256": "d160bb43ae815a040198d172bdaa65aae155eb426d20565aed7f822a9c32ed20",
+        "status": "downloaded",
+        "format": "xls",
+        "publication_date": "2015-10-22",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2015/10/22/2012_ercot_hourly_load_data.xls",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/2012_ercot_hourly_load_data.xls",
+        "bytes": 1804288,
+        "sha256": "4fa9078ed7427345eba5e505ae7fd1c2977c15726a4feb58204f035b00af7793",
+        "status": "downloaded",
+        "format": "xls",
+        "publication_date": "2015-10-22",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2015/10/22/2011_ercot_hourly_load_data.xls",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/2011_ercot_hourly_load_data.xls",
+        "bytes": 1799680,
+        "sha256": "ee695df2ef4cd3dc4204e183413a96287ff4d6b8dbb167be110c51ae7d761d8d",
+        "status": "downloaded",
+        "format": "xls",
+        "publication_date": "2015-10-22",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2015/10/22/2010_ercot_hourly_load_data.xls",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/2010_ercot_hourly_load_data.xls",
+        "bytes": 1799680,
+        "sha256": "b7f4cacc203ac1e8416a06c0f6ad47a584412c2d4d4ff3b52462147393ccde81",
+        "status": "downloaded",
+        "format": "xls",
+        "publication_date": "2015-10-22",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2015/10/22/2009_ercot_hourly_load_data.xls",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/2009_ercot_hourly_load_data.xls",
+        "bytes": 1799680,
+        "sha256": "2680fbf227bedc1adf9ee3501d1d1d2415a596d9d6e3fd78c87458244a443ad1",
+        "status": "downloaded",
+        "format": "xls",
+        "publication_date": "2015-10-22",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2015/10/22/2008_ercot_hourly_load_data.xls",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/2008_ercot_hourly_load_data.xls",
+        "bytes": 1804288,
+        "sha256": "ed0269f32cec9e32e48a104c5d0840b75e250696b9bd3f938b2c35e48bb7fb79",
+        "status": "downloaded",
+        "format": "xls",
+        "publication_date": "2015-10-22",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2015/10/22/2007_ercot_hourly_load_data.xls",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/2007_ercot_hourly_load_data.xls",
+        "bytes": 1799680,
+        "sha256": "56b5697005446df62334dea97aef3753ab2f7019ad1f4cd21bbcce87fd0e2fc9",
+        "status": "downloaded",
+        "format": "xls",
+        "publication_date": "2015-10-22",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2015/10/22/2006_ercot_hourly_load_data.xls",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/2006_ercot_hourly_load_data.xls",
+        "bytes": 1799680,
+        "sha256": "f8ce4d21738105ee930e0fe8dc51b0d4d28b8e9fb839bc2a9127f08e064a3fee",
+        "status": "downloaded",
+        "format": "xls",
+        "publication_date": "2015-10-22",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2015/10/22/2005_ercot_hourly_load_data.xls",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/2005_ercot_hourly_load_data.xls",
+        "bytes": 1799680,
+        "sha256": "82bd7d426592de3386e0bba7cc8383dd63c9dce0893b253577d3c6a65427898c",
+        "status": "downloaded",
+        "format": "xls",
+        "publication_date": "2015-10-22",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_hourly_load",
+        "url": "https://www.ercot.com/files/docs/2015/10/22/2004_ercot_hourly_load_data.xls",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/2004_ercot_hourly_load_data.xls",
+        "bytes": 1804288,
+        "sha256": "aa3f4f0bb0255452a2dd8aa2af0e1925160054674a590e502b1f4b706c97b2ce",
+        "status": "cached",
+        "format": "xls",
+        "publication_date": "2015-10-22",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "eia_monthly_electricity_sales",
+        "url": "https://www.eia.gov/electricity/data/eia861m/xls/sales_revenue.xlsx",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/eia_monthly_electricity_sales/sales_revenue.xlsx",
+        "bytes": 2280162,
+        "sha256": "c7963ad7c9bd2020cc7472f100a9c5330a4dff97a62be95407137a14b9c4044e",
+        "status": "cached",
+        "format": "xlsx",
+        "publication_date": null,
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "eia_monthly_electricity_sales",
+        "url": "https://www.eia.gov/electricity/data/eia861m/archive/xls/HS861M 1990-2009.xlsx",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/eia_monthly_electricity_sales/HS861M 1990-2009.xlsx",
+        "bytes": 2650368,
+        "sha256": "f051468ed500f3d086b16f97e7f2ae70fed39508251b21ef56fbc0e9829ab201",
+        "status": "cached",
+        "format": "xlsx",
+        "publication_date": null,
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      },
+      {
+        "id": "ercot_official_long_term_forecast",
+        "url": "https://www.ercot.com/files/docs/2025/04/08/2025-ERCOT-Monthly-Peak-Demand-and-Energy-Forecast.xlsx",
+        "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_official_long_term_forecast/2025-ERCOT-Monthly-Peak-Demand-and-Energy-Forecast.xlsx",
+        "bytes": 27202,
+        "sha256": "cf2f50b9f9846f6d378715b7027a58bbeda926ce43626178e0604e48866e2e75",
+        "status": "cached",
+        "format": "xlsx",
+        "publication_date": "2025-04-08",
+        "actual_start": null,
+        "actual_end": null,
+        "revised_history_candidate": false
+      }
+    ]
+  },
+  "processed_datasets": [
+    {
+      "dataset_id": "ercot_hourly",
+      "local_path": "data/processed/ercot_hourly.parquet",
+      "file_size": 28521029,
+      "sha256": "6e32e9b18b00ecd8555a0c091534bbc9669151a9b24fdc35877b32383d62250b",
+      "row_count": 1601272,
+      "actual_start": "2004-01-01T06:00:00+00:00",
+      "actual_end": "2026-11-01T04:00:00+00:00",
+      "columns": [
+        {
+          "name": "timestamp_utc",
+          "dtype": "datetime64[us, UTC]",
+          "missing": 0
+        },
+        {
+          "name": "timestamp_local",
+          "dtype": "datetime64[us, America/Chicago]",
+          "missing": 0
+        },
+        {
+          "name": "weather_zone",
+          "dtype": "str",
+          "missing": 0
+        },
+        {
+          "name": "demand_mw",
+          "dtype": "float64",
+          "missing": 8
+        },
+        {
+          "name": "interval_duration_hours",
+          "dtype": "float64",
+          "missing": 0
+        },
+        {
+          "name": "energy_mwh",
+          "dtype": "float64",
+          "missing": 8
+        },
+        {
+          "name": "source_file",
+          "dtype": "str",
+          "missing": 0
+        },
+        {
+          "name": "quality_flag",
+          "dtype": "str",
+          "missing": 0
+        }
+      ],
+      "duplicate_records": 0,
+      "validation_status": "valid"
+    },
+    {
+      "dataset_id": "ercot_daily",
+      "local_path": "data/processed/ercot_daily.parquet",
+      "file_size": 376015,
+      "sha256": "57b1fb3db42bd667655fb5442ad3c46f6c2e107899cec1373fda6542a9d4cbe3",
+      "row_count": 8340,
+      "actual_start": "2004-01-01T00:00:00+00:00",
+      "actual_end": "2026-10-31T00:00:00+00:00",
+      "columns": [
+        {
+          "name": "date",
+          "dtype": "datetime64[us]",
+          "missing": 0
+        },
+        {
+          "name": "total_energy_mwh",
+          "dtype": "float64",
+          "missing": 0
+        },
+        {
+          "name": "average_demand_mw",
+          "dtype": "float64",
+          "missing": 0
+        },
+        {
+          "name": "peak_demand_mw",
+          "dtype": "float64",
+          "missing": 0
+        },
+        {
+          "name": "minimum_demand_mw",
+          "dtype": "float64",
+          "missing": 0
+        },
+        {
+          "name": "observation_count",
+          "dtype": "int64",
+          "missing": 0
+        },
+        {
+          "name": "completeness_pct",
+          "dtype": "float64",
+          "missing": 0
+        }
+      ],
+      "duplicate_records": 0,
+      "validation_status": "valid"
+    },
+    {
+      "dataset_id": "ercot_monthly",
+      "local_path": "data/processed/ercot_monthly.parquet",
+      "file_size": 16978,
+      "sha256": "c572b8fd6692e1ef1163ebd343fa871d3b4fe05d02fa98fc44ee1a19e01e9d75",
+      "row_count": 274,
+      "actual_start": "2004-01-01T00:00:00+00:00",
+      "actual_end": "2026-10-01T00:00:00+00:00",
+      "columns": [
+        {
+          "name": "month",
+          "dtype": "datetime64[us]",
+          "missing": 0
+        },
+        {
+          "name": "total_energy_mwh",
+          "dtype": "float64",
+          "missing": 0
+        },
+        {
+          "name": "average_demand_mw",
+          "dtype": "float64",
+          "missing": 0
+        },
+        {
+          "name": "peak_demand_mw",
+          "dtype": "float64",
+          "missing": 0
+        },
+        {
+          "name": "minimum_demand_mw",
+          "dtype": "float64",
+          "missing": 0
+        },
+        {
+          "name": "observation_count",
+          "dtype": "int64",
+          "missing": 0
+        },
+        {
+          "name": "completeness_pct",
+          "dtype": "float64",
+          "missing": 0
+        }
+      ],
+      "duplicate_records": 0,
+      "validation_status": "valid"
+    },
+    {
+      "dataset_id": "eia_state_monthly",
+      "local_path": "data/processed/eia_state_monthly.parquet",
+      "file_size": 1841340,
+      "sha256": "747c7a7360c71a1a513a58e6481448e67fde2c659eb7d0a5a1842d0c9455d451",
+      "row_count": 124440,
+      "actual_start": "1990-01-01T00:00:00+00:00",
+      "actual_end": "2026-08-01T00:00:00+00:00",
+      "columns": [
+        {
+          "name": "year",
+          "dtype": "int64",
+          "missing": 0
+        },
+        {
+          "name": "month",
+          "dtype": "int64",
+          "missing": 0
+        },
+        {
+          "name": "state",
+          "dtype": "str",
+          "missing": 0
+        },
+        {
+          "name": "sector",
+          "dtype": "str",
+          "missing": 0
+        },
+        {
+          "name": "electricity_sales_mwh",
+          "dtype": "float64",
+          "missing": 12266
+        },
+        {
+          "name": "revenue_usd",
+          "dtype": "float64",
+          "missing": 12266
+        },
+        {
+          "name": "average_price",
+          "dtype": "float64",
+          "missing": 13790
+        },
+        {
+          "name": "customer_count",
+          "dtype": "float64",
+          "missing": 64260
+        },
+        {
+          "name": "source_file",
+          "dtype": "str",
+          "missing": 0
+        }
+      ],
+      "duplicate_records": 0,
+      "validation_status": "valid"
+    },
+    {
+      "dataset_id": "economic_indicators",
+      "local_path": "data/processed/economic_indicators.parquet",
+      "file_size": 53688,
+      "sha256": "fc1c8020cc33c67ca7100f95de118fdd486eaa9e08e4505672ee0049e613e4c9",
+      "row_count": 7256,
+      "actual_start": "1900-01-01T00:00:00+00:00",
+      "actual_end": "2026-10-31T00:00:00+00:00",
+      "columns": [
+        {
+          "name": "dataset_id",
+          "dtype": "str",
+          "missing": 0
+        },
+        {
+          "name": "observation_date",
+          "dtype": "object",
+          "missing": 0
+        },
+        {
+          "name": "value",
+          "dtype": "float64",
+          "missing": 3
+        },
+        {
+          "name": "publication_date",
+          "dtype": "datetime64[s]",
+          "missing": 7256
+        },
+        {
+          "name": "sampling_frequency",
+          "dtype": "str",
+          "missing": 0
+        },
+        {
+          "name": "source_url",
+          "dtype": "str",
+          "missing": 0
+        },
+        {
+          "name": "source_file",
+          "dtype": "str",
+          "missing": 0
+        },
+        {
+          "name": "units",
+          "dtype": "str",
+          "missing": 0
+        },
+        {
+          "name": "vintage_available",
+          "dtype": "bool",
+          "missing": 0
+        }
+      ],
+      "duplicate_records": 0,
+      "validation_status": "valid"
+    },
+    {
+      "dataset_id": "geopolitical_indicators",
+      "local_path": "data/processed/geopolitical_indicators.parquet",
+      "file_size": 629933,
+      "sha256": "506b512937dbb4b6fc525eccf641c68cefc2143e1ef0c1ce2585588979b60376",
+      "row_count": 170464,
+      "actual_start": "1900-01-01T00:00:00+00:00",
+      "actual_end": "2026-10-01T00:00:00+00:00",
+      "columns": [
+        {
+          "name": "observation_date",
+          "dtype": "object",
+          "missing": 0
+        },
+        {
+          "name": "indicator",
+          "dtype": "str",
+          "missing": 0
+        },
+        {
+          "name": "value",
+          "dtype": "float64",
+          "missing": 53040
+        },
+        {
+          "name": "publication_date",
+          "dtype": "datetime64[s]",
+          "missing": 170464
+        },
+        {
+          "name": "sampling_frequency",
+          "dtype": "str",
+          "missing": 0
+        },
+        {
+          "name": "source_url",
+          "dtype": "str",
+          "missing": 0
+        },
+        {
+          "name": "source_file",
+          "dtype": "str",
+          "missing": 0
+        },
+        {
+          "name": "units",
+          "dtype": "str",
+          "missing": 0
+        },
+        {
+          "name": "vintage_available",
+          "dtype": "bool",
+          "missing": 0
+        }
+      ],
+      "duplicate_records": 0,
+      "validation_status": "valid"
+    },
+    {
+      "dataset_id": "ercot_official_forecasts",
+      "local_path": "data/processed/ercot_official_forecasts.parquet",
+      "file_size": 10287,
+      "sha256": "4645400aa3526f424e7e741471ee67692c82e92ea876de8d72b9c333814f6d49",
+      "row_count": 240,
+      "actual_start": "2025-01-01T00:00:00+00:00",
+      "actual_end": "2044-12-01T00:00:00+00:00",
+      "columns": [
+        {
+          "name": "forecast_year",
+          "dtype": "int64",
+          "missing": 0
+        },
+        {
+          "name": "forecast_month",
+          "dtype": "int64",
+          "missing": 0
+        },
+        {
+          "name": "peak_demand_mw",
+          "dtype": "float64",
+          "missing": 0
+        },
+        {
+          "name": "energy_mwh",
+          "dtype": "float64",
+          "missing": 0
+        },
+        {
+          "name": "forecast_variant",
+          "dtype": "str",
+          "missing": 0
+        },
+        {
+          "name": "publication_date",
+          "dtype": "str",
+          "missing": 0
+        },
+        {
+          "name": "source_url",
+          "dtype": "str",
+          "missing": 0
+        },
+        {
+          "name": "source_file",
+          "dtype": "str",
+          "missing": 0
+        }
+      ],
+      "duplicate_records": 0,
+      "validation_status": "valid"
+    }
+  ]
+}

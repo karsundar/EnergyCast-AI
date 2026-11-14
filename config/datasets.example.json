@@ -1,9 +1,17 @@
 {
+  "project": "EnergyCast AI",
   "datasets": [
     {
       "id": "replace-with-source-id",
       "url": "https://replace-with-authoritative-source",
       "format": "csv",
+      "download_strategy": "direct",
+      "source_handler": "fred",
+      "allowed_formats": ["csv"],
+      "file_pattern": "*.csv",
+      "requires_authentication": false,
+      "request_parameters": {},
+      "enabled": true,
       "sha256": null,
       "target_geography": "replace-me",
       "forecast_target": "replace-me",

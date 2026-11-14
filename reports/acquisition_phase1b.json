@@ -1,0 +1,111 @@
+{
+  "created_at": "2026-11-14T18:59:05.745260+00:00",
+  "scope": "Phase 1B bounded samples",
+  "max_artifact_bytes": 67108864,
+  "datasets": [
+    {
+      "id": "ercot_hourly_load",
+      "url": "https://www.ercot.com/files/docs/2026/02/10/Native_Load_2026.zip",
+      "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/Native_Load_2026.zip",
+      "bytes": 908024,
+      "sha256": "94e20fa206cffe28d2fe11b4cf27f0b86c160853efa14a7784db2e5fd32dc7a6",
+      "status": "cached",
+      "format": "zip",
+      "publication_date": "2026-02-10",
+      "actual_start": null,
+      "actual_end": null,
+      "revised_history_candidate": false
+    },
+    {
+      "id": "ercot_hourly_load",
+      "url": "https://www.ercot.com/files/docs/2025/02/11/Native_Load_2025.zip",
+      "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/Native_Load_2025.zip",
+      "bytes": 1085085,
+      "sha256": "20f6699f4d1f577561e9581ce370a39b0b7af339c2c263c99c7b7fd605580854",
+      "status": "cached",
+      "format": "zip",
+      "publication_date": "2025-02-11",
+      "actual_start": null,
+      "actual_end": null,
+      "revised_history_candidate": false
+    },
+    {
+      "id": "ercot_hourly_load",
+      "url": "https://www.ercot.com/files/docs/2021/01/12/Native_Load_2020.zip",
+      "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/Native_Load_2020.zip",
+      "bytes": 1099986,
+      "sha256": "a02195b9a8b79540d78362039cca30c95922e485828908dcd25c50c2dae4489a",
+      "status": "cached",
+      "format": "zip",
+      "publication_date": "2021-01-12",
+      "actual_start": null,
+      "actual_end": null,
+      "revised_history_candidate": false
+    },
+    {
+      "id": "ercot_hourly_load",
+      "url": "https://www.ercot.com/files/docs/2015/10/22/2004_ercot_hourly_load_data.xls",
+      "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_hourly_load/2004_ercot_hourly_load_data.xls",
+      "bytes": 1804288,
+      "sha256": "aa3f4f0bb0255452a2dd8aa2af0e1925160054674a590e502b1f4b706c97b2ce",
+      "status": "cached",
+      "format": "xls",
+      "publication_date": "2015-10-22",
+      "actual_start": null,
+      "actual_end": null,
+      "revised_history_candidate": false
+    },
+    {
+      "id": "eia_monthly_electricity_sales",
+      "url": "https://www.eia.gov/electricity/data/eia861m/xls/sales_revenue.xlsx",
+      "path": "/home/karthiks/src/EnergyCast-AI/data/raw/eia_monthly_electricity_sales/sales_revenue.xlsx",
+      "bytes": 2280162,
+      "sha256": "c7963ad7c9bd2020cc7472f100a9c5330a4dff97a62be95407137a14b9c4044e",
+      "status": "cached",
+      "format": "xlsx",
+      "publication_date": null,
+      "actual_start": null,
+      "actual_end": null,
+      "revised_history_candidate": false
+    },
+    {
+      "id": "eia_monthly_electricity_sales",
+      "url": "https://www.eia.gov/electricity/data/eia861m/archive/xls/HS861M 1990-2009.xlsx",
+      "path": "/home/karthiks/src/EnergyCast-AI/data/raw/eia_monthly_electricity_sales/HS861M 1990-2009.xlsx",
+      "bytes": 2650368,
+      "sha256": "f051468ed500f3d086b16f97e7f2ae70fed39508251b21ef56fbc0e9829ab201",
+      "status": "cached",
+      "format": "xlsx",
+      "publication_date": null,
+      "actual_start": null,
+      "actual_end": null,
+      "revised_history_candidate": false
+    },
+    {
+      "id": "global_geopolitical_risk",
+      "url": "https://www.matteoiacoviello.com/gpr_files/data_gpr_export.xls",
+      "path": "/home/karthiks/src/EnergyCast-AI/data/raw/global_geopolitical_risk/data_gpr_export.xls",
+      "bytes": 2718208,
+      "sha256": "32e54b08df4cbc2954c3b89970008a7a3a2f2e94ed4184135908248e4d01cd83",
+      "status": "downloaded",
+      "format": "xls",
+      "publication_date": null,
+      "actual_start": null,
+      "actual_end": null,
+      "revised_history_candidate": false
+    },
+    {
+      "id": "ercot_official_long_term_forecast",
+      "url": "https://www.ercot.com/files/docs/2025/04/08/2025-ERCOT-Monthly-Peak-Demand-and-Energy-Forecast.xlsx",
+      "path": "/home/karthiks/src/EnergyCast-AI/data/raw/ercot_official_long_term_forecast/2025-ERCOT-Monthly-Peak-Demand-and-Energy-Forecast.xlsx",
+      "bytes": 27202,
+      "sha256": "cf2f50b9f9846f6d378715b7027a58bbeda926ce43626178e0604e48866e2e75",
+      "status": "downloaded",
+      "format": "xlsx",
+      "publication_date": "2025-04-08",
+      "actual_start": null,
+      "actual_end": null,
+      "revised_history_candidate": false
+    }
+  ]
+}

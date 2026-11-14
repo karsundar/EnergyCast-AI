@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-11-14T18:40:37.653314+00:00",
+  "manifest": "config/datasets.json",
+  "mode": "discovery",
+  "datasets": [
+    {
+      "dataset_id": "fred_industrial_production",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=INDPRO",
+      "format": "csv",
+      "filename": "fredgraph.csv",
+      "requested_start": "2004-01-01",
+      "requested_end": "2026-09-30",
+      "estimated_bytes": null,
+      "requires_authentication": false,
+      "availability": "available",
+      "publication_date": null,
+      "status": "discovered"
+    }
+  ]
+}
