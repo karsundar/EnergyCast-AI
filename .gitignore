@@ -1,0 +1,17 @@
+# Local data and generated artifacts
+data/raw/
+data/interim/
+data/processed/
+reports/validation/*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Local configuration and secrets
+.env
+*.local
+

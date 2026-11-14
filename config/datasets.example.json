@@ -1,0 +1,15 @@
+{
+  "datasets": [
+    {
+      "id": "replace-with-source-id",
+      "url": "https://replace-with-authoritative-source",
+      "format": "csv",
+      "sha256": null,
+      "target_geography": "replace-me",
+      "forecast_target": "replace-me",
+      "sampling_interval": "replace-me",
+      "required_start": "replace-me",
+      "required_end": "replace-me"
+    }
+  ]
+}
