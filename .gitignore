@@ -9,6 +9,7 @@ reports/acquisition.json
 __pycache__/
 *.py[cod]
 .venv*/
+.venv-seasonal/
 venv*/
 env*/
 .pytest_cache/
@@ -26,4 +27,3 @@ reports/*.log
 
 # Keep the shareable template; the active manifest may contain private URLs
 config/datasets.json
-
