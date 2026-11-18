@@ -1,0 +1,43 @@
+{
+  "status": "smoke_passed",
+  "prediction_rows": 12,
+  "common_rows": 20,
+  "experiments": [
+    "E0",
+    "E25-A",
+    "E25-B",
+    "E25-C",
+    "E9"
+  ],
+  "oracle_rows": 0,
+  "paired_rows": 24,
+  "lambda_selection": [
+    {
+      "target_name": "total_energy_mwh",
+      "selected_lambda": 0.5,
+      "development_wape": {
+        "0.0": 3.9163229487689044,
+        "0.25": 3.8740446722533677,
+        "0.5": 3.86656913760529,
+        "0.75": 3.903125728828485,
+        "1.0": 3.9828211423156428
+      }
+    },
+    {
+      "target_name": "peak_demand_mw",
+      "selected_lambda": 0.25,
+      "development_wape": {
+        "0.0": 5.367258408358606,
+        "0.25": 5.3272311278037945,
+        "0.5": 5.352525474498598,
+        "0.75": 5.454575291945236,
+        "1.0": 5.597238021465323
+      }
+    }
+  ],
+  "experiments_not_started": [
+    "E24",
+    "E26",
+    "E27"
+  ]
+}

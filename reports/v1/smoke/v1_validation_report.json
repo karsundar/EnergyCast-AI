@@ -1,0 +1,32 @@
+{
+  "status": "smoke_passed",
+  "selected_models": {
+    "total_energy_mwh": "E14",
+    "peak_demand_mw": "E24-B"
+  },
+  "selection_period": [
+    "2018-01-01",
+    "2019-12-01"
+  ],
+  "calibration_period": [
+    "2020-01-01",
+    "2020-12-01"
+  ],
+  "final_test_start": "2021-01-01",
+  "calibrated_prediction_rows": 24,
+  "system_rows": 24,
+  "regional_rows": 0,
+  "twelve_month_generation_valid": true,
+  "oracle_rows": 0,
+  "quantile_crossing_rows": 0,
+  "weather_available_after_issuance_rows": 0,
+  "calibration_uses_final_test": false,
+  "calibration_method": "geography_horizon_relative_symmetric_conformal",
+  "ineligible_challengers": {
+    "E25-B": "No equivalent archived operational seasonal-weather forecasts exist for the 2018-2020 development window."
+  },
+  "experiments_not_started": [
+    "E26",
+    "E27"
+  ]
+}

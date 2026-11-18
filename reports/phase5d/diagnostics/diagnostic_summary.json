@@ -1,0 +1,75 @@
+{
+  "status": "complete",
+  "stage": "Phase 5D structural-bias diagnostics only",
+  "prediction_rows": 34344,
+  "bias_breakdown_rows": 282,
+  "paired_rows": 16,
+  "issuance_rows": 212,
+  "explicit_prediction_clipping": false,
+  "target_normalization": false,
+  "forecast_strategy": "direct multi-horizon, not recursive",
+  "chronos2_future_covariates_supported": true,
+  "experiments_started": [],
+  "experiments_designed": [
+    "E24",
+    "E25",
+    "E26",
+    "E27"
+  ],
+  "system_training_range_summary": [
+    {
+      "experiment": "E18",
+      "target_name": "peak_demand_mw",
+      "rows": 636,
+      "bias": -7246.192309207908,
+      "mae": 7939.097894424826,
+      "actual_above_training_max_share": 0.1289308176100629,
+      "prediction_above_training_max_share": 0.0
+    },
+    {
+      "experiment": "E18",
+      "target_name": "total_energy_mwh",
+      "rows": 636,
+      "bias": -4392534.576415488,
+      "mae": 4411119.454175567,
+      "actual_above_training_max_share": 0.09433962264150944,
+      "prediction_above_training_max_share": 0.0
+    },
+    {
+      "experiment": "E19",
+      "target_name": "peak_demand_mw",
+      "rows": 636,
+      "bias": -7110.547727588416,
+      "mae": 7841.8647235177295,
+      "actual_above_training_max_share": 0.1289308176100629,
+      "prediction_above_training_max_share": 0.0
+    },
+    {
+      "experiment": "E19",
+      "target_name": "total_energy_mwh",
+      "rows": 636,
+      "bias": -4296993.883041489,
+      "mae": 4318185.950890814,
+      "actual_above_training_max_share": 0.09433962264150944,
+      "prediction_above_training_max_share": 0.0
+    },
+    {
+      "experiment": "E20",
+      "target_name": "peak_demand_mw",
+      "rows": 636,
+      "bias": -7754.888080675772,
+      "mae": 8348.460615205146,
+      "actual_above_training_max_share": 0.1289308176100629,
+      "prediction_above_training_max_share": 0.0
+    },
+    {
+      "experiment": "E20",
+      "target_name": "total_energy_mwh",
+      "rows": 636,
+      "bias": -4421282.852770511,
+      "mae": 4439087.370155753,
+      "actual_above_training_max_share": 0.09433962264150944,
+      "prediction_above_training_max_share": 0.0
+    }
+  ]
+}

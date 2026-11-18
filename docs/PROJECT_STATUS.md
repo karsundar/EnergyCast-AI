@@ -1,5 +1,24 @@
 # Project status
 
+## Deterministic V1 production preparation
+
+- Deterministic production is frozen to E14 non-oracle energy (4.409% WAPE)
+  and E24-B peak (6.201% WAPE). Public probabilistic intervals remain disabled.
+- The atomic production runner, immutable history, monitoring join, rollback,
+  refresh rollback, structured logs, idempotent forecast IDs, scheduler preview
+  and deterministic report are implemented.
+- A 2025-04 replay produced 216 forecasts and reproduced both frozen experiment
+  outputs exactly (maximum absolute difference 0.0). Three focused tests pass;
+  a simulated failure preserved the existing output checksum.
+- Option B resolved the fitted-artifact blocker. Bundle
+  `energycast-v1.0.0-frozen-202610` contains 27 fitted statistical states, two
+  LightGBM models, E14 weights, schemas, inference inputs and the pinned local
+  Chronos-2 checkpoint. Ten artifacts totaling 503,484,976 bytes are checksummed.
+- Two fresh-process runs generated 216 finite forecasts each with maximum delta
+  0.0. Strict checksum validation and four focused tests pass. Publication and
+  scheduling remain inactive by instruction; rollback against an actual current
+  production forecast cannot be exercised until a first publication is approved.
+
 ## Phase 4C preparation
 
 - E11-E13 Chronos-2 execution supports ROCm-only enforcement, FP32/BF16,
@@ -157,9 +176,48 @@ complete; no bulk job started.
 
 ## Next action
 
+- Phase 5C Stage 2 Gate A is complete: 11,448 E18 predictions and 45,792 identical-observation comparison rows. E18 underperforms with system WAPE of 11.830% energy and 11.443% peak and strong negative bias. Gate B remains a controlled seasonal-weather-input comparison; E19-E23 are deferred.
+- Gate B E19/E20 is implemented and smoke-validated without launching the full run. Raw provider weather changes only leads 1-6; leads 7-12 exactly retain normals. The full manual command and scheduled-release latency caveat are documented; E21-E23 remain deferred.
+- Gate B full evaluation is complete. Raw SEAS5 modestly improves E18 but remains far behind E14/E0; raw NCEP worsens both targets. The systematic negative bias is not corrected. Feature-isolation audits passed and E21-E23 remain deferred for review.
+- Phase 5D diagnostics confirm level-target extrapolation under structural growth as the principal E18-E20 limitation. The read-only 34,344-row audit and E24-E27 designs are complete; no experiment was trained. E25 is recommended first, followed by E24, subject to separate approval.
+- E25-A/B/C is implemented and bounded validation passes. Development-only lambda is 0.50 energy and 0.25 peak; residual availability, weather issuance and exact E0/E9 comparison gates pass. Full OOS cache extension/training is a manual command and has not been launched. E24/E26/E27 remain unstarted.
+- Full E25 is complete. E25-A energy WAPE is 4.703% and E25-B peak WAPE is 6.236%; residual correction reduces systematic bias and outperforms E0/E9, but seasonal weather adds no material increment over normals. E14 remains best for energy. E24/E26/E27 remain unstarted.
+
 1. Use Holt-Winters as the best validated monthly model; treat TFT forecasts as experimental.
 2. Do not run medium or large TFT configurations or retrain TFT without a separately approved, testable hypothesis.
 3. Weather is validated through 2026-05. When the AWS snapshot contains data through at least 2026-11-01 Texas-local boundary hours, rerun the annual runner with `--end-year 2026 --end-month 10`; validated 2004–2025 caches will be reused.
 4. Obtain an authoritative machine-readable ERCOT weather-zone boundary source before grid-to-zone aggregation.
 5. Keep seasonal acquisition disabled until its separate licence/sample gate passes; use CDS or a later validated AWS snapshot only for coverage newer than the current AWS snapshot.
+
+# Phase 5C Stage 1 weather-skill validation (2026-11-17)
+
+- Implemented leakage-safe SEAS5/NCEP comparison against regional ERA5 for five common monthly variables and leads 1–6.
+- Archived forecasts require recorded availability; retrospective hindcasts remain a separate research track with null availability. The 2017–2020 archive gap is not bridged.
+- Added expanding climate normals, chronologically available bias correction, lead-wise deterministic/probabilistic metrics, and validation-only provider weighting.
+- A bounded 5,832-row smoke run passed all availability, target alignment, lead and gap checks. Full Stage 1 evaluation is prepared for manual execution; Stage 2 E18–E23 remains gated on review.
+- The operator completed the full 23,598-row run. Audit found and version-corrected spatial wind aggregation without altering Phase 5B artifacts; the corrected result is `reports/phase5c/full_v2`.
+- Archived-test skill favors calibrated NCEP temperature (1.423 °C MAE versus 1.478 °C for expanding normals). Normals remain better for precipitation, solar, humidity and wind. Wind/humidity comparisons are proxy-only because monthly seasonal inputs cannot reproduce hourly-derived ERA5 definitions.
+- Availability timestamps encode documented provider release schedules rather than file-specific publication audits. Treat results as schedule-based operational simulation. Stage 2 remains gated.
+
+## Phase 5C Stage 1.5 operational weather readiness (2026-11-17)
+
+- Built a versioned 2004-01–2026-05 ERA5 reference matching seasonal monthly aggregation: monthly-mean U/V then vector speed, and monthly-mean temperature/dewpoint then Magnus RH, before regional weighting.
+- Re-evaluated 23,598 provider/ERA5 matches. Comparable wind and humidity are now valid, but expanding normals retain lower final-test MAE. NCEP's final-test temperature advantage is not used for selection: 2021–2023 development selects SEAS5 for every system lead.
+- Implemented chronological provider selection, calibrated standalone provider temperature, optional precipitation/solar ablations, five-variable normals and explicit lead 7–12 normal fallback.
+- The bounded smoke and full 61,344-row operational build passed with zero missing/nonfinite values, duplicates, cutoff, availability, target-alignment or unsupported-lead violations. Targets cover 2021-01 through 2027-10; Stage 2 remains unstarted.
+
+## Phase 5D E24 (2026-11-17)
+
+- E24-A/B/C implementation and bounded validation are complete. Smoke validation has zero leakage, positivity and reference-availability violations and exact E0/E9/E14/E25 common observations.
+- Full rolling E24 evaluation is prepared for manual resumable execution but has not been launched. E26/E27 remain unstarted.
+- Full E24 is complete: 34,344 E24 predictions, 103,032 common-comparison rows and zero leakage/positivity/reference violations. E24-B is the new peak benchmark at 6.201% WAPE; E14 remains best for energy at 4.409%. E26/E27 remain unstarted.
+
+## EnergyCast V1 final validation (2026-11-18)
+
+- Bounded final-selection/calibration validation is complete. Development-only 2018-2019 selection chooses E14 energy and E24-B peak; 2020 is isolated for scale-aware interval calibration and 2021+ is excluded from all fitting.
+- Geography/horizon and same-geography fallback calibration, system/regional metrics, issuance/provider audits, paired uncertainty and 12-month output validation are implemented. The smoke has zero oracle rows and quantile crossings; 12 calibration-focused tests pass.
+- Full final evaluation is prepared for manual execution. Deployment work and E26/E27 remain unstarted pending review.
+- Full V1 evaluation is complete. E14 energy remains 4.409% WAPE and E24-B peak 6.201%. Operational/leakage and 12-month generation gates pass, but P10-P90 coverage is only 53.5%/57.7% system and 69.1%/65.4% regional. Deterministic selection is validated; probabilistic deployment is blocked and final-test residuals must not be used to retune intervals.
+- A separate pre-test-safe calibration-remedy framework is implemented. Three predefined methods, four forecast-origin blocks, fixed horizon bands, geography-only fallback and conditional coverage audits are available. The smoke reads no final-test rows and passes 10 focused tests. Full development-only selection remains manual; intervals remain disabled because no untouched historical confirmation set remains.
+- Full remedy development evaluation is complete: 11,340 rows, four blocked folds and zero final-test/cutoff violations. Coverage is 80.5%/74.2% system/regional energy and 91.9%/80.8% system/regional peak. Conditional high-growth coverage remains weak, so probabilistic deployment stays disabled.
 

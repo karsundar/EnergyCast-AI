@@ -1,0 +1,7 @@
+experiment,target_name,geography,observations,actual_above_training_max_frequency,prediction_above_training_max_frequency,above_range_signed_bias
+E24-A,peak_demand_mw,ERCOT_SYSTEM,2,0.0,0.0,
+E24-A,total_energy_mwh,ERCOT_SYSTEM,2,0.0,0.0,
+E24-B,peak_demand_mw,ERCOT_SYSTEM,2,0.0,0.0,
+E24-B,total_energy_mwh,ERCOT_SYSTEM,2,0.0,0.0,
+E24-C,peak_demand_mw,ERCOT_SYSTEM,2,0.0,0.0,
+E24-C,total_energy_mwh,ERCOT_SYSTEM,2,0.0,0.0,

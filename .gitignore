@@ -2,6 +2,8 @@
 data/raw/
 data/interim/
 data/processed/
+data/production/
+models/production/
 reports/validation/*.json
 reports/acquisition.json
 
@@ -20,6 +22,7 @@ logs/
 lightning_logs/
 *.pid
 reports/*.log
+reports/**/*.log
 
 # Local configuration and secrets
 .env

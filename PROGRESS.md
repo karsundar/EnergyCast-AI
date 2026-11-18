@@ -252,3 +252,85 @@ Last updated: 2026-11-14
 - Post-run reconciliation found some E4/E5 final horizons omitted a leap day or month-day 31 because timestamp `DateOffset` did not preserve the future month end. Calendar-period month-end construction and a leap-year regression test now pass; E4/E5 require regeneration before final metrics.
 - Regenerated all E4/E5 partitions with complete calendar-month boundaries. Final evaluation succeeded with 68,688 comparable predictions and canonical monthly actual reconciliation.
 - Final ERCOT-system WAPE: E0 4.765% energy / 6.305% peak; E1 4.911% / 5.730%; E2 11.212% / 10.495%; E3 10.926% / 10.060%; E4 13.661% / 18.031%; E5 11.061% / 16.785%. Weather-aware results remain explicitly oracle-only.
+# Phase 5C Stage 1 preparation
+
+- Added the Stage 1 weather-skill evaluator, configuration, focused leakage tests and execution handoff.
+- Bounded smoke validation passed on 5,832 exact ERA5/provider matches across both providers and leads 1–6; no fabricated operational availability or 2017–2020 archived forecasts were introduced.
+- Full weather-skill evaluation remains a manual command. No electricity model training or Stage 2 experiment was started.
+- Full Stage 1 and a versioned corrected-wind rerun completed on 23,598 rows. Initial and corrected outputs are both preserved.
+- Review confirms useful temperature skill only; interval undercoverage and wind/humidity definition mismatches block Stage 2 pending feature-scope approval.
+
+## Phase 5C Stage 1.5
+
+- Generated 23 versioned seasonal-compatible ERA5 partitions (2,421 regional monthly rows) without modifying canonical ERA5 or Phase 5B data.
+- Comparable full weather skill and temperature lead/season/region/anomaly diagnostics are complete.
+- Operational feature smoke and the full 61,344-row build passed with all audit violations and duplicate business keys at zero. No model training started.
+
+## Phase 5C Stage 2 Gate A
+
+- Implemented E18 with a direct multi-horizon LightGBM schema that can be reused unchanged for E19/E20. Forecast demand history is frozen at origin and weather inputs are expanding climate normals only.
+- The bounded smoke run passed: four E18 forecasts and 16 identical-key E0/E11/E14/E18 comparison rows, with zero oracle rows. Smoke metrics are diagnostic only.
+- Full Gate A completed with 11,448 E18 predictions and 45,792 exact-key E0/E11/E14/E18 comparison rows. System E18 WAPE is 11.830% energy and 11.443% peak, with substantial negative bias; it does not beat E14 (4.409%/6.542%) or E0 peak (6.305%).
+- Gate A found no leakage or alignment defect. E19-E23 remain unimplemented and unlaunched pending the separate Gate B authorization.
+
+## Phase 5C Stage 2 Gate B
+
+- Implemented E19 raw SEAS5 and E20 raw NCEP using one fixed fitted E18-compatible model per target/origin, with expanding-normal fallback for leads 7-12. Provider calibration is excluded and remains reserved for E22.
+- The bounded smoke run passed: eight predictions, exact target-specific E14/E0 comparisons, zero oracle rows, zero unrelated-feature differences and exact E18 model reproduction.
+- Full Gate B completed with 22,896 E19/E20 predictions and 45,792 common comparison rows. System E19 WAPE is 11.581% energy / 11.303% peak, a small improvement over E18 (11.830% / 11.443%); E20 worsens to 11.905% / 12.033%. E14 energy (4.409%) and E0 peak (6.305%) remain decisively better.
+- The full audit retained zero unrelated-feature and fallback-weather differences and exact E18 reproduction. Negative bias remains dominant. Provider releases occur on scheduled days 6/10 inside the lead-1 target month. E21-E23 remain unstarted.
+
+## Phase 5D structural-bias investigation
+
+- Completed a read-only diagnostic of 34,344 E18-E20 predictions; no model was modified or trained. Bias breakdowns cover origin/target year, horizon, season, region, demand level and growth regime, with deterministic paired bootstrap intervals.
+- Confirmed level-target extrapolation as the primary mechanism: system actuals exceed historical training maxima in 12.9% of peak and 9.4% of energy rows, predictions do so in 0%, and every above-range row underforecasts. Error severity strongly increases with the actual/training-maximum ratio.
+- Month-start seasonal forecasts require normals; both providers are available at the defined mid-month refresh. E25 residual correction is recommended first, then E24 growth targets. E21-E27 remain unstarted.
+
+## Phase 5D E25 bounded validation
+
+- Implemented E25-A/B/C using strictly rolling-origin OOS Holt-Winters residuals, one shared residual model per target/origin, operational weather availability gates and normal fallback for leads 7-12.
+- Development-only shrinkage selected lambda 0.50 for energy and 0.25 for peak; lambda zero remains the unchanged Holt-Winters control. The 12-row smoke and 20-row exact E0/E9 comparison passed leakage and issuance checks.
+- Full cache extension and evaluation remain manual long-running commands. E24, E26 and E27 were not started.
+- Full E25 completed with 34,344 predictions and 57,240 identical-observation rows. E25-A wins energy at 4.703% system WAPE; E25-B wins peak at 6.236%. Both improve E0 and E9, but E14 remains best for energy at 4.409%.
+- Residual correction reduces energy/peak bias to -0.829 million MWh and -2,183 MW for E25-A. Seasonal provider inputs add no material value over normals. E24/E26/E27 remain unstarted.
+
+## Phase 5D E24 bounded validation
+
+- Implemented E24-A year-over-year log growth, E24-B OOS Holt-Winters log ratio and E24-C shrunken seasonal-naive log ratio with one LightGBM schema and expanding climate normals.
+- The smoke produced 12 E24 predictions and 36 exact common-comparison rows. Positivity, reference availability, label cutoff and oracle-weather violations are zero; focused E24/E25 tests pass.
+- Development-only lambda selection includes lambda=0 controls. E24-A is fixed at lambda=1; E24-B/C select shrinkage without final-test data. Full rolling evaluation remains manual. E26/E27 remain unstarted.
+- Full E24 completed with 34,344 predictions and 103,032 identical-observation rows. E24-B sets a new peak benchmark at 6.201% WAPE and reaches 4.688% energy WAPE; E14 remains the energy benchmark at 4.409%.
+- E24-B's peak improvement over E25-B is only 0.035 percentage points and is not conclusive by horizon-band bootstrap intervals. E24-A/C worsen WAPE, and above-range bias remains negative. E26/E27 remain unstarted.
+
+## EnergyCast V1 final-validation bounded gate
+
+- Froze E14, E24-B and E0 candidates. Development-only selection on 2018-2019 chooses E14 energy (2.969% WAPE) and E24-B peak (4.320%); 2020 is held separately for interval calibration and 2021+ remains untouched during fitting.
+- Implemented target/geography/horizon scale-normalized P10/P90 calibration with same-geography fallback, separate system/regional reporting, interval width, pinball loss, coverage, training-range behavior and paired model uncertainty.
+- Bounded validation passes: 24 calibrated forecasts, zero oracle rows, zero quantile crossings and a valid 12-horizon contract. Month-start/day-15 and provider/fallback audits are explicit. Full evaluation remains manual; deployment and E26/E27 have not started.
+- Full V1 evaluation completed with 11,448 forecasts. Deterministic benchmarks are confirmed at 4.409% energy WAPE (E14) and 6.201% peak WAPE (E24-B), with paired improvements over E0 excluding zero.
+- Calibration-only selection chose relative symmetric conformal scaling, but final P10-P90 coverage is only 53.5%/57.7% system energy/peak and 69.1%/65.4% regionally. Do not tune widths on final-test outcomes; probabilistic deployment remains blocked for review.
+
+## V1 pre-test-safe calibration remedy
+
+- Implemented scale-normalized symmetric conformal, scale-normalized asymmetric quantile and relative asymmetric quantile candidates with fixed horizon bands and same-geography fallback.
+- Forecast-origin-blocked evaluation admits residuals only after target-month close and reports coverage, width and pinball loss by horizon band, geography, origin block and growth regime. System and regional methods are selected separately.
+- The bounded 2019-H1 gate generated 1,296 candidate rows with zero final-test reads and cutoff violations; 10 V1 calibration tests pass. Full four-fold development evaluation remains manual.
+- No untouched historical holdout remains. Deterministic forecasts stay enabled; probabilistic intervals remain disabled pending prospective or independent confirmation. E26/E27 remain unstarted.
+- Full four-fold remedy evaluation completed with 11,340 development predictions and zero final-test/cutoff violations. Selected coverage is 80.5% energy-system, 74.2% energy-regional, 91.9% peak-system and 80.8% peak-regional.
+- Material origin-block, horizon and high-growth conditional miscalibration remains. Frozen tables are retained only as prospective research candidates; interval serving remains disabled.
+- Implemented deterministic EnergyCast V1 production scaffolding with frozen
+  E14/E24-B manifests, strict source/candidate validation, atomic publication,
+  immutable history, monitoring, rollback, refresh recovery, shadow-only
+  calibration and a non-activating monthly schedule preview.
+- Completed the bounded 2025-04 production replay: 540 candidate rows generated
+  216 twelve-month forecasts and exactly reproduced saved E14 energy and E24-B
+  peak predictions (maximum absolute delta 0.0). Three focused tests pass and a
+  simulated failure did not alter the prior forecast artifact.
+- Resolved the fitted-artifact gate with an authorized one-time freeze at the
+  2026-10 cutoff. The 503,484,976-byte bundle vendors Chronos-2, 27 fitted
+  statistical states, E9/E24-B LightGBM models, schemas, fixed weights,
+  transformations, inference inputs, dependency versions and checksums.
+- Two fresh-process inference runs and the default production dry-run each
+  generated 216 finite deterministic forecasts; fresh-run maximum delta is 0.0.
+  Four focused tests pass, corrupt bundles are rejected, and public probabilistic
+  fields remain absent. No live forecast, scheduler activation or Git push occurred.

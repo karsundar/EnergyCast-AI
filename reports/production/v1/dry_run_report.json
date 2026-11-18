@@ -1,0 +1,17 @@
+{
+  "status": "validated_dry_run",
+  "forecast_id": "4ae41f95c68c8b4f1e7b",
+  "issued_at": "2026-11-02 12:15:00+00:00",
+  "data_cutoff": "2026-10-01 00:00:00",
+  "source_sha256": "2d50dcfebd55936d128324ef8a941dafa6b648cbd47efa6d88b7ad3c8f64b956",
+  "candidate_bundle": "/home/karthiks/src/EnergyCast-AI/data/production/v1/input/candidate_forecasts.parquet",
+  "candidate_bundle_sha256": "d49e5ff4b23522cf033ea91531f1ca51298d1e907212ff35382d04e46a543daf",
+  "rows": 216,
+  "fitted_model_bundle": "/home/karthiks/src/EnergyCast-AI/models/production/energycast_v1_202610",
+  "fitted_model_bundle_version": "energycast-v1.0.0-frozen-202610",
+  "models": {
+    "total_energy_mwh": "E14",
+    "peak_demand_mw": "E24-B"
+  },
+  "probabilistic_intervals_published": false
+}

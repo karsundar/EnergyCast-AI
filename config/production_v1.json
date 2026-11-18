@@ -1,0 +1,43 @@
+{
+  "production_version": "energycast-v1.0.0",
+  "forecast_horizon_months": 12,
+  "models": {
+    "total_energy_mwh": {
+      "experiment": "E14",
+      "artifact": "reports/phase4b/E14_weights_non-oracle.json",
+      "backtest_wape_pct": 4.409,
+      "candidate_experiments": ["E0", "E8", "E9", "E11"]
+    },
+    "peak_demand_mw": {
+      "experiment": "E24-B",
+      "artifact": "reports/phase5d/e24/full/lambda_selection.json",
+      "backtest_wape_pct": 6.201,
+      "reference_type": "holt_winters_oos"
+    }
+  },
+  "source": {
+    "monthly_targets": "data/processed/ercot_monthly_targets.parquet",
+    "maximum_age_days": 62,
+    "minimum_completeness_pct": 99.0,
+    "required_geographies": [
+      "COAST", "EAST", "FAR_WEST", "NORTH", "NORTH_CENTRAL",
+      "SOUTH_CENTRAL", "SOUTHERN", "WEST", "ERCOT_SYSTEM"
+    ]
+  },
+  "paths": {
+    "root": "data/production/v1",
+    "reports": "reports/production/v1",
+    "candidate_bundle": "data/production/v1/input/candidate_forecasts.parquet",
+    "model_bundle": "models/production/energycast_v1_202610"
+  },
+  "shadow_calibration": {
+    "enabled_internal": true,
+    "publish_intervals": false,
+    "configuration": "reports/v1/calibration_remedy/full/selected_methods.csv"
+  },
+  "schedule": {
+    "cron": "15 6 2 * *",
+    "timezone": "America/Chicago",
+    "description": "Run at 06:15 local time on day 2; activation requires approval"
+  }
+}

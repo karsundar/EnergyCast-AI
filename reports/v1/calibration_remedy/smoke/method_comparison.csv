@@ -1,0 +1,13 @@
+target_name,scope,calibration_method,folds,coverage,normalized_pinball_loss,selection_score
+peak_demand_mw,regional,relative_asymmetric,1.0,0.8125,0.040160399046386394,0.04328539904638638
+peak_demand_mw,regional,scale_normalized_asymmetric,1.0,0.796875,0.03902593721802066,0.03980718721802067
+peak_demand_mw,regional,scale_normalized_symmetric,1.0,0.796875,0.03902593721802066,0.03980718721802067
+peak_demand_mw,system,relative_asymmetric,1.0,0.8333333333333334,0.019766482351607613,0.028099815684940944
+peak_demand_mw,system,scale_normalized_asymmetric,1.0,0.8333333333333334,0.01888356074074772,0.027216894074081052
+peak_demand_mw,system,scale_normalized_symmetric,1.0,0.8333333333333334,0.01888356074074772,0.027216894074081052
+total_energy_mwh,regional,relative_asymmetric,1.0,0.8072916666666666,0.019451189470750543,0.02127410613741719
+total_energy_mwh,regional,scale_normalized_asymmetric,1.0,0.78125,0.019826553179452894,0.024514053179452905
+total_energy_mwh,regional,scale_normalized_symmetric,1.0,0.78125,0.019826553179452894,0.024514053179452905
+total_energy_mwh,system,relative_asymmetric,1.0,0.7916666666666666,0.013046387281563382,0.015129720614896735
+total_energy_mwh,system,scale_normalized_asymmetric,1.0,0.7916666666666666,0.013487511060132906,0.01557084439346626
+total_energy_mwh,system,scale_normalized_symmetric,1.0,0.7916666666666666,0.013487511060132906,0.01557084439346626

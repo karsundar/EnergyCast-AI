@@ -1,0 +1,20 @@
+{
+  "status": "complete",
+  "prediction_rows": 34344,
+  "common_rows": 57240,
+  "experiments": [
+    "E0",
+    "E25-A",
+    "E25-B",
+    "E25-C",
+    "E9"
+  ],
+  "oracle_rows": 0,
+  "paired_rows": 48,
+  "lambda_selection": "preserved from training run",
+  "experiments_not_started": [
+    "E24",
+    "E26",
+    "E27"
+  ]
+}

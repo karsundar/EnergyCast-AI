@@ -1,0 +1,10 @@
+{
+  "bundle_version": "energycast-v1.0.0-frozen-202610",
+  "training_data_cutoff": "2026-10-01",
+  "forecast_issued_at": "2026-11-02T12:15:00Z",
+  "forecast_horizon_months": 12,
+  "random_seed": 42,
+  "chronos_environment": ".venv-chronos2/bin/python",
+  "chronos_snapshot": "/home/karthiks/.cache/huggingface/hub/models--amazon--chronos-2/snapshots/ff35bf3168857dce1984939b85d8955976f12f32",
+  "output_directory": "models/production/energycast_v1_202610"
+}

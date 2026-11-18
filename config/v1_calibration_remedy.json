@@ -1,0 +1,28 @@
+{
+  "target_coverage": 0.8,
+  "minimum_band_samples": 24,
+  "coverage_penalty_weight": 0.25,
+  "methods": [
+    "scale_normalized_symmetric",
+    "scale_normalized_asymmetric",
+    "relative_asymmetric"
+  ],
+  "horizon_bands": {
+    "1-3": [1, 3],
+    "4-6": [4, 6],
+    "7-9": [7, 9],
+    "10-12": [10, 12]
+  },
+  "blocked_folds": [
+    {"name": "2019-H1", "start": "2019-01-01", "end": "2019-06-01"},
+    {"name": "2019-H2", "start": "2019-07-01", "end": "2019-12-01"},
+    {"name": "2020-H1", "start": "2020-01-01", "end": "2020-06-01"},
+    {"name": "2020-H2", "start": "2020-07-01", "end": "2020-12-01"}
+  ],
+  "selected_models": {
+    "total_energy_mwh": "E14",
+    "peak_demand_mw": "E24-B"
+  },
+  "independent_holdout_available": false,
+  "probabilistic_intervals_enabled": false
+}

@@ -1,0 +1,20 @@
+{
+  "status": "validated",
+  "phase5b_artifacts_modified": false,
+  "providers": [
+    {
+      "provider": "seas5",
+      "rows": 12258,
+      "output": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal/phase5c_corrected/seas5_ensemble_monthly.parquet",
+      "runtime_seconds": 0.3495492080000986,
+      "wind_definition": "ensemble distribution of area-weighted grid-cell scalar wind speed"
+    },
+    {
+      "provider": "ncep",
+      "rows": 12258,
+      "output": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal/phase5c_corrected/ncep_ensemble_monthly.parquet",
+      "runtime_seconds": 0.4397593579997192,
+      "wind_definition": "ensemble distribution of area-weighted grid-cell scalar wind speed"
+    }
+  ]
+}

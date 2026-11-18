@@ -1,0 +1,74 @@
+{
+  "status": "smoke_passed",
+  "prediction_rows": 12,
+  "common_rows": 36,
+  "experiments": [
+    "E0",
+    "E14",
+    "E24-A",
+    "E24-B",
+    "E24-C",
+    "E25-A",
+    "E25-B",
+    "E25-C",
+    "E9"
+  ],
+  "oracle_rows": 0,
+  "positive_reference_violations": 0,
+  "reference_after_origin_violations": 0,
+  "future_label_cutoff_violations": 0,
+  "lambda_selection": [
+    {
+      "target_name": "total_energy_mwh",
+      "reference_type": "seasonal_naive",
+      "selected_lambda": 0.75,
+      "development_wape": {
+        "0.0": 5.3322168007286885,
+        "0.25": 5.2293083165657945,
+        "0.5": 5.183796205848733,
+        "0.75": 5.18146480840731,
+        "1.0": 5.216119662158294
+      }
+    },
+    {
+      "target_name": "total_energy_mwh",
+      "reference_type": "holt_winters_oos",
+      "selected_lambda": 0.25,
+      "development_wape": {
+        "0.0": 3.9163229487689044,
+        "0.25": 3.8541449294668775,
+        "0.5": 3.8781740905479722,
+        "0.75": 3.9765294531866764,
+        "1.0": 4.136685377008064
+      }
+    },
+    {
+      "target_name": "peak_demand_mw",
+      "reference_type": "seasonal_naive",
+      "selected_lambda": 0.5,
+      "development_wape": {
+        "0.0": 7.474784474696998,
+        "0.25": 7.400834314102476,
+        "0.5": 7.38381276561367,
+        "0.75": 7.429018999870047,
+        "1.0": 7.521586555853195
+      }
+    },
+    {
+      "target_name": "peak_demand_mw",
+      "reference_type": "holt_winters_oos",
+      "selected_lambda": 0.25,
+      "development_wape": {
+        "0.0": 5.367258408358606,
+        "0.25": 5.353236013929395,
+        "0.5": 5.461929347043491,
+        "0.75": 5.680459843641643,
+        "1.0": 5.946151452857669
+      }
+    }
+  ],
+  "experiments_not_started": [
+    "E26",
+    "E27"
+  ]
+}

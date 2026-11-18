@@ -1,0 +1,36 @@
+{
+  "status": "smoke_passed",
+  "gate": "A",
+  "implemented_experiments": [
+    "E18"
+  ],
+  "deferred_experiments": [
+    "E19",
+    "E20",
+    "E21",
+    "E22",
+    "E23"
+  ],
+  "e18_rows": 4,
+  "common_rows": 16,
+  "common_experiments": [
+    "E0",
+    "E11",
+    "E14",
+    "E18"
+  ],
+  "oracle_rows": 0,
+  "stage2_weather_schema": [
+    "temperature_mean_c",
+    "relative_humidity_pct",
+    "wind_speed_mps",
+    "precipitation_mm",
+    "solar_energy_mj_m2"
+  ],
+  "daily_or_extreme_features": false,
+  "outputs": {
+    "predictions": "/home/karthiks/src/EnergyCast-AI/data/processed/phase5c_stage2/smoke/E18_predictions.parquet",
+    "common_predictions": "/home/karthiks/src/EnergyCast-AI/data/processed/phase5c_stage2/smoke/gate_a_common_predictions.parquet",
+    "metrics": "/home/karthiks/src/EnergyCast-AI/reports/phase5c_stage2/smoke/gate_a_common_metrics.csv"
+  }
+}

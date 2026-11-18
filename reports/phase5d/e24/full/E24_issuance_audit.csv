@@ -1,0 +1,3 @@
+issuance_schedule,evaluated,reason
+month_start,True,climate normals are available and predictions are issued at month start
+day_15_refresh,False,climate-normal-only isolation has no new day-15 input; result is exactly the month-start forecast

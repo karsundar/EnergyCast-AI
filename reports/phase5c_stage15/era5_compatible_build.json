@@ -1,0 +1,232 @@
+{
+  "status": "validated",
+  "years": [
+    {
+      "year": 2004,
+      "status": "validated",
+      "rows": 108,
+      "months": 12,
+      "zones": 9,
+      "minimum_grid_observations": 696,
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2004/part.parquet",
+      "seconds": 0.28334754500065173
+    },
+    {
+      "year": 2005,
+      "status": "validated",
+      "rows": 108,
+      "months": 12,
+      "zones": 9,
+      "minimum_grid_observations": 672,
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2005/part.parquet",
+      "seconds": 0.2732257790012227
+    },
+    {
+      "year": 2006,
+      "status": "validated",
+      "rows": 108,
+      "months": 12,
+      "zones": 9,
+      "minimum_grid_observations": 672,
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2006/part.parquet",
+      "seconds": 0.27642287900016527
+    },
+    {
+      "year": 2007,
+      "status": "validated",
+      "rows": 108,
+      "months": 12,
+      "zones": 9,
+      "minimum_grid_observations": 672,
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2007/part.parquet",
+      "seconds": 0.2776507259986829
+    },
+    {
+      "year": 2008,
+      "status": "validated",
+      "rows": 108,
+      "months": 12,
+      "zones": 9,
+      "minimum_grid_observations": 696,
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2008/part.parquet",
+      "seconds": 0.3207404669992684
+    },
+    {
+      "year": 2009,
+      "status": "validated",
+      "rows": 108,
+      "months": 12,
+      "zones": 9,
+      "minimum_grid_observations": 672,
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2009/part.parquet",
+      "seconds": 0.3217034799999965
+    },
+    {
+      "year": 2010,
+      "status": "validated",
+      "rows": 108,
+      "months": 12,
+      "zones": 9,
+      "minimum_grid_observations": 672,
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2010/part.parquet",
+      "seconds": 0.32313250200058974
+    },
+    {
+      "year": 2011,
+      "status": "validated",
+      "rows": 108,
+      "months": 12,
+      "zones": 9,
+      "minimum_grid_observations": 672,
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2011/part.parquet",
+      "seconds": 0.32269502200142597
+    },
+    {
+      "year": 2012,
+      "status": "validated",
+      "rows": 108,
+      "months": 12,
+      "zones": 9,
+      "minimum_grid_observations": 696,
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2012/part.parquet",
+      "seconds": 0.32556955899963214
+    },
+    {
+      "year": 2013,
+      "status": "validated",
+      "rows": 108,
+      "months": 12,
+      "zones": 9,
+      "minimum_grid_observations": 672,
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2013/part.parquet",
+      "seconds": 0.3212747899997339
+    },
+    {
+      "year": 2014,
+      "status": "validated",
+      "rows": 108,
+      "months": 12,
+      "zones": 9,
+      "minimum_grid_observations": 672,
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2014/part.parquet",
+      "seconds": 0.3217430919994513
+    },
+    {
+      "year": 2015,
+      "status": "validated",
+      "rows": 108,
+      "months": 12,
+      "zones": 9,
+      "minimum_grid_observations": 672,
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2015/part.parquet",
+      "seconds": 0.32117443500101217
+    },
+    {
+      "year": 2016,
+      "status": "validated",
+      "rows": 108,
+      "months": 12,
+      "zones": 9,
+      "minimum_grid_observations": 696,
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2016/part.parquet",
+      "seconds": 0.32409441900017555
+    },
+    {
+      "year": 2017,
+      "status": "validated",
+      "rows": 108,
+      "months": 12,
+      "zones": 9,
+      "minimum_grid_observations": 672,
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2017/part.parquet",
+      "seconds": 0.31363839999903576
+    },
+    {
+      "year": 2018,
+      "status": "validated",
+      "rows": 108,
+      "months": 12,
+      "zones": 9,
+      "minimum_grid_observations": 672,
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2018/part.parquet",
+      "seconds": 0.31819646500116505
+    },
+    {
+      "year": 2019,
+      "status": "validated",
+      "rows": 108,
+      "months": 12,
+      "zones": 9,
+      "minimum_grid_observations": 672,
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2019/part.parquet",
+      "seconds": 0.3206666080004652
+    },
+    {
+      "year": 2020,
+      "status": "validated",
+      "rows": 108,
+      "months": 12,
+      "zones": 9,
+      "minimum_grid_observations": 696,
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2020/part.parquet",
+      "seconds": 0.321441723001044
+    },
+    {
+      "year": 2021,
+      "status": "cached",
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2021/part.parquet"
+    },
+    {
+      "year": 2022,
+      "status": "validated",
+      "rows": 108,
+      "months": 12,
+      "zones": 9,
+      "minimum_grid_observations": 672,
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2022/part.parquet",
+      "seconds": 0.3293049459989561
+    },
+    {
+      "year": 2023,
+      "status": "validated",
+      "rows": 108,
+      "months": 12,
+      "zones": 9,
+      "minimum_grid_observations": 672,
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2023/part.parquet",
+      "seconds": 0.3272577440002351
+    },
+    {
+      "year": 2024,
+      "status": "validated",
+      "rows": 108,
+      "months": 12,
+      "zones": 9,
+      "minimum_grid_observations": 696,
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2024/part.parquet",
+      "seconds": 0.3260922980007308
+    },
+    {
+      "year": 2025,
+      "status": "validated",
+      "rows": 108,
+      "months": 12,
+      "zones": 9,
+      "minimum_grid_observations": 672,
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2025/part.parquet",
+      "seconds": 0.32284462099960365
+    },
+    {
+      "year": 2026,
+      "status": "validated",
+      "rows": 45,
+      "months": 5,
+      "zones": 9,
+      "minimum_grid_observations": 672,
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal_compatible_era5/year=2026/part.parquet",
+      "seconds": 0.17027579800014792
+    }
+  ],
+  "phase5b_artifacts_modified": false,
+  "canonical_era5_modified": false
+}

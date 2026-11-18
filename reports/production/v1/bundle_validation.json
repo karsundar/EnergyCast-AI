@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "bundle_version": "energycast-v1.0.0-frozen-202610",
+  "training_data_cutoff": "2026-10-01",
+  "rows": 216,
+  "finite_predictions": 216,
+  "fresh_process_runs": 2,
+  "maximum_absolute_difference": 0.0,
+  "artifact_count": 10,
+  "artifact_checksums_verified": true,
+  "future_data_used": false,
+  "public_probabilistic_intervals": false,
+  "output_sha256": "5d3a1e1d96b30f853c7ebede856d35b0d5bbe19334ed4d93f2720eb1b550950a"
+}

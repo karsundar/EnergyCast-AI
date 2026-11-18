@@ -1,0 +1,26 @@
+{
+  "providers": {
+    "seas5": "data/processed/weather/seasonal/phase5c_corrected/seas5_ensemble_monthly.parquet",
+    "ncep": "data/processed/weather/seasonal/phase5c_corrected/ncep_ensemble_monthly.parquet"
+  },
+  "era5_glob": "data/processed/weather/seasonal_compatible_era5/year=*/part.parquet",
+  "variables": [
+    "temperature_mean_c",
+    "relative_humidity_pct",
+    "wind_speed_mps",
+    "precipitation_mm",
+    "solar_energy_mj_m2"
+  ],
+  "minimum_normal_years": 10,
+  "minimum_bias_samples": 12,
+  "era5_publication_lag_days": 7,
+  "validation_start": "2021-01-01",
+  "validation_end": "2023-12-01",
+  "test_start": "2024-01-01",
+  "test_end": "2026-05-01",
+  "hindcast_validation_start": "2012-01-01",
+  "hindcast_validation_end": "2014-12-01",
+  "hindcast_test_start": "2015-01-01",
+  "hindcast_test_end": "2017-05-01",
+  "output_root": "reports/phase5c_stage15"
+}

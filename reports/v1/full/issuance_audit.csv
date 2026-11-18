@@ -1,0 +1,3 @@
+schedule,eligible,weather_policy
+month_start,True,E14 weather-independent; E24-B expanding climate normals
+day_15_refresh,True,No new input for frozen V1 candidates; forecast is invariant to schedule

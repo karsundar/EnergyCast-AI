@@ -1,0 +1,41 @@
+{
+  "status": "complete",
+  "stage": "Phase 5C Stage 1 only",
+  "rows": 23598,
+  "metric_rows": 1980,
+  "archived_rows": 6750,
+  "hindcast_research_rows": 16848,
+  "archive_target_coverage": [
+    "2021-01-01",
+    "2026-05-01"
+  ],
+  "hindcast_target_coverage": [
+    "2004-01-01",
+    "2017-05-01"
+  ],
+  "leads": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "providers": [
+    "ncep",
+    "seas5"
+  ],
+  "operational_availability_missing": 0,
+  "hindcast_availability_nonnull": 0,
+  "archive_gap_fabricated_rows_2017_2020": 0,
+  "weights_source": "archived validation or separate hindcast-research validation only; inverse MAE by track/variable/lead/geography scope",
+  "hindcast_warning": "retrospective research only; no historical real-time availability asserted",
+  "humidity_target": "relative_humidity_pct; ERA5 regional monthly has no dewpoint target",
+  "runtime_seconds": 69.44053843700021,
+  "outputs": {
+    "predictions": "/home/karthiks/src/EnergyCast-AI/reports/phase5c/full/weather_skill_predictions.parquet",
+    "metrics": "/home/karthiks/src/EnergyCast-AI/reports/phase5c/full/weather_skill_metrics.parquet",
+    "weights": "/home/karthiks/src/EnergyCast-AI/reports/phase5c/full/validation_provider_weights.parquet",
+    "ensemble": "/home/karthiks/src/EnergyCast-AI/reports/phase5c/full/validation_weighted_ensemble.parquet"
+  }
+}

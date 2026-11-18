@@ -1,0 +1,75 @@
+{
+  "status": "smoke_passed",
+  "stage": "Phase 5D structural-bias diagnostics only",
+  "prediction_rows": 72,
+  "bias_breakdown_rows": 162,
+  "paired_rows": 16,
+  "issuance_rows": 4,
+  "explicit_prediction_clipping": false,
+  "target_normalization": false,
+  "forecast_strategy": "direct multi-horizon, not recursive",
+  "chronos2_future_covariates_supported": true,
+  "experiments_started": [],
+  "experiments_designed": [
+    "E24",
+    "E25",
+    "E26",
+    "E27"
+  ],
+  "system_training_range_summary": [
+    {
+      "experiment": "E18",
+      "target_name": "peak_demand_mw",
+      "rows": 12,
+      "bias": -1978.098377905021,
+      "mae": 4923.383576111817,
+      "actual_above_training_max_share": 0.0,
+      "prediction_above_training_max_share": 0.0
+    },
+    {
+      "experiment": "E18",
+      "target_name": "total_energy_mwh",
+      "rows": 12,
+      "bias": -2073799.0684894098,
+      "mae": 2147477.3182970337,
+      "actual_above_training_max_share": 0.0,
+      "prediction_above_training_max_share": 0.0
+    },
+    {
+      "experiment": "E19",
+      "target_name": "peak_demand_mw",
+      "rows": 12,
+      "bias": -1609.054039734466,
+      "mae": 5059.1502665278695,
+      "actual_above_training_max_share": 0.0,
+      "prediction_above_training_max_share": 0.0
+    },
+    {
+      "experiment": "E19",
+      "target_name": "total_energy_mwh",
+      "rows": 12,
+      "bias": -1866703.8389990125,
+      "mae": 2020004.2157461147,
+      "actual_above_training_max_share": 0.0,
+      "prediction_above_training_max_share": 0.0
+    },
+    {
+      "experiment": "E20",
+      "target_name": "peak_demand_mw",
+      "rows": 12,
+      "bias": -3170.5880143696945,
+      "mae": 5921.524674267636,
+      "actual_above_training_max_share": 0.0,
+      "prediction_above_training_max_share": 0.0
+    },
+    {
+      "experiment": "E20",
+      "target_name": "total_energy_mwh",
+      "rows": 12,
+      "bias": -2248682.985993889,
+      "mae": 2346648.3690847633,
+      "actual_above_training_max_share": 0.0,
+      "prediction_above_training_max_share": 0.0
+    }
+  ]
+}

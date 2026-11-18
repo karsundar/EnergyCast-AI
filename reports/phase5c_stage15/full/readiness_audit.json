@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "operational_feature_rows": 61344,
+  "temperature_breakdown_rows": 8684,
+  "nonfinite_values": 0,
+  "missing_values": 0,
+  "future_calibration_cutoff_violations": 0,
+  "availability_after_origin_violations": 0,
+  "target_alignment_violations": 0,
+  "dynamic_unsupported_lead_violations": 0,
+  "daily_features_fabricated": false,
+  "availability_evidence": "scheduled provider release, not file-specific archive audit",
+  "stage2_started": false,
+  "outputs": {
+    "features": "/home/karthiks/src/EnergyCast-AI/reports/phase5c_stage15/full/operational_weather_features.parquet",
+    "temperature_breakdowns": "/home/karthiks/src/EnergyCast-AI/reports/phase5c_stage15/full/temperature_skill_breakdowns.parquet"
+  }
+}

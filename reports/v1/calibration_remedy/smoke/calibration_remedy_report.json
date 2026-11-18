@@ -1,0 +1,58 @@
+{
+  "status": "smoke_passed",
+  "input_target_end": "2020-12-01",
+  "final_test_rows_read": 0,
+  "blocked_prediction_rows": 1296,
+  "blocked_folds": [
+    "2019-H1"
+  ],
+  "future_calibration_cutoff_violations": 0,
+  "selected_methods": [
+    {
+      "target_name": "total_energy_mwh",
+      "scope": "system",
+      "calibration_method": "relative_asymmetric",
+      "folds": 1.0,
+      "coverage": 0.7916666666666666,
+      "normalized_pinball_loss": 0.013046387281563382,
+      "selection_score": 0.015129720614896735
+    },
+    {
+      "target_name": "total_energy_mwh",
+      "scope": "regional",
+      "calibration_method": "relative_asymmetric",
+      "folds": 1.0,
+      "coverage": 0.8072916666666666,
+      "normalized_pinball_loss": 0.019451189470750543,
+      "selection_score": 0.02127410613741719
+    },
+    {
+      "target_name": "peak_demand_mw",
+      "scope": "system",
+      "calibration_method": "scale_normalized_asymmetric",
+      "folds": 1.0,
+      "coverage": 0.8333333333333334,
+      "normalized_pinball_loss": 0.01888356074074772,
+      "selection_score": 0.027216894074081052
+    },
+    {
+      "target_name": "peak_demand_mw",
+      "scope": "regional",
+      "calibration_method": "scale_normalized_asymmetric",
+      "folds": 1.0,
+      "coverage": 0.796875,
+      "normalized_pinball_loss": 0.03902593721802066,
+      "selection_score": 0.03980718721802067
+    }
+  ],
+  "target_coverage": 0.8,
+  "independent_holdout_available": false,
+  "confirmation_status": "awaiting_prospective_or_independently_held_out_confirmation",
+  "deterministic_forecasts_enabled": true,
+  "probabilistic_intervals_enabled": false,
+  "final_test_results_preserved_unchanged": true,
+  "experiments_not_started": [
+    "E26",
+    "E27"
+  ]
+}

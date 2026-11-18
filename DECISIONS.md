@@ -1,5 +1,24 @@
 # Decisions
 
+## Phase 5C Stage 1
+
+- Score only the five variables common to seasonal products and canonical ERA5 monthly regional data. Use relative humidity for humidity skill; do not fabricate an ERA5 dewpoint target.
+- Treat archived forecasts with recorded `available_at` as the only operational backtest source. Keep retrospective hindcasts and their calibration in an explicitly separate research track.
+- Use expanding same-calendar-month ERA5 normals with observations strictly before initialization and a ten-year minimum.
+- Permit bias correction only from errors whose verifying ERA5 month was available before the current forecast. Use month end plus seven days as the documented ERA5 availability assumption.
+- Learn provider weights from the archived 2021–2023 validation period only. Keep the 2012–2014 hindcast research-validation split separate; never use final test periods for selection.
+- Do not begin E18–E23 until the complete Stage 1 results are reviewed.
+- Preserve the initial Stage 1 report and Phase 5B products. Store the spatially corrected wind ensembles as versioned Phase 5C inputs and the rerun under `full_v2`.
+- Label archived evaluation as schedule-based operational simulation because `available_at` records documented release schedules, not file-specific publication audits.
+- Do not use the preliminary wind or relative-humidity comparison for provider selection until historical ERA5 features are transformed to seasonal-compatible monthly definitions. The preliminary final-test NCEP temperature result is descriptive and is superseded for selection by the Stage 1.5 development-only decision below.
+
+## Phase 5C Stage 1.5
+
+- Define comparable ERA5 wind as magnitude of monthly-mean U/V at each grid cell before area weighting. Define comparable humidity from monthly-mean temperature/dewpoint with the same Magnus transform before area weighting.
+- Do not select NCEP from its 2024–2026 test advantage. Archived 2021–2023 development selects SEAS5 for all six system temperature leads; operational selection must be recomputed chronologically by region/lead and fall back to normals until both providers have 12 observable errors.
+- Use expanding normals as defaults for wind and humidity. Permit precipitation and solar seasonal forecasts only as controlled ablations because their development improvements did not persist in final testing.
+- Keep release availability labeled schedule-based. Do not represent it as a file-specific archived publication timestamp.
+
 ## Phase 4C closure and Phase 5A source gate
 
 - Fit E16 before final test and use the 2020 holdout only for conformal
@@ -163,6 +182,36 @@
 - Regional extremes are extrema across intersecting cells; temperature/humidity/wind/HDD/CDD use area weighting; precipitation and solar radiation are spatially averaged before temporal summation.
 - Preserve the 2016 missing demand interval after integration. No interpolation is authorized.
 # Decisions
+## Phase 5C Stage 2 Gate A
+
+- Use one global direct multi-horizon LightGBM architecture and the same five-variable monthly schema for E18-E20 so provider comparisons change weather inputs rather than model structure.
+- Fit supervised historical rows with seasonal-compatible ERA5 weather, but construct E18 forecast rows exclusively from expanding climate normals available at origin. Freeze demand-derived inputs at origin.
+- Recompute E0, E11 and non-oracle E14 only by exact-key intersection with E18; exclude all oracle forecasts. Do not interpret the two-horizon smoke metrics as accuracy results.
+- Stop after bounded Gate A validation. Full E18 is operator-run; E19-E23 require the next execution gates.
+
+## Phase 5C Stage 2 Gate B
+
+- E19/E20 use raw archived SEAS5/NCEP ensemble means for leads 1-6; do not use chronologically calibrated values because bias correction belongs to E22. Leads 7-12 exactly reuse E18 normals.
+- Refit the shared architecture once per target/origin and use that same fitted instance for E19 and E20. Verify deterministic reproduction of the saved E18 P50 before accepting each task.
+- Preserve the monthly demand-history origin separately from scheduled operational release time. Lead-1 release occurs within the target month; report this latency and do not describe schedule timestamps as audited publication evidence.
+- Compare energy to E14 and peak to E0 on exact common keys. Stop after Gate B; do not start E21-E23.
+
+## Phase 5D structural-bias investigation
+
+- Treat level-target extrapolation under demand-distribution shift as the primary confirmed E18-E20 defect. Recursive compounding, explicit clipping and target normalization are ruled out by implementation/runtime evidence.
+- Prioritize E25 because it preserves the strongest Holt-Winters level forecast and learns only strictly out-of-sample residuals. Require development-only selection and retain a no-correction control. Evaluate E24 growth/log-ratio targets second.
+- At month start, use normals because neither scheduled provider release is available. Provider weather is eligible only for the mid-month refresh after its scheduled timestamp. These remain simulated schedules rather than audited publication times.
+- Chronos-2 future-covariate support is present in the installed implementation, but E26 remains design-only pending a separate ROCm smoke gate. Do not start E21-E27 without review.
+
+## Phase 5D E25
+
+- Train residual correction only from rolling-origin Holt-Winters errors; make each residual label eligible after target-month close plus one day. Never use fitted in-sample residuals.
+- Select one shrinkage lambda per target on 2018-2020 development validation, including lambda zero, then hold it fixed. Share one fitted residual model and lambda across A/B/C so operational weather is the experimental change.
+- E25-A is a month-start normal-weather forecast. E25-B/C are day-15 refreshes using raw scheduled SEAS5/NCEP leads 1-6 and normals at leads 7-12. No hindcast or future ERA5 feature is permitted.
+- Require an extended OOS cache before full execution; do not silently rely on the older cache after its coverage ends. E24/E26/E27 remain unauthorized.
+- Retain E25-A as the selected E25 energy configuration and E25-B as the numerical peak winner, with A/B peak performance effectively tied. Seasonal weather does not justify extra complexity over normal-based residual correction.
+- E25-B establishes a modest new operational peak benchmark at 6.236% WAPE versus E0 at 6.305%. E14 remains the operational energy benchmark at 4.409%; do not replace it with E25-A at 4.703%.
+
 # Phase 5B seasonal acquisition
 
 - Use ECMWF SEAS5 system 51 as primary and CDS NCEP CFSv2 system 2 as a
@@ -183,7 +232,46 @@
   expanding ERA5 normals for leads 7–12, fitted strictly before each origin.
   Keep unavailable fallback dewpoint/quantiles null and never infer daily
   extremes from seasonal monthly means.
+
+## Phase 5D E24
+
+- Isolate target transformation with expanding climate normals and identical LightGBM architecture/features across E24 variants; dynamic seasonal weather is excluded.
+- E24-A is direct seasonal year-over-year log growth with lambda fixed at 1. E24-C uses the same reference with development-selected shrinkage, isolating shrinkage rather than changing two variables.
+- E24-B uses only historical rolling-origin OOS Holt-Winters references. Require positive denominators, reference dates no later than origin and labels available only after target-month close.
+- Day-15 climate-normal inputs are identical to month-start inputs; audit the schedule separately without duplicating predictions or claiming a refresh benefit.
+- Retain E24-B as the numerical operational peak benchmark (6.201% WAPE), while noting its small, statistically inconclusive improvement over E25-B by horizon band. Retain E14 as the operational energy benchmark (4.409%).
+- Do not promote E24-A/C: direct or shrunken seasonal-naive log growth increases extrapolation frequency but worsens WAPE and does not eliminate above-range underforecasting.
+
+## EnergyCast V1 final validation
+
+- Freeze E14, E24-B and E0 before V1 selection. Select on 2018-2019 system WAPE, reserve 2020 OOS residuals solely for probabilistic calibration, and preserve 2021+ as final evaluation.
+- Select E14 for V1 energy and E24-B for V1 peak from development criteria. E25-B is not selection-eligible because the 2018-2020 operational seasonal archive needed for an equivalent development evaluation does not exist.
+- Calibrate relative, symmetric conformal residual radii separately by target, geography and horizon, falling back only within the same geography. A Jan-Jun/Jul-Dec 2020 calibration-only comparison selected relative scaling over fixed geography-median scaling; final-test results were not used for this choice.
+- Treat day-15 output as invariant for V1: neither frozen candidate receives new dynamic weather information after month start. Do not imply a refresh benefit.
+- Accept E14 energy and E24-B peak as the validation-selected deterministic V1 models. Their final-test paired improvements over E0 are confirmatory only and were not used for selection.
+- Reject the current intervals for deployment: relative symmetric conformal calibration improves coverage over fixed 2020 widths but remains materially below 80% on 2021+. Do not inflate using final-test residuals. Stop deployment pending a pre-test-safe remedy.
+
+## V1 calibration remedy protocol
+
+- Preserve the failed final-test interval result unchanged. Remedy development may read only OOS development predictions ending in 2020 and must not be evaluated against 2021+ during selection.
+- Compare predefined scale-normalized symmetric, scale-normalized asymmetric and relative asymmetric methods with fixed 1-3/4-6/7-9/10-12 horizon bands. Require 24 band samples and fall back only within the same geography.
+- Select system and regional methods separately using forecast-origin-blocked development folds, normalized pinball loss and a predefined 80%-coverage penalty.
+- Because no untouched historical holdout remains, keep intervals disabled after selection and require prospective or independently held-out confirmation before deployment.
+- Retain the four selected scope-specific remedy tables as prospective candidates, not validated production intervals. Development coverage misses 80% regionally for energy and substantially exceeds it system-wide for peak; high-growth conditional coverage is unstable.
 - Do not assume a constant NCEP ensemble size: observed completed hindcast
   initializations already contain 28, 24 and 20 members. Validate and preserve
   actual membership per initialization. Block official regional processing and
   provider comparison until all 227 priority partitions pass completion gates.
+- Freeze deterministic V1 publication to E14 non-oracle energy and E24-B peak.
+  Do not expose probabilistic intervals; frozen remedy candidates run only as
+  internal shadow outputs until independent prospective confirmation.
+- Require an exact-key, 12-horizon frozen candidate bundle whose origin equals
+  the validated source cutoff. Do not silently refit historical backtest recipes
+  during production inference. This leaves live publication gated until fitted
+  artifacts are frozen or forecast-origin refitting is explicitly authorized.
+- Keep monthly scheduling preview-only. Publish atomically only after validation,
+  retain immutable forecast history, and allow rollback only to validated IDs.
+- Select Option B and freeze fitted artifacts once at the approved 2026-10 data
+  cutoff. Production inference must load and checksum this bundle; it must never
+  refit implicitly. Component-specific OOS-label cutoffs remain explicit rather
+  than being misrepresented as the overall demand/context cutoff.

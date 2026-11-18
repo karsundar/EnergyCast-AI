@@ -3784,6 +3784,22 @@
     "provider_comparison_sha256": "e3ab05ce3027d2a72e43ea6c582770829f007b42ccd5536926e3648d0b281692",
     "bulk_started": true
   },
+  "phase5c_stage15_inventory": {
+    "status": "complete",
+    "era5_compatible_coverage": "2004-01 through 2026-05",
+    "era5_compatible_partitions": 23,
+    "era5_compatible_rows": 2421,
+    "era5_compatible_bytes": 189183,
+    "build_report": "reports/phase5c_stage15/era5_compatible_build.json",
+    "comparable_skill_report": "reports/phase5c_stage15/comparable_full/validation.json",
+    "readiness_report": "reports/phase5c_stage15/READINESS_REPORT.md",
+    "smoke_feature_rows": 11232,
+    "full_feature_rows": 61344,
+    "full_feature_path": "reports/phase5c_stage15/full/operational_weather_features.parquet",
+    "full_temperature_breakdown_rows": 8684,
+    "full_readiness_audit": "reports/phase5c_stage15/full/readiness_audit.json",
+    "stage2_started": false
+  },
   "weather_inventory": {
     "annual_cache_count": 23,
     "hourly_rows": 466855488,

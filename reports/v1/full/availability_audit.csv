@@ -1,0 +1,3 @@
+model,future_observed_weather,provider_requirement,fallback
+E14,False,none,not applicable
+E24-B,False,expanding climate normals available at origin,same expanding climate-normal policy at horizons 1-12

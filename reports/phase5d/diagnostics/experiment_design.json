@@ -1,0 +1,59 @@
+{
+  "status": "design_only_no_training",
+  "selection_policy": "development period only; final test reserved for evaluation",
+  "experiments": {
+    "E24": {
+      "name": "LightGBM growth-target forecasting",
+      "priority": 2,
+      "targets": [
+        "log level ratio to origin",
+        "year-over-year growth"
+      ],
+      "controls": [
+        "E18",
+        "E19",
+        "E20"
+      ],
+      "gate": "compare transformations on development origins only"
+    },
+    "E25": {
+      "name": "Holt-Winters plus seasonal-weather residual correction",
+      "priority": 1,
+      "residuals": "strict rolling-origin out-of-sample Holt-Winters errors only",
+      "weather_variants": [
+        "no correction",
+        "climate normal",
+        "SEAS5",
+        "NCEP"
+      ],
+      "gate": "accept correction only when development bias falls without WAPE increase"
+    },
+    "E26": {
+      "name": "Chronos-2 plus seasonal future covariates",
+      "priority": 4,
+      "compatibility": "verified installed Chronos-2 model declares future-covariate support",
+      "environment": ".venv-chronos2; preserve ROCm stack; smoke required before any run"
+    },
+    "E27": {
+      "name": "SARIMAX plus operational seasonal weather",
+      "priority": 3,
+      "controls": [
+        "weather-independent SARIMA",
+        "normal weather",
+        "SEAS5",
+        "NCEP"
+      ],
+      "gate": "same rolling origins and scheduled-availability policy"
+    }
+  },
+  "issuance": {
+    "month_start": "provider release unavailable; use expanding normals",
+    "mid_month_refresh": "use provider weather only when scheduled available_at <= issuance time"
+  },
+  "prohibited": [
+    "future ERA5 predictors",
+    "in-sample-only residual targets",
+    "final-test model selection",
+    "daily features from monthly weather"
+  ]
+}
