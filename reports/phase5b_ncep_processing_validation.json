@@ -1,0 +1,39 @@
+{
+  "status": "validated",
+  "input_partitions": 227,
+  "source_rows": 11483472,
+  "matched_weight_rows": 14913600,
+  "member_rows": 671112,
+  "ensemble_rows": 12258,
+  "member_counts_by_initialization": [
+    20,
+    24,
+    28,
+    112,
+    116,
+    120,
+    124
+  ],
+  "member_duplicates": 0,
+  "ensemble_duplicates": 0,
+  "hindcast_available_at_nonnull": 0,
+  "lead_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "issue_coverage": [
+    "2004-01-01T00:00:00+00:00",
+    "2026-11-01T00:00:00+00:00"
+  ],
+  "runtime_seconds": 1.3281059389992151,
+  "outputs": {
+    "member": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal/regional/ncep_cfsv2_member_monthly.parquet",
+    "ensemble": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal/regional/ncep_cfsv2_ensemble_monthly.parquet"
+  },
+  "acquisition_complete": true,
+  "expected_partitions": 227
+}

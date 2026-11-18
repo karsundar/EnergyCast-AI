@@ -1,0 +1,187 @@
+{
+  "created_at": "2026-11-14T21:13:41.219066+00:00",
+  "phase": "2A",
+  "completeness_threshold_pct": 99.0,
+  "training_period": "2004-01 through 2017-12",
+  "tuning_period": "2018-01 through 2019-12",
+  "interval_calibration_period": "2020-01 through 2020-12",
+  "test_period": "2021-01 through latest actual",
+  "selected_lightgbm_parameters": {
+    "total_energy_mwh": {
+      "n_estimators": 150,
+      "learning_rate": 0.05,
+      "num_leaves": 15,
+      "max_depth": 5
+    },
+    "peak_demand_mw": {
+      "n_estimators": 250,
+      "learning_rate": 0.03,
+      "num_leaves": 15,
+      "max_depth": 6
+    }
+  },
+  "prediction_status_counts": {
+    "complete": 55728,
+    "incomplete_horizon": 5616
+  },
+  "target_quality_flags": {
+    "complete": 2457,
+    "incomplete_above_threshold": 9
+  },
+  "system_summary": [
+    {
+      "target_name": "peak_demand_mw",
+      "model": "holt_winters",
+      "observations": 774.0,
+      "mae": 4168.846109647031,
+      "rmse": 5578.194575243017,
+      "mape": 5.900625103626157,
+      "wape": 5.867497628338255,
+      "mase": 1.122653032821744,
+      "forecast_bias": -2367.4328755998654,
+      "directional_accuracy": 0.8850129198966409,
+      "interval_coverage": 0.3242894056847545
+    },
+    {
+      "target_name": "peak_demand_mw",
+      "model": "seasonal_naive",
+      "observations": 774.0,
+      "mae": 5304.587306988373,
+      "rmse": 7282.158315242788,
+      "mape": 7.562798989800092,
+      "wape": 7.46601160715495,
+      "mase": 1.4285034447007787,
+      "forecast_bias": -2847.458685502583,
+      "directional_accuracy": 0.8229974160206718,
+      "interval_coverage": 0.5155038759689923
+    },
+    {
+      "target_name": "peak_demand_mw",
+      "model": "drift_seasonal_naive",
+      "observations": 774.0,
+      "mae": 6068.148371510121,
+      "rmse": 8291.138848025168,
+      "mape": 8.72031541476059,
+      "wape": 8.540695732530862,
+      "mase": 1.6341272845557162,
+      "forecast_bias": -1489.1343760027994,
+      "directional_accuracy": 0.8191214470284238,
+      "interval_coverage": 0.5193798449612403
+    },
+    {
+      "target_name": "peak_demand_mw",
+      "model": "lightgbm_direct",
+      "observations": 774.0,
+      "mae": 7250.183611904628,
+      "rmse": 8614.916777674189,
+      "mape": 9.812315850603053,
+      "wape": 10.204366874907052,
+      "mase": 1.9524444909549297,
+      "forecast_bias": -6324.926337640513,
+      "directional_accuracy": 0.8049095607235142,
+      "interval_coverage": 0.4715762273901809
+    },
+    {
+      "target_name": "total_energy_mwh",
+      "model": "holt_winters",
+      "observations": 774.0,
+      "mae": 1787192.2966615607,
+      "rmse": 2357766.885182818,
+      "mape": 4.555463206702255,
+      "wape": 4.654435711126407,
+      "mase": 1.4511947855959002,
+      "forecast_bias": -1041919.6230247994,
+      "directional_accuracy": 0.872093023255814,
+      "interval_coverage": 0.3669250645994832
+    },
+    {
+      "target_name": "total_energy_mwh",
+      "model": "drift_seasonal_naive",
+      "observations": 774.0,
+      "mae": 2305004.0403893446,
+      "rmse": 2947363.8031868087,
+      "mape": 5.9491664597018605,
+      "wape": 6.002987557589315,
+      "mase": 1.8716563687292689,
+      "forecast_bias": -995397.0657492818,
+      "directional_accuracy": 0.8449612403100775,
+      "interval_coverage": 0.4470284237726098
+    },
+    {
+      "target_name": "total_energy_mwh",
+      "model": "seasonal_naive",
+      "observations": 774.0,
+      "mae": 2339877.1984245707,
+      "rmse": 2932419.413354062,
+      "mape": 5.974947285158004,
+      "wape": 6.0938087145639255,
+      "mase": 1.8999732684789579,
+      "forecast_bias": -1899885.7552438504,
+      "directional_accuracy": 0.8333333333333334,
+      "interval_coverage": 0.27906976744186046
+    },
+    {
+      "target_name": "total_energy_mwh",
+      "model": "lightgbm_direct",
+      "observations": 774.0,
+      "mae": 4107818.3528256584,
+      "rmse": 5106221.085544433,
+      "mape": 9.903960428278543,
+      "wape": 10.698108128558513,
+      "mase": 3.3355361842881823,
+      "forecast_bias": -4019394.3443403817,
+      "directional_accuracy": 0.8204134366925064,
+      "interval_coverage": 0.6059431524547804
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/processed/ercot_monthly_targets.parquet",
+      "bytes": 98892,
+      "sha256": "2d50dcfebd55936d128324ef8a941dafa6b648cbd47efa6d88b7ad3c8f64b956",
+      "rows": 2466
+    },
+    {
+      "path": "data/processed/ercot_monthly_features.parquet",
+      "bytes": 722839,
+      "sha256": "90e765d4ef0cdeb385db0e51778d934444f655a89093a414b558b6fd5b52c6eb",
+      "rows": 4932
+    },
+    {
+      "path": "data/processed/economic_monthly_features.parquet",
+      "bytes": 58780,
+      "sha256": "14a9e378ecbd749b320a19eafe44a848613f1392dfdba3a754de3bf30eb5da57",
+      "rows": 7256
+    },
+    {
+      "path": "data/processed/geopolitical_monthly_features.parquet",
+      "bytes": 637932,
+      "sha256": "18724f256cc485d4b6599f1a4517f30db85d0fc5702d96031a2c533e482b8661",
+      "rows": 170464
+    },
+    {
+      "path": "data/processed/baseline_predictions.parquet",
+      "bytes": 1415845,
+      "sha256": "c20c3c96cb6dee8ea2ffc1fdb027d98e129854cc28b6b86656f3bff0187ea78c",
+      "rows": 61344
+    },
+    {
+      "path": "reports/baseline_metrics.parquet",
+      "bytes": 394290,
+      "sha256": "1c7e28dca7a9dcc7f856306f72dc18180da82435a8981e124be7ec5555fa81f1",
+      "rows": 4440
+    }
+  ],
+  "charts": [
+    "reports/charts/phase2a_system_wape_by_horizon.png",
+    "reports/charts/phase2a_system_h1_forecasts.png",
+    "reports/charts/phase2a_interval_coverage.png"
+  ],
+  "constraints": {
+    "intermediate_future_actuals_used": false,
+    "economic_or_geopolitical_baseline_inputs": false,
+    "copernicus_downloaded": false,
+    "tft_trained": false,
+    "extreme_weather_breakdown": "pre-test calendar-month 95th-percentile peak-load proxy; no climate data used"
+  }
+}

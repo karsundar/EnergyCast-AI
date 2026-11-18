@@ -22,6 +22,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from acquisition.handlers import discover_catalog, plan_cds_requests, retrieve_cds_chunk  # noqa: E402
 from acquisition.http import atomic_validated_download, open_with_retries  # noqa: E402
 from acquisition.validation import validate_file  # noqa: E402
+from download_datasets import _bounded_cds_dataset, download_cds  # noqa: E402
 
 
 class QuietHandler(SimpleHTTPRequestHandler):
@@ -197,6 +198,67 @@ class ValidationAndHandlersTest(unittest.TestCase):
                    "request_parameters": {"validated": False}}
         with self.assertRaisesRegex(ValueError, "not validated"):
             plan_cds_requests(dataset)
+
+    def test_era5_plan_includes_product_type_and_texas_bounds(self):
+        dataset = {
+            "id": "era5_historical_weather", "required_start": "2024-01-01", "required_end": "2024-01-31",
+            "file_pattern": "era5_{year}_{month}.nc",
+            "request_parameters": {
+                "validated": True, "variables": ["2m_temperature"], "area": [36.5, -106.75, 25.75, -93.5],
+                "data_format": "netcdf", "download_format": "unarchived", "product_type": "reanalysis",
+            },
+        }
+        plans = plan_cds_requests(dataset)
+        self.assertEqual(len(plans), 1)
+        self.assertEqual(plans[0][1]["product_type"], "reanalysis")
+        self.assertEqual(plans[0][1]["area"], [36.5, -106.75, 25.75, -93.5])
+
+    def test_cds_month_bounds_are_inclusive_and_do_not_mutate_manifest(self):
+        dataset = {
+            "download_strategy": "cds_api", "required_start": "2004-01-01", "required_end": "2026-10-31"
+        }
+        bounded = _bounded_cds_dataset(dataset, "2004-02", "2004-02")
+        self.assertEqual(bounded["required_start"], "2004-02-01")
+        self.assertEqual(bounded["required_end"], "2004-02-29")
+        self.assertEqual(dataset["required_end"], "2026-10-31")
+
+    def test_cds_sample_is_atomic_and_bounded(self):
+        dataset = {
+            "id": "era5_historical_weather", "enabled": True, "format": "netcdf",
+            "allowed_formats": ["netcdf"], "required_start": "2004-01-01", "required_end": "2004-01-31",
+            "file_pattern": "era5_{year}_{month}.nc", "max_bytes": 1024,
+            "request_parameters": {
+                "dataset": "reanalysis-era5-single-levels", "validated": True,
+                "variables": ["2m_temperature"], "area": [36.5, -106.75, 25.75, -93.5],
+                "data_format": "netcdf", "download_format": "unarchived", "product_type": "reanalysis",
+                "sample_request": {"year": "2024", "month": "01", "day": ["01"], "time": ["00:00"]},
+            },
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            def fake_retrieve(unused_dataset, request, target, *, validation_sample=False):
+                self.assertTrue(validation_sample)
+                self.assertEqual(request["day"], ["01"])
+                self.assertEqual(request["time"], ["00:00"])
+                target.write_bytes(b"CDF\x01" + b"\x00" * 32)
+            with mock.patch("download_datasets.retrieve_cds_chunk", side_effect=fake_retrieve) as retrieve:
+                records = download_cds(dataset, Path(directory), sample_only=True, force=False)
+                cached = download_cds(dataset, Path(directory), sample_only=True, force=False)
+            self.assertEqual(len(records), 1)
+            self.assertEqual(records[0]["status"], "downloaded")
+            self.assertEqual(cached[0]["status"], "cached")
+            self.assertEqual(retrieve.call_count, 1)
+            self.assertTrue(Path(records[0]["path"]).name.startswith("sample_"))
+            self.assertEqual(Path(records[0]["path"]).name, "sample_era5_2024_01.nc")
+            self.assertEqual(list(Path(directory).rglob("*.part")), [])
+
+    def test_valid_cds_netcdf_zip_bundle(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "era5.zip"
+            with zipfile.ZipFile(path, "w") as archive:
+                archive.writestr("instant.nc", b"CDF\x01" + b"\x00" * 32)
+                archive.writestr("accum.nc", b"\x89HDF\r\n\x1a\n" + b"\x00" * 32)
+            result = validate_file(path, "netcdf", {"allowed_formats": ["netcdf"]})
+            self.assertEqual(result.format, "netcdf")
 
     def test_invalid_checksum_removes_download(self):
         with tempfile.TemporaryDirectory() as directory:

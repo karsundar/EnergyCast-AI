@@ -1,0 +1,38 @@
+{
+  "status": "complete",
+  "oracle_weather": true,
+  "performance": [
+    {
+      "experiment": "E6",
+      "target": "total_energy_mwh",
+      "checkpoint": "models/phase4a/E6/total_energy_mwh/epoch=021-val_loss=253758.625000.ckpt",
+      "sequences": 477,
+      "prediction_rows": 5724,
+      "inference_seconds": 2.9480796419957187
+    },
+    {
+      "experiment": "E6",
+      "target": "peak_demand_mw",
+      "checkpoint": "models/phase4a/E6/peak_demand_mw/epoch=016-val_loss=483.536499.ckpt",
+      "sequences": 477,
+      "prediction_rows": 5724,
+      "inference_seconds": 0.6530519259977154
+    },
+    {
+      "experiment": "E7",
+      "target": "total_energy_mwh",
+      "checkpoint": "models/phase4a/E7/total_energy_mwh/epoch=002-val_loss=6234.807617.ckpt",
+      "sequences": 477,
+      "prediction_rows": 5724,
+      "inference_seconds": 10.890070360001118
+    },
+    {
+      "experiment": "E7",
+      "target": "peak_demand_mw",
+      "checkpoint": "models/phase4a/E7/peak_demand_mw/epoch=023-val_loss=361.515137.ckpt",
+      "sequences": 477,
+      "prediction_rows": 5724,
+      "inference_seconds": 10.746748362995277
+    }
+  ]
+}

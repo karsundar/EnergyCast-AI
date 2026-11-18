@@ -1,0 +1,121 @@
+{
+  "artifact": {
+    "bytes": 367142,
+    "path": "data/raw/era5_historical_weather/aws_sample_era5_2024_01.nc",
+    "sha256": "21d54147cdb250f919d6bc97d0bba6e2c1a688a5abeb8b28e5c770c2150eabd0"
+  },
+  "coordinates": {
+    "latitude": [
+      25.75,
+      36.5
+    ],
+    "longitude_0_360": [
+      253.25,
+      266.5
+    ]
+  },
+  "coverage": {
+    "end": "2024-01-01T18:00:00.000000000",
+    "start": "2024-01-01T00:00:00.000000000"
+  },
+  "created_at": "2026-11-15T12:48:45.910374+00:00",
+  "dimensions": {
+    "latitude": 44,
+    "longitude": 54,
+    "valid_time": 4
+  },
+  "dtypes": {
+    "d2m": "float32",
+    "ssrd": "float32",
+    "t2m": "float32",
+    "tp": "float32",
+    "u10": "float32",
+    "v10": "float32"
+  },
+  "missing_values": {
+    "d2m": 0,
+    "ssrd": 0,
+    "t2m": 0,
+    "tp": 0,
+    "u10": 0,
+    "v10": 0
+  },
+  "performance": {
+    "host_network_received_bytes": 335032772,
+    "local_netcdf_write_seconds": 0.060961007000003065,
+    "note": "network bytes are a host-interface delta and may include unrelated host traffic",
+    "peak_rss_bytes": 578076672,
+    "remote_read_seconds": 114.31258418699997,
+    "total_seconds": 116.71803449200002
+  },
+  "request": {
+    "bounds": [
+      36.5,
+      -106.75,
+      25.75,
+      -93.5
+    ],
+    "timestamps": [
+      "2024-01-01T00:00:00.000000000",
+      "2024-01-01T06:00:00.000000000",
+      "2024-01-01T12:00:00.000000000",
+      "2024-01-01T18:00:00.000000000"
+    ],
+    "variables": [
+      "t2m",
+      "d2m",
+      "u10",
+      "v10",
+      "tp",
+      "ssrd"
+    ]
+  },
+  "source": {
+    "bucket": "earthmover-icechunk-era5",
+    "group": "single/temporal",
+    "prefix": "icechunkV2",
+    "registry": "https://registry.opendata.aws/earthmover-era5/",
+    "repository_snapshot": "VKGPX45BPEQJMVZZXZEG"
+  },
+  "source_chunking": {
+    "d2m": [
+      8736,
+      12,
+      12
+    ],
+    "ssrd": [
+      8736,
+      12,
+      12
+    ],
+    "t2m": [
+      8736,
+      12,
+      12
+    ],
+    "tp": [
+      8736,
+      12,
+      12
+    ],
+    "u10": [
+      8736,
+      12,
+      12
+    ],
+    "v10": [
+      8736,
+      12,
+      12
+    ]
+  },
+  "status": "validated",
+  "units": {
+    "d2m": "K",
+    "ssrd": "J m**-2",
+    "t2m": "K",
+    "tp": "m",
+    "u10": "m s**-1",
+    "v10": "m s**-1"
+  }
+}

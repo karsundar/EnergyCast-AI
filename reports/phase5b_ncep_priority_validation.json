@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "provider": "copernicus_cfsv2",
+  "plan": "priority",
+  "expected_requests": 227,
+  "validated_requests": 227,
+  "rows": 11483472,
+  "bytes_by_type": {
+    "raw": 169094473,
+    "processed": 701687339
+  },
+  "pending_or_invalid": 0,
+  "failure_preview": []
+}

@@ -1,0 +1,41 @@
+{
+  "status": "smoke_passed",
+  "workers": 1,
+  "lightgbm_threads_per_worker": 2,
+  "residual_transform_selection": [
+    {
+      "experiment": "E17",
+      "target": "total_energy_mwh",
+      "selected": "level",
+      "validation_wape": {
+        "level": 4.484253871010897,
+        "growth": 4.488157209507336
+      },
+      "interval_source": "2018-2020 development residuals"
+    },
+    {
+      "experiment": "E17",
+      "target": "peak_demand_mw",
+      "selected": "level",
+      "validation_wape": {
+        "level": 6.167121493430418,
+        "growth": 6.225906357656617
+      },
+      "interval_source": "2018-2020 development residuals"
+    }
+  ],
+  "tasks": [
+    {
+      "task": "E17:total_energy_mwh:2020-12",
+      "seconds": 0.04780122900410788,
+      "rows": 2,
+      "worker_peak_rss_kib": 245904
+    },
+    {
+      "task": "E17:peak_demand_mw:2020-12",
+      "seconds": 0.055656927994277794,
+      "rows": 2,
+      "worker_peak_rss_kib": 246060
+    }
+  ]
+}

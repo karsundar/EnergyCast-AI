@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "provider": "copernicus_seas5",
+  "plan": "priority",
+  "expected_requests": 227,
+  "validated_requests": 227,
+  "rows": 6949404,
+  "bytes_by_type": {
+    "raw": 110580266,
+    "processed": 437198418
+  },
+  "pending_or_invalid": 0,
+  "failure_preview": []
+}

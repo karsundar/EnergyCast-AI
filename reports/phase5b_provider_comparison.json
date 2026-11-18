@@ -1,0 +1,55 @@
+{
+  "status": "validated",
+  "comparison_scope": "complete",
+  "common_rows": 12258,
+  "common_issue_coverage": [
+    "2004-01-01T00:00:00+00:00",
+    "2026-11-01T00:00:00+00:00"
+  ],
+  "metrics": {
+    "temperature_mean_c": {
+      "rows": 12258,
+      "ncep_minus_seas5_mean": -1.5534742918482063,
+      "mae": 1.6015811147600483,
+      "rmse": 1.8439978429019446,
+      "correlation": 0.9930782949132393
+    },
+    "dewpoint_mean_c": {
+      "rows": 12258,
+      "ncep_minus_seas5_mean": 0.6931929470763455,
+      "mae": 1.5129341028105445,
+      "rmse": 1.9073830508991627,
+      "correlation": 0.9778354321057282
+    },
+    "relative_humidity_pct": {
+      "rows": 12258,
+      "ncep_minus_seas5_mean": 8.433762558974557,
+      "mae": 9.234407847462618,
+      "rmse": 10.93409586693978,
+      "correlation": 0.8031520226828606
+    },
+    "wind_speed_mps": {
+      "rows": 12258,
+      "ncep_minus_seas5_mean": 0.09201609263303148,
+      "mae": 0.39644800167122674,
+      "rmse": 0.4911434170387504,
+      "correlation": 0.8864289086272007
+    },
+    "precipitation_mm": {
+      "rows": 12258,
+      "ncep_minus_seas5_mean": 16.0933045400354,
+      "mae": 24.99648900305747,
+      "rmse": 31.116363663367338,
+      "correlation": 0.6595345753127694
+    },
+    "solar_energy_mj_m2": {
+      "rows": 12258,
+      "ncep_minus_seas5_mean": -47.20134363052532,
+      "mae": 60.510203574588395,
+      "rmse": 80.23005734010185,
+      "correlation": 0.9397114442289056
+    }
+  },
+  "output": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal/regional/seas5_ncep_common_provider_features.parquet",
+  "ensemble_warning": "equal-provider mean is an uncalibrated feature, not a validated forecast ensemble"
+}

@@ -100,6 +100,26 @@ def _validate_zip(path: Path, expected: str) -> ValidationResult:
     return ValidationResult(expected)
 
 
+def _validate_netcdf_bundle(path: Path) -> ValidationResult:
+    """Validate a CDS ZIP response containing one or more NetCDF products."""
+    try:
+        with zipfile.ZipFile(path) as archive:
+            members = [item for item in archive.infolist() if not item.is_dir()]
+            if not members:
+                raise ValueError("NetCDF bundle contains no files")
+            for member in members:
+                member_path = Path(member.filename)
+                if member_path.is_absolute() or ".." in member_path.parts:
+                    raise ValueError(f"unsafe NetCDF bundle member: {member.filename}")
+                with archive.open(member) as source:
+                    prefix = source.read(8)
+                if not any(prefix.startswith(signature) for signature in NETCDF_SIGNATURES):
+                    raise ValueError(f"invalid NetCDF member signature: {member.filename}")
+    except (OSError, zipfile.BadZipFile) as exc:
+        raise ValueError(f"invalid NetCDF bundle: {exc}") from exc
+    return ValidationResult("netcdf")
+
+
 def validate_file(
     path: Path,
     expected_format: str,
@@ -134,6 +154,8 @@ def validate_file(
             raise ValueError("invalid XLS file signature")
         return ValidationResult(expected)
     if expected in {"netcdf", "nc"}:
+        if prefix.startswith(b"PK\x03\x04"):
+            return _validate_netcdf_bundle(path)
         if not any(prefix.startswith(signature) for signature in NETCDF_SIGNATURES):
             raise ValueError("invalid NetCDF file signature")
         return ValidationResult("netcdf")

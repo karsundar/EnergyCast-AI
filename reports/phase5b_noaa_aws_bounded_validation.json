@@ -1,0 +1,87 @@
+{
+  "status": "bounded_operational_sample_validated",
+  "provider": "noaa_aws_noaa-cfs-pds",
+  "key": "cfs.20240101/06/monthly_grib_01/flxf.01.2024010106.202402.avrg.grib.grb2",
+  "source_object_bytes": 5239300,
+  "source_etag_md5": "4197bed459cff656e1086ac424a54921",
+  "selected_message_ranges": [
+    [
+      757165,
+      810773
+    ],
+    [
+      1954001,
+      2009609
+    ],
+    [
+      2111332,
+      2262353
+    ],
+    [
+      2262354,
+      2335871
+    ],
+    [
+      2335872,
+      2407857
+    ],
+    [
+      2407858,
+      2481888
+    ]
+  ],
+  "transferred_bytes": 479775,
+  "transfer_reduction_pct": 90.843,
+  "selected_sha256": "1b7c58b08234b4faefb11b54ef9c328db8c7da3612108ebdf40bf6fb8f28a404",
+  "decoded_variables": [
+    "avg_10u",
+    "avg_10v",
+    "avg_2sh",
+    "avg_2t",
+    "avg_sp",
+    "prate",
+    "sdswrf"
+  ],
+  "native_grid": {
+    "latitude": 12,
+    "longitude": 14
+  },
+  "native_subset_rows": 168,
+  "native_subset_path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal/aws_cfsv2_bounded_2024010106_202402.csv.gz",
+  "seconds": 3.996563125998364,
+  "limitations": [
+    "AWS operational objects begin later than the required hindcast period",
+    "native Gaussian grid requires documented regridding to the CDS one-degree grid",
+    "dewpoint must be derived from specific humidity, surface pressure and temperature"
+  ],
+  "cds_comparison": "linear_regrid_from_native_gaussian_grid",
+  "cds_closest_member_index": 1,
+  "temperature_mae_k": 0.10641336744684698,
+  "cds_equivalence_status": "bounded_native_source_equivalence_validated",
+  "variable_comparison": {
+    "temperature_k": {
+      "mae": 0.10641336744684698,
+      "max_abs": 0.1414284876333909
+    },
+    "wind_u_m_s": {
+      "mae": 0.04052462416917521,
+      "max_abs": 0.07133078041819702
+    },
+    "wind_v_m_s": {
+      "mae": 0.04305105417736706,
+      "max_abs": 0.13545084990924364
+    },
+    "precipitation_rate_kg_m2_s": {
+      "mae": 9.039532071410777e-10,
+      "max_abs": 6.571260828131007e-09
+    },
+    "solar_flux_w_m2": {
+      "mae": 0.13555538082546928,
+      "max_abs": 0.32781352600491687
+    },
+    "derived_dewpoint_k": {
+      "mae": 0.7434530821866748,
+      "max_abs": 1.2177499185897318
+    }
+  }
+}

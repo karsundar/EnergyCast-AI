@@ -1,0 +1,64 @@
+{
+  "status": "smoke_passed",
+  "workers": 2,
+  "residual_transform_selection": [
+    {
+      "experiment": "E9",
+      "target": "total_energy_mwh",
+      "selected": "level",
+      "validation_wape": {
+        "level": 3.074545981521622,
+        "growth": 3.1338596843616493
+      }
+    },
+    {
+      "experiment": "E9",
+      "target": "peak_demand_mw",
+      "selected": "level",
+      "validation_wape": {
+        "level": 4.558451885989545,
+        "growth": 4.652058490454614
+      }
+    },
+    {
+      "experiment": "E10",
+      "target": "total_energy_mwh",
+      "selected": "level",
+      "validation_wape": {
+        "level": 2.3833944736587096,
+        "growth": 2.4000828312402676
+      }
+    },
+    {
+      "experiment": "E10",
+      "target": "peak_demand_mw",
+      "selected": "level",
+      "validation_wape": {
+        "level": 5.517941970186217,
+        "growth": 5.848736735273246
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "task": "E9:total_energy_mwh:2020-12",
+      "seconds": 0.05750518300192198,
+      "rows": 2
+    },
+    {
+      "task": "E9:peak_demand_mw:2020-12",
+      "seconds": 0.043327715997293126,
+      "rows": 2
+    },
+    {
+      "task": "E10:total_energy_mwh:2020-12",
+      "seconds": 0.09517247400071938,
+      "rows": 2
+    },
+    {
+      "task": "E10:peak_demand_mw:2020-12",
+      "seconds": 0.49695472700113896,
+      "rows": 2
+    }
+  ]
+}

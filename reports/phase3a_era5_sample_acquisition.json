@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-11-14T23:20:45-06:00",
+  "manifest": "config/datasets.json",
+  "mode": "bounded_cds_sample",
+  "datasets": [
+    {
+      "id": "era5_historical_weather",
+      "url": "cdsapi://reanalysis-era5-single-levels",
+      "path": "data/raw/era5_historical_weather/sample_era5_2024_01.zip",
+      "bytes": 182505,
+      "sha256": "286381bde6fe90ddd6f02905038e89f01cd8c845216fc7d5cf14c2e293769fd2",
+      "status": "downloaded_and_validated",
+      "format": "netcdf",
+      "container_format": "zip",
+      "members": [
+        "data_stream-oper_stepType-instant.nc",
+        "data_stream-oper_stepType-accum.nc"
+      ],
+      "requested_coverage": "2024-01-01T00:00:00Z/2024-01-01T18:00:00Z",
+      "area": [36.5, -106.75, 25.75, -93.5]
+    }
+  ]
+}

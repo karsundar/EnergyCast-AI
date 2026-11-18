@@ -1,0 +1,65 @@
+{
+  "weather_coverage_end": "2026-05-01",
+  "completeness_threshold_pct": 99.0,
+  "splits": {
+    "training_end": "2017-12-01",
+    "validation_start": "2018-01-01",
+    "validation_end": "2020-12-01",
+    "test_start": "2021-01-01"
+  },
+  "forecast_horizon_months": 12,
+  "lightgbm": {
+    "n_estimators": 250,
+    "learning_rate": 0.03,
+    "num_leaves": 15,
+    "max_depth": 6,
+    "random_state": 42,
+    "n_jobs": 2,
+    "deterministic": true,
+    "force_col_wise": true
+  },
+  "execution": {
+    "workers": 8,
+    "lightgbm_threads_per_worker": 2,
+    "blas_threads_per_worker": 1
+  },
+  "sarimax": {
+    "order": [1, 0, 1],
+    "seasonal_order": [1, 0, 1, 12],
+    "maxiter": 100
+  },
+  "tft": {
+    "hidden_size": 16,
+    "attention_heads": 2,
+    "lstm_layers": 1,
+    "hidden_continuous_size": 8,
+    "dropout": 0.1,
+    "learning_rate": 0.001,
+    "batch_size_monthly": 32,
+    "batch_size_daily": 16,
+    "encoder_months": 36,
+    "decoder_months": 12,
+    "encoder_days": 365,
+    "decoder_days": 366,
+    "max_epochs": 100,
+    "early_stopping_patience": 10,
+    "gradient_clip_val": 0.1,
+    "quantiles": [0.1, 0.5, 0.9],
+    "seed": 42,
+    "precision": "32-true",
+    "performance_reference": {
+      "batch_size_daily": 16,
+      "num_workers": 0,
+      "persistent_workers": false,
+      "pin_memory": false,
+      "prefetch_factor": 2,
+      "deterministic": "warn"
+    },
+    "performance_sweep": {
+      "batch_sizes": [32, 64, 128, 256, 512],
+      "num_workers": [0, 4, 8, 16],
+      "prefetch_factors": [2, 4],
+      "precisions": ["32-true", "bf16-mixed"]
+    }
+  }
+}

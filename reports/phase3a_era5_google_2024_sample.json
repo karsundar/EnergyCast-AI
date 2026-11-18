@@ -1,0 +1,107 @@
+{
+  "artifact": {
+    "bytes": 246720,
+    "path": "data/raw/era5_historical_weather/google_sample_era5_2024_01.nc",
+    "sha256": "ddefc55a182c354166984748a479c5b53262b56a33e907fdba8dad78bc3d1fd3"
+  },
+  "created_at": "2026-11-15T12:55:04.772629+00:00",
+  "dimensions": {
+    "latitude": 44,
+    "longitude": 54,
+    "valid_time": 4
+  },
+  "dtypes": {
+    "d2m": "float32",
+    "ssrd": "float32",
+    "t2m": "float32",
+    "tp": "float32",
+    "u10": "float32",
+    "v10": "float32"
+  },
+  "missing_values": {
+    "d2m": 0,
+    "ssrd": 0,
+    "t2m": 0,
+    "tp": 0,
+    "u10": 0,
+    "v10": 0
+  },
+  "performance": {
+    "host_network_received_bytes": 63024148,
+    "local_netcdf_write_seconds": 0.03202110100005484,
+    "note": "network bytes are a host-interface delta and may include unrelated host traffic",
+    "peak_rss_bytes": 578076672,
+    "remote_read_seconds": 4.133226147000073,
+    "total_seconds": 6.454060154999979
+  },
+  "provider": {
+    "last_updated": "2026-11-14 02:45:20.130337+00:00",
+    "provider": "google_arco",
+    "url": "https://storage.googleapis.com/gcp-public-data-arco-era5/ar/full_37-1h-0p25deg-chunk-1.zarr-v3",
+    "valid_time_start": "1940-01-01",
+    "valid_time_stop": "2026-06-30"
+  },
+  "request": {
+    "bounds": [
+      36.5,
+      -106.75,
+      25.75,
+      -93.5
+    ],
+    "timestamps": [
+      "2024-01-01T00:00:00",
+      "2024-01-01T06:00:00",
+      "2024-01-01T12:00:00",
+      "2024-01-01T18:00:00"
+    ],
+    "variables": [
+      "t2m",
+      "d2m",
+      "u10",
+      "v10",
+      "tp",
+      "ssrd"
+    ]
+  },
+  "source_chunking": {
+    "10m_u_component_of_wind": [
+      1,
+      721,
+      1440
+    ],
+    "10m_v_component_of_wind": [
+      1,
+      721,
+      1440
+    ],
+    "2m_dewpoint_temperature": [
+      1,
+      721,
+      1440
+    ],
+    "2m_temperature": [
+      1,
+      721,
+      1440
+    ],
+    "surface_solar_radiation_downwards": [
+      1,
+      721,
+      1440
+    ],
+    "total_precipitation": [
+      1,
+      721,
+      1440
+    ]
+  },
+  "status": "validated",
+  "units": {
+    "d2m": "K",
+    "ssrd": "J m**-2",
+    "t2m": "K",
+    "tp": "m",
+    "u10": "m s**-1",
+    "v10": "m s**-1"
+  }
+}

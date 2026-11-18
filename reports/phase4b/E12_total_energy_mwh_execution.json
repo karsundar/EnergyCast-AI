@@ -1,0 +1,435 @@
+{
+  "status": "complete",
+  "model_revision": "ff35bf3168857dce1984939b85d8955976f12f32",
+  "torch_environment": {
+    "precision": "bf16",
+    "batch_size": 64,
+    "hip_visible_devices": null
+  },
+  "timings": [
+    {
+      "origin": "2020-12-01",
+      "seconds": 1.373496131003776,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 310568960
+    },
+    {
+      "origin": "2021-01-01",
+      "seconds": 0.029798962001223117,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 310569472
+    },
+    {
+      "origin": "2021-02-01",
+      "seconds": 0.027891034995263908,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 310569472
+    },
+    {
+      "origin": "2021-03-01",
+      "seconds": 0.028253118995053228,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 310569984
+    },
+    {
+      "origin": "2021-04-01",
+      "seconds": 0.031214429000101518,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 310569984
+    },
+    {
+      "origin": "2021-05-01",
+      "seconds": 0.03526175200386206,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 313294848
+    },
+    {
+      "origin": "2021-06-01",
+      "seconds": 0.03130835799674969,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 313294848
+    },
+    {
+      "origin": "2021-07-01",
+      "seconds": 0.028522323998913635,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 313295360
+    },
+    {
+      "origin": "2021-08-01",
+      "seconds": 0.028889277004054748,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 313295360
+    },
+    {
+      "origin": "2021-09-01",
+      "seconds": 0.027980512000794988,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 313295872
+    },
+    {
+      "origin": "2021-10-01",
+      "seconds": 0.02779825500329025,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 313296384
+    },
+    {
+      "origin": "2021-11-01",
+      "seconds": 0.027816714995424263,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 313296384
+    },
+    {
+      "origin": "2021-12-01",
+      "seconds": 0.02774517699435819,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 313296896
+    },
+    {
+      "origin": "2022-01-01",
+      "seconds": 0.027752556998166256,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 313296896
+    },
+    {
+      "origin": "2022-02-01",
+      "seconds": 0.02776990699931048,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 313297408
+    },
+    {
+      "origin": "2022-03-01",
+      "seconds": 0.027704776999598835,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 313297408
+    },
+    {
+      "origin": "2022-04-01",
+      "seconds": 0.02773391699884087,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 313297920
+    },
+    {
+      "origin": "2022-05-01",
+      "seconds": 0.027669939001498278,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 313297920
+    },
+    {
+      "origin": "2022-06-01",
+      "seconds": 0.027786557002400514,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 313298432
+    },
+    {
+      "origin": "2022-07-01",
+      "seconds": 0.02776593699672958,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 313298432
+    },
+    {
+      "origin": "2022-08-01",
+      "seconds": 0.027697176999936346,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 313298944
+    },
+    {
+      "origin": "2022-09-01",
+      "seconds": 0.033199605997651815,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 316454400
+    },
+    {
+      "origin": "2022-10-01",
+      "seconds": 0.030537569997250102,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 316454400
+    },
+    {
+      "origin": "2022-11-01",
+      "seconds": 0.030011028997250833,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 316454912
+    },
+    {
+      "origin": "2022-12-01",
+      "seconds": 0.030348852997121867,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 316454912
+    },
+    {
+      "origin": "2023-01-01",
+      "seconds": 0.029455728996254038,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 316455424
+    },
+    {
+      "origin": "2023-02-01",
+      "seconds": 0.029395639001450036,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 316455424
+    },
+    {
+      "origin": "2023-03-01",
+      "seconds": 0.029944260000775103,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 316455936
+    },
+    {
+      "origin": "2023-04-01",
+      "seconds": 0.02933276999829104,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 316455936
+    },
+    {
+      "origin": "2023-05-01",
+      "seconds": 0.02961615600361256,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 316456448
+    },
+    {
+      "origin": "2023-06-01",
+      "seconds": 0.02933837999444222,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 316456448
+    },
+    {
+      "origin": "2023-07-01",
+      "seconds": 0.029520766998757608,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 316456960
+    },
+    {
+      "origin": "2023-08-01",
+      "seconds": 0.029344110000238288,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 316457472
+    },
+    {
+      "origin": "2023-09-01",
+      "seconds": 0.029135382996173576,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 316457472
+    },
+    {
+      "origin": "2023-10-01",
+      "seconds": 0.029390049996436574,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 316457984
+    },
+    {
+      "origin": "2023-11-01",
+      "seconds": 0.029188203006924596,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 316457984
+    },
+    {
+      "origin": "2023-12-01",
+      "seconds": 0.030481120993499644,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 316458496
+    },
+    {
+      "origin": "2024-01-01",
+      "seconds": 0.028679151000687853,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 317995008
+    },
+    {
+      "origin": "2024-02-01",
+      "seconds": 0.028394236003805418,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 317995520
+    },
+    {
+      "origin": "2024-03-01",
+      "seconds": 0.028449015000660438,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 317995520
+    },
+    {
+      "origin": "2024-04-01",
+      "seconds": 0.02831608799897367,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 317996032
+    },
+    {
+      "origin": "2024-05-01",
+      "seconds": 0.02839488600147888,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 317996032
+    },
+    {
+      "origin": "2024-06-01",
+      "seconds": 0.028349827000056393,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 317996544
+    },
+    {
+      "origin": "2024-07-01",
+      "seconds": 0.02840382599970326,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 317997056
+    },
+    {
+      "origin": "2024-08-01",
+      "seconds": 0.028262708001420833,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 317997056
+    },
+    {
+      "origin": "2024-09-01",
+      "seconds": 0.028329417000350077,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 317997568
+    },
+    {
+      "origin": "2024-10-01",
+      "seconds": 0.028209670002979692,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 317997568
+    },
+    {
+      "origin": "2024-11-01",
+      "seconds": 0.02845886500290362,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 317998080
+    },
+    {
+      "origin": "2024-12-01",
+      "seconds": 0.029048575001070276,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 317998080
+    },
+    {
+      "origin": "2025-01-01",
+      "seconds": 0.029027086005953606,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 317998592
+    },
+    {
+      "origin": "2025-02-01",
+      "seconds": 0.028712161001749337,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 317998592
+    },
+    {
+      "origin": "2025-03-01",
+      "seconds": 0.02941378999821609,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 317999104
+    },
+    {
+      "origin": "2025-04-01",
+      "seconds": 0.028168400000140537,
+      "rows": 108,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 317999104
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "artifacts": {
+    "hindcast": {
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal/seas5_hindcast_sample.parquet",
+      "rows": 7700,
+      "bytes": 494179
+    },
+    "forecast": {
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal/seas5_forecast_sample.parquet",
+      "rows": 15708,
+      "bytes": 956031
+    },
+    "ncep_cfsv2_hindcast": {
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal/ncep_cfsv2_hindcast_sample.parquet",
+      "rows": 8624,
+      "bytes": 568156
+    },
+    "ncep_cfsv2_forecast": {
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal/ncep_cfsv2_forecast_sample.parquet",
+      "rows": 38192,
+      "bytes": 2119944
+    },
+    "climate_normal": {
+      "path": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal/climate_normal_monthly.parquet",
+      "rows": 11016,
+      "bytes": 128776,
+      "first_issue": "2018-01-01",
+      "last_issue": "2026-06-01"
+    }
+  }
+}

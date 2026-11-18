@@ -1,0 +1,44 @@
+{
+  "enabled": false,
+  "provider": "copernicus_cfsv2",
+  "dataset": "seasonal-monthly-single-levels",
+  "originating_centre": "ncep",
+  "system": "2",
+  "progress_path": "reports/phase5b_ncep_progress.json",
+  "texas_area_nwse": [36.5, -106.75, 25.75, -93.5],
+  "variables": [
+    "2m_temperature",
+    "2m_dewpoint_temperature",
+    "10m_u_component_of_wind",
+    "10m_v_component_of_wind",
+    "total_precipitation",
+    "surface_solar_radiation_downwards"
+  ],
+  "leadtime_month": ["1", "2", "3", "4", "5", "6"],
+  "plans": {
+    "priority": {
+      "hindcast_start": "2004-01", "hindcast_end": "2016-12",
+      "forecast_start": "2021-01", "forecast_end": "2026-11"
+    },
+    "project_full": {
+      "hindcast_start": "2004-01", "hindcast_end": "2016-12",
+      "forecast_start": "2019-10", "forecast_end": "2026-11"
+    },
+    "provider_full": {
+      "hindcast_start": "1993-01", "hindcast_end": "2016-12",
+      "forecast_start": "2019-10", "forecast_end": "2026-11"
+    }
+  },
+  "measured_two_lead_sample": {
+    "hindcast_members": 28,
+    "forecast_members": 124,
+    "hindcast_raw_bytes": 202602,
+    "forecast_raw_bytes": 572342,
+    "hindcast_processed_bytes": 553246,
+    "forecast_processed_bytes": 2324422
+  },
+  "minimum_free_gib": 8,
+  "retry_attempts": 4,
+  "retry_base_seconds": 30,
+  "inter_request_seconds": 5
+}

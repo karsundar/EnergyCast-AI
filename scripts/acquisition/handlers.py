@@ -7,6 +7,7 @@ import importlib
 import calendar
 import netrc
 import re
+import time
 from dataclasses import asdict, dataclass
 from html.parser import HTMLParser
 from datetime import date
@@ -173,9 +174,15 @@ def discover_dataset(
     return discover_catalog(dataset, html)
 
 
-def retrieve_cds_chunk(dataset: dict[str, Any], request: dict[str, Any], target: Path) -> None:
+def retrieve_cds_chunk(
+    dataset: dict[str, Any],
+    request: dict[str, Any],
+    target: Path,
+    *,
+    validation_sample: bool = False,
+) -> None:
     """Submit one validated request chunk; credentials remain owned by cdsapi."""
-    if not dataset.get("enabled", True):
+    if not dataset.get("enabled", True) and not validation_sample:
         raise ValueError(f"{dataset['id']}: CDS execution is disabled pending request validation")
     if not _cds_auth_available():
         raise ValueError(f"{dataset['id']}: CDS authentication is not configured")
@@ -184,13 +191,28 @@ def retrieve_cds_chunk(dataset: dict[str, Any], request: dict[str, Any], target:
     except ImportError as exc:
         raise ValueError("cdsapi is required for CDS downloads") from exc
     client = cdsapi.Client(quiet=True)
-    client.retrieve(str(dataset["request_parameters"]["dataset"]), request, str(target))
+    retries = int(dataset.get("request_parameters", {}).get("max_retries", 3))
+    base_delay = float(dataset.get("request_parameters", {}).get("retry_backoff_seconds", 2.0))
+    for attempt in range(retries + 1):
+        try:
+            client.retrieve(str(dataset["request_parameters"]["dataset"]), request, str(target))
+            return
+        except Exception as exc:
+            status = getattr(exc, "status", None) or getattr(exc, "status_code", None) or getattr(exc, "code", None)
+            match = re.search(r"(?:HTTP[^0-9]*)?(429|503)", str(exc), re.IGNORECASE)
+            transient = status in {429, 503} or match is not None
+            if not transient or attempt >= retries:
+                raise
+            target.unlink(missing_ok=True)
+            time.sleep(base_delay * (2**attempt))
 
 
-def plan_cds_requests(dataset: dict[str, Any]) -> list[tuple[str, dict[str, Any]]]:
+def plan_cds_requests(
+    dataset: dict[str, Any], *, validation_sample: bool = False
+) -> list[tuple[str, dict[str, Any]]]:
     """Create bounded monthly requests without submitting them."""
     parameters = dataset["request_parameters"]
-    if parameters.get("validated") is not True:
+    if parameters.get("validated") is not True and not validation_sample:
         raise ValueError(f"{dataset['id']}: CDS request parameters are not validated")
     start = date.fromisoformat(str(dataset["required_start"]))
     end = date.fromisoformat(str(dataset["required_end"]))
@@ -205,6 +227,7 @@ def plan_cds_requests(dataset: dict[str, Any]) -> list[tuple[str, dict[str, Any]
             "data_format": parameters["data_format"],
         }
         if dataset["id"] == "era5_historical_weather":
+            request["product_type"] = parameters.get("product_type", "reanalysis")
             request["day"] = [f"{day:02d}" for day in range(1, calendar.monthrange(year, month)[1] + 1)]
             request["time"] = [f"{hour:02d}:00" for hour in range(24)]
             if "download_format" in parameters:

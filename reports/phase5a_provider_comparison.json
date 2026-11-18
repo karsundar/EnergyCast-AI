@@ -1,0 +1,54 @@
+{
+  "status": "bounded_validation_complete",
+  "recommended_primary": "copernicus_cds_ecmwf_seas5_system_51",
+  "recommended_secondary": "copernicus_cds_ncep_cfsv2_system_2",
+  "providers": {
+    "seas5": {
+      "hindcast_period": "1981-2016",
+      "forecast_period": "2017-present",
+      "sample_hindcast_members": 25,
+      "sample_forecast_members": 51,
+      "release_delay": "normally 6th at 12 UTC",
+      "texas_subset": true,
+      "required_variables": "complete",
+      "validated_leads": [1, 2],
+      "catalogue_leads": [1, 2, 3, 4, 5, 6]
+    },
+    "copernicus_ncep_cfsv2": {
+      "hindcast_period": "1993-2016",
+      "forecast_period": "2019-10-present",
+      "sample_hindcast_members": 28,
+      "sample_forecast_members": 124,
+      "release_delay": "normally 10th at 12 UTC",
+      "texas_subset": true,
+      "required_variables": "complete",
+      "validated_leads": [1, 2],
+      "catalogue_leads": [1, 2, 3, 4, 5, 6]
+    },
+    "noaa_ncei_cfsv2_direct": {
+      "authentication": "none",
+      "texas_subset": false,
+      "required_variables": "incomplete in selected FLX artifact",
+      "missing": ["10m_v_component_of_wind"],
+      "decision": "sample-only; reject for bulk"
+    },
+    "climate_normal": {
+      "type": "leakage-safe baseline",
+      "use": "leads beyond validated dynamical range",
+      "rows": 11016
+    }
+  },
+  "leakage_controls": [
+    "Retrospective hindcasts have no synthetic real-time availability timestamp.",
+    "Archived forecasts preserve scheduled provider release timestamps.",
+    "forecastMonth 1 targets the initialization calendar month.",
+    "Climate normals use only observations strictly before forecast origin."
+  ],
+  "preliminary_storage": {
+    "seas5_texas_raw_compressed_gib": "0.3-1.0",
+    "ncep_cfsv2_cds_texas_raw_compressed_gib": "0.3-1.0",
+    "normalized_combined_gib": "1-4",
+    "temporary_recommendation_gib": 8
+  },
+  "bulk_authorized": false
+}

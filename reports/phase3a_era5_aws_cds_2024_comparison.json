@@ -1,0 +1,140 @@
+{
+  "accumulation_semantics": {
+    "comparison": "values compared directly without differencing or temporal summation",
+    "ssrd": "one-hour accumulation ending at valid_time, joules per square metre",
+    "tp": "one-hour accumulation ending at valid_time, metres of water equivalent"
+  },
+  "aws_path": "data/raw/era5_historical_weather/aws_sample_era5_2024_01.nc",
+  "cds_directory": "data/raw/era5_historical_weather/sample_era5_2024_01",
+  "coordinates": {
+    "latitude": {
+      "aws_count": 44,
+      "cds_count": 44,
+      "exact": true,
+      "max_abs_difference": 0.0
+    },
+    "longitude": {
+      "aws_count": 54,
+      "cds_count": 54,
+      "exact": true,
+      "max_abs_difference": 0.0
+    },
+    "valid_time": {
+      "aws_count": 4,
+      "cds_count": 4,
+      "exact": true,
+      "max_abs_difference": 0.0
+    }
+  },
+  "status": "equivalent",
+  "variables": {
+    "d2m": {
+      "absolute_tolerance": 0.0005,
+      "aws_dtype": "float32",
+      "aws_step_type": "instant",
+      "aws_units": "K",
+      "cds_dtype": "float32",
+      "cds_step_type": "instant",
+      "cds_units": "K",
+      "exact_fraction": 0.75,
+      "maximum_absolute_difference": 0.00018310546875,
+      "mean_absolute_difference": 4.57763671875e-05,
+      "shape": [
+        4,
+        44,
+        54
+      ],
+      "within_tolerance": true
+    },
+    "ssrd": {
+      "absolute_tolerance": 1.0,
+      "aws_dtype": "float32",
+      "aws_step_type": "accum",
+      "aws_units": "J m**-2",
+      "cds_dtype": "float32",
+      "cds_step_type": "accum",
+      "cds_units": "J m**-2",
+      "exact_fraction": 1.0,
+      "maximum_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0,
+      "shape": [
+        4,
+        44,
+        54
+      ],
+      "within_tolerance": true
+    },
+    "t2m": {
+      "absolute_tolerance": 0.0005,
+      "aws_dtype": "float32",
+      "aws_step_type": "instant",
+      "aws_units": "K",
+      "cds_dtype": "float32",
+      "cds_step_type": "instant",
+      "cds_units": "K",
+      "exact_fraction": 0.0,
+      "maximum_absolute_difference": 0.000244140625,
+      "mean_absolute_difference": 0.00016021728515625,
+      "shape": [
+        4,
+        44,
+        54
+      ],
+      "within_tolerance": true
+    },
+    "tp": {
+      "absolute_tolerance": 3e-06,
+      "aws_dtype": "float32",
+      "aws_step_type": "accum",
+      "aws_units": "m",
+      "cds_dtype": "float32",
+      "cds_step_type": "accum",
+      "cds_units": "m",
+      "exact_fraction": 0.9453914141414141,
+      "maximum_absolute_difference": 1.1920928955078125e-06,
+      "mean_absolute_difference": 2.0043817834822016e-08,
+      "shape": [
+        4,
+        44,
+        54
+      ],
+      "within_tolerance": true
+    },
+    "u10": {
+      "absolute_tolerance": 0.0001,
+      "aws_dtype": "float32",
+      "aws_step_type": "instant",
+      "aws_units": "m s**-1",
+      "cds_dtype": "float32",
+      "cds_step_type": "instant",
+      "cds_units": "m s**-1",
+      "exact_fraction": 1.0,
+      "maximum_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0,
+      "shape": [
+        4,
+        44,
+        54
+      ],
+      "within_tolerance": true
+    },
+    "v10": {
+      "absolute_tolerance": 0.0001,
+      "aws_dtype": "float32",
+      "aws_step_type": "instant",
+      "aws_units": "m s**-1",
+      "cds_dtype": "float32",
+      "cds_step_type": "instant",
+      "cds_units": "m s**-1",
+      "exact_fraction": 1.0,
+      "maximum_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0,
+      "shape": [
+        4,
+        44,
+        54
+      ],
+      "within_tolerance": true
+    }
+  }
+}

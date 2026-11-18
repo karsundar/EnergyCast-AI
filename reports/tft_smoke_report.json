@@ -1,0 +1,90 @@
+{
+  "status": "passed",
+  "torch_version": "2.13.0+rocm10.1.0",
+  "hip_version": "7.16.26385",
+  "gpu": "AMD Radeon AI PRO R9700",
+  "precision": "32-true",
+  "epochs": 3,
+  "architecture": "small",
+  "decoder_target_derived_features": [],
+  "results": [
+    {
+      "target_name": "total_energy_mwh",
+      "training_cutoff": "2019-12-01",
+      "validation_period": "2020-01 through 2020-12",
+      "training_sequences": 1305,
+      "validation_sequences": 9,
+      "parameters": 28238,
+      "duration_seconds": 11.402696992001438,
+      "seconds_per_epoch": 3.8008989973338125,
+      "peak_allocated_bytes": 81737216,
+      "peak_reserved_bytes": 81788928,
+      "cpu_max_rss_kib": 3267200,
+      "best_checkpoint": "models/tft/smoke/total_energy_mwh/epoch=02-val_loss=350916.156250-v1.ckpt",
+      "checkpoint_bytes": 865717,
+      "prediction_shape": [
+        9,
+        12,
+        3
+      ],
+      "prediction_finite": true,
+      "gradient_finite": true,
+      "epoch_metrics": [
+        {
+          "epoch": 0.0,
+          "train_loss_epoch": 544808.9375,
+          "val_loss": 593168.5625
+        },
+        {
+          "epoch": 1.0,
+          "train_loss_epoch": 261074.75,
+          "val_loss": 395741.25
+        },
+        {
+          "epoch": 2.0,
+          "train_loss_epoch": 216246.828125,
+          "val_loss": 350916.15625
+        }
+      ]
+    },
+    {
+      "target_name": "peak_demand_mw",
+      "training_cutoff": "2019-12-01",
+      "validation_period": "2020-01 through 2020-12",
+      "training_sequences": 1305,
+      "validation_sequences": 9,
+      "parameters": 28238,
+      "duration_seconds": 8.573398710999754,
+      "seconds_per_epoch": 2.8577995703332513,
+      "peak_allocated_bytes": 81750528,
+      "peak_reserved_bytes": 83886080,
+      "cpu_max_rss_kib": 3282012,
+      "best_checkpoint": "models/tft/smoke/peak_demand_mw/epoch=01-val_loss=808.245972-v1.ckpt",
+      "checkpoint_bytes": 865717,
+      "prediction_shape": [
+        9,
+        12,
+        3
+      ],
+      "prediction_finite": true,
+      "gradient_finite": true,
+      "epoch_metrics": [
+        {
+          "epoch": 0.0,
+          "train_loss_epoch": 1321.4945068359375,
+          "val_loss": 1162.237060546875
+        },
+        {
+          "epoch": 1.0,
+          "train_loss_epoch": 772.5564575195312,
+          "val_loss": 808.2459716796875
+        },
+        {
+          "epoch": 2.0,
+          "train_loss_epoch": 537.2013549804688,
+          "val_loss": 816.9872436523438
+        }
+      ]
+    }
+  ]
+}

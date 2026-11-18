@@ -1,0 +1,35 @@
+{
+  "static_variables": {
+    "geography": 0.18969399245230167,
+    "encoder_length": 0.3499158776624989,
+    "target_value_center": 0.13765851809483354,
+    "target_value_scale": 0.3227316117903659
+  },
+  "encoder_variables": {
+    "month_of_year": 0.03718036995335588,
+    "quarter": 0.13495260691340805,
+    "season": 0.4061452774476317,
+    "time_idx": 0.08473548778378429,
+    "days_in_month": 0.02784986669429341,
+    "weekday_count": 0.023086606621896204,
+    "weekend_count": 0.04405986022820208,
+    "holiday_count": 0.05898781557702069,
+    "month_sin": 0.043732144693806145,
+    "month_cos": 0.02646520525258371,
+    "relative_time_idx": 0.015641749129320513,
+    "target_value": 0.09716300970469739
+  },
+  "decoder_variables": {
+    "month_of_year": 0.058270035520865834,
+    "quarter": 0.09002443381828959,
+    "season": 0.007611430916282015,
+    "time_idx": 0.09435057347794748,
+    "days_in_month": 0.05964437179677233,
+    "weekday_count": 0.09892652911079156,
+    "weekend_count": 0.11363944279126928,
+    "holiday_count": 0.12196893119475131,
+    "month_sin": 0.10164948298819243,
+    "month_cos": 0.17408022423235772,
+    "relative_time_idx": 0.07983454415248041
+  }
+}

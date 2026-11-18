@@ -1,0 +1,50 @@
+{
+  "enabled": false,
+  "provider": "copernicus_seas5",
+  "dataset": "seasonal-monthly-single-levels",
+  "originating_centre": "ecmwf",
+  "system": "51",
+  "progress_path": "reports/phase5b_seasonal_progress.json",
+  "texas_area_nwse": [36.5, -106.75, 25.75, -93.5],
+  "variables": [
+    "2m_temperature",
+    "2m_dewpoint_temperature",
+    "10m_u_component_of_wind",
+    "10m_v_component_of_wind",
+    "total_precipitation",
+    "surface_solar_radiation_downwards"
+  ],
+  "leadtime_month": ["1", "2", "3", "4", "5", "6"],
+  "plans": {
+    "priority": {
+      "hindcast_start": "2004-01",
+      "hindcast_end": "2016-12",
+      "forecast_start": "2021-01",
+      "forecast_end": "2026-11"
+    },
+    "project_full": {
+      "hindcast_start": "2004-01",
+      "hindcast_end": "2016-12",
+      "forecast_start": "2017-01",
+      "forecast_end": "2026-11"
+    },
+    "provider_full": {
+      "hindcast_start": "1981-01",
+      "hindcast_end": "2016-12",
+      "forecast_start": "2017-01",
+      "forecast_end": "2026-11"
+    }
+  },
+  "measured_two_lead_sample": {
+    "hindcast_members": 25,
+    "forecast_members": 51,
+    "hindcast_raw_bytes": 188049,
+    "forecast_raw_bytes": 293874,
+    "hindcast_processed_bytes": 494179,
+    "forecast_processed_bytes": 956031
+  },
+  "minimum_free_gib": 8,
+  "retry_attempts": 4,
+  "retry_base_seconds": 30,
+  "inter_request_seconds": 5
+}

@@ -8,9 +8,17 @@ reports/acquisition.json
 # Python
 __pycache__/
 *.py[cod]
-.venv/
+.venv*/
+venv*/
+env*/
 .pytest_cache/
 .ruff_cache/
+
+# Runtime state (reports and reproducible model artifacts remain tracked)
+logs/
+lightning_logs/
+*.pid
+reports/*.log
 
 # Local configuration and secrets
 .env

@@ -1,0 +1,106 @@
+{
+  "artifact": {
+    "bytes": 283758,
+    "path": "data/raw/era5_historical_weather/copernicus_arco_sample_era5_2024_01.nc",
+    "sha256": "44139f47cf938cda99cdcd5027f78bc8d61724a32bb8e258ab71b1509b26ec85"
+  },
+  "created_at": "2026-11-15T13:01:18.899672+00:00",
+  "dimensions": {
+    "latitude": 44,
+    "longitude": 54,
+    "valid_time": 4
+  },
+  "dtypes": {
+    "d2m": "float32",
+    "ssrd": "float32",
+    "t2m": "float32",
+    "tp": "float32",
+    "u10": "float32",
+    "v10": "float32"
+  },
+  "missing_values": {
+    "d2m": 0,
+    "ssrd": 0,
+    "t2m": 0,
+    "tp": 0,
+    "u10": 0,
+    "v10": 0
+  },
+  "performance": {
+    "host_network_received_bytes": 53141983,
+    "local_netcdf_write_seconds": 0.06443194600001334,
+    "note": "network bytes are a host-interface delta and may include unrelated host traffic",
+    "peak_rss_bytes": 578076672,
+    "remote_read_seconds": 132.2660591240001,
+    "total_seconds": 142.12310524100008
+  },
+  "provider": {
+    "provider": "copernicus_arco",
+    "url": "https://arco.datastores.ecmwf.int/cadl-arco-time-002/arco/reanalysis_era5_single_levels/sfc/timeChunked.zarr",
+    "valid_time_start": "1940-01-01T00:00:00.000000000",
+    "valid_time_stop": "2026-11-08T23:00:00.000000000"
+  },
+  "request": {
+    "bounds": [
+      36.5,
+      -106.75,
+      25.75,
+      -93.5
+    ],
+    "timestamps": [
+      "2024-01-01T00:00:00",
+      "2024-01-01T06:00:00",
+      "2024-01-01T12:00:00",
+      "2024-01-01T18:00:00"
+    ],
+    "variables": [
+      "t2m",
+      "d2m",
+      "u10",
+      "v10",
+      "tp",
+      "ssrd"
+    ]
+  },
+  "source_chunking": {
+    "d2m": [
+      1,
+      721,
+      1024
+    ],
+    "ssrd": [
+      1,
+      721,
+      1024
+    ],
+    "t2m": [
+      1,
+      721,
+      1024
+    ],
+    "tp": [
+      1,
+      721,
+      1024
+    ],
+    "u10": [
+      1,
+      721,
+      1024
+    ],
+    "v10": [
+      1,
+      721,
+      1024
+    ]
+  },
+  "status": "validated",
+  "units": {
+    "d2m": "K",
+    "ssrd": "J m**-2",
+    "t2m": "K",
+    "tp": "m",
+    "u10": "m s**-1",
+    "v10": "m s**-1"
+  }
+}

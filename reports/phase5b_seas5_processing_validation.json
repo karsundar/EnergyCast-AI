@@ -1,0 +1,80 @@
+{
+  "status": "validated",
+  "source_provider": "ecmwf_seas5_system_51",
+  "member_rows": 406134,
+  "ensemble_rows": 12258,
+  "operational_rows": 7668,
+  "climate_fallback_rows": 3834,
+  "member_duplicates": 0,
+  "ensemble_duplicates": 0,
+  "issue_coverage": [
+    "2004-01-01T00:00:00+00:00",
+    "2026-11-01T00:00:00+00:00"
+  ],
+  "target_coverage": [
+    "2004-01-01 00:00:00",
+    "2027-04-01 00:00:00"
+  ],
+  "hindcast_member_counts": [
+    25
+  ],
+  "forecast_member_counts": [
+    51
+  ],
+  "hindcast_available_at_nonnull": 0,
+  "operational_leads": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "operational_duplicate_keys": 0,
+  "dynamic_forecast_rows": 3834,
+  "numeric_nulls": {
+    "lead_month": 0,
+    "ensemble_member_count": 0,
+    "temperature_mean_c_mean": 0,
+    "temperature_mean_c_p10": 0,
+    "temperature_mean_c_p50": 0,
+    "temperature_mean_c_p90": 0,
+    "dewpoint_mean_c_mean": 0,
+    "dewpoint_mean_c_p10": 0,
+    "dewpoint_mean_c_p50": 0,
+    "dewpoint_mean_c_p90": 0,
+    "relative_humidity_pct_mean": 0,
+    "relative_humidity_pct_p10": 0,
+    "relative_humidity_pct_p50": 0,
+    "relative_humidity_pct_p90": 0,
+    "wind_speed_mps_mean": 0,
+    "wind_speed_mps_p10": 0,
+    "wind_speed_mps_p50": 0,
+    "wind_speed_mps_p90": 0,
+    "precipitation_mm_mean": 0,
+    "precipitation_mm_p10": 0,
+    "precipitation_mm_p50": 0,
+    "precipitation_mm_p90": 0,
+    "solar_energy_mj_m2_mean": 0,
+    "solar_energy_mj_m2_p10": 0,
+    "solar_energy_mj_m2_p50": 0,
+    "solar_energy_mj_m2_p90": 0
+  },
+  "mapping_approximate": true,
+  "daily_extremes_fabricated": false,
+  "climate_fallback_unavailable_fields": [
+    "dewpoint_mean_c"
+  ],
+  "runtime_seconds": 2.2676772940030787,
+  "outputs": {
+    "member": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal/regional/seas5_member_monthly.parquet",
+    "ensemble": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal/regional/seas5_ensemble_monthly.parquet",
+    "operational": "/home/karthiks/src/EnergyCast-AI/data/processed/weather/seasonal/regional/seas5_operational_12month.parquet"
+  }
+}

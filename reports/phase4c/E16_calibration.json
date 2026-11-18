@@ -1,0 +1,60 @@
+{
+  "total_energy_mwh": {
+    "base": "E10",
+    "selection_objective": "pinball",
+    "selected_method": "scale_normalized",
+    "development_scores": {
+      "relative": {
+        "wape": 3.328226736064996,
+        "coverage": 0.5825617283950617,
+        "mean_interval_width": 472565.22045784694,
+        "mean_pinball_loss": 81406.49421774229,
+        "bias": 76303.46452531235
+      },
+      "scale_normalized": {
+        "wape": 3.1985344067800154,
+        "coverage": 0.5841049382716049,
+        "mean_interval_width": 451884.9185649071,
+        "mean_pinball_loss": 79583.84916964722,
+        "bias": 68547.07587819167
+      }
+    },
+    "group_calibrations": 108,
+    "target_coverage": 0.8,
+    "interval_inflation": {
+      "minimum": 0.924443506359706,
+      "median": 1.5566368777191353,
+      "maximum": 4.913697334519951,
+      "holdout_coverage": 0.8055555555555556
+    }
+  },
+  "peak_demand_mw": {
+    "base": "E1",
+    "selection_objective": "pinball",
+    "selected_method": "scale_normalized",
+    "development_scores": {
+      "relative": {
+        "wape": 4.449028744885646,
+        "coverage": 0.5787037037037037,
+        "mean_interval_width": 1805.7915605268586,
+        "mean_pinball_loss": 220.45864445868915,
+        "bias": 387.7111138167187
+      },
+      "scale_normalized": {
+        "wape": 4.436821180407911,
+        "coverage": 0.5640432098765432,
+        "mean_interval_width": 1653.6986425065904,
+        "mean_pinball_loss": 215.19751604455914,
+        "bias": 393.00396159294934
+      }
+    },
+    "group_calibrations": 108,
+    "target_coverage": 0.8,
+    "interval_inflation": {
+      "minimum": 1.0929320934718387,
+      "median": 1.5545307736026974,
+      "maximum": 4.657449131500549,
+      "holdout_coverage": 0.8055555555555556
+    }
+  }
+}

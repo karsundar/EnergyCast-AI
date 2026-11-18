@@ -1,0 +1,33 @@
+{
+  "years": {
+    "2004": "cache_hit",
+    "2005": "cache_hit",
+    "2006": "cache_hit",
+    "2007": "cache_hit",
+    "2008": "cache_hit",
+    "2009": "cache_hit",
+    "2010": "cache_hit",
+    "2011": "cache_hit",
+    "2012": "cache_hit",
+    "2013": "cache_hit",
+    "2014": "cache_hit",
+    "2015": "cache_hit",
+    "2016": "cache_hit",
+    "2017": "cache_hit",
+    "2018": "cache_hit",
+    "2019": "cache_hit",
+    "2020": "cache_hit",
+    "2021": "cache_hit",
+    "2022": "cache_hit",
+    "2023": "cache_hit",
+    "2024": "cache_hit",
+    "2025": "cache_hit",
+    "2026": "cache_hit"
+  },
+  "integrated": {
+    "hourly": 1768338,
+    "daily": 73683,
+    "monthly": 2421
+  },
+  "elapsed_seconds": 0.7120276900004683
+}

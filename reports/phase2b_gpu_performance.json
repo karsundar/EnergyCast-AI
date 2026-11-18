@@ -1,0 +1,44 @@
+{
+  "device": "AMD Radeon AI PRO R9700",
+  "torch": "2.13.0+rocm10.1.0",
+  "hip": "7.16.26385",
+  "measurements": [
+    {
+      "target_name": "total_energy_mwh",
+      "best_checkpoint": "models/tft/small/total_energy_mwh/epoch=009-val_loss=363303.750000-v1.ckpt",
+      "best_validation_loss": 363303.75,
+      "epochs_completed": null,
+      "reused_checkpoint": true,
+      "training_duration_seconds": null,
+      "average_epoch_seconds": null,
+      "inference_duration_seconds": 2.316186761003337,
+      "parameters": 28238,
+      "checkpoint_bytes": 866228,
+      "peak_allocated_bytes": 36804608,
+      "peak_reserved_bytes": 37748736,
+      "cpu_max_rss_kib": 2744692,
+      "training_sequences": 1089,
+      "validation_sequences": 225,
+      "test_sequences": 531
+    },
+    {
+      "target_name": "peak_demand_mw",
+      "best_checkpoint": "models/tft/small/peak_demand_mw/epoch=005-val_loss=727.513306.ckpt",
+      "best_validation_loss": 727.5133056640625,
+      "epochs_completed": 17,
+      "reused_checkpoint": false,
+      "training_duration_seconds": 32.005276831994706,
+      "average_epoch_seconds": 1.8826633430585122,
+      "inference_duration_seconds": 0.32673069299926283,
+      "parameters": 28238,
+      "checkpoint_bytes": 866164,
+      "peak_allocated_bytes": 81734656,
+      "peak_reserved_bytes": 83886080,
+      "cpu_max_rss_kib": 3310576,
+      "training_sequences": 1089,
+      "validation_sequences": 225,
+      "test_sequences": 531
+    }
+  ],
+  "note": "GPU utilization percentage was not sampled during training and is unavailable; no value is fabricated."
+}

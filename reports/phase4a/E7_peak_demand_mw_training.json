@@ -1,0 +1,25 @@
+{
+  "status": "stopped_by_user_after_plateau",
+  "experiment": "E7",
+  "target": "peak_demand_mw",
+  "oracle_weather": true,
+  "frequency": "daily",
+  "validation_loss": 361.51513671875,
+  "final_completed_validation_loss": 362.8056335449219,
+  "best_checkpoint": "/home/karthiks/src/EnergyCast-AI/models/phase4a/E7/peak_demand_mw/epoch=023-val_loss=361.515137.ckpt",
+  "best_epoch": 23,
+  "completed_epochs": 29,
+  "interrupted_epoch": 29,
+  "decoder_target_known": false,
+  "performance_configuration": {
+    "batch_size": 512,
+    "num_workers": 0,
+    "persistent_workers": false,
+    "pin_memory": false,
+    "prefetch_factor": null,
+    "precision": "32-true",
+    "deterministic": "warn"
+  },
+  "checkpoint_valid": true,
+  "final_report_reconstructed_from_metrics": true
+}

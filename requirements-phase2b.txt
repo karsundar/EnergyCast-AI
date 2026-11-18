@@ -1,0 +1,6 @@
+-r requirements-phase2.txt
+-c constraints-phase2b-rocm.txt
+
+torch[device-gfx1201]==2.13.0+rocm10.1.0
+lightning==2.6.6
+pytorch-forecasting==1.8.0

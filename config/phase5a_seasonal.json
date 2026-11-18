@@ -1,0 +1,62 @@
+{
+  "enabled": false,
+  "texas_area_nwse": [36.5, -106.75, 25.75, -93.5],
+  "variables": [
+    "2m_temperature",
+    "2m_dewpoint_temperature",
+    "10m_u_component_of_wind",
+    "10m_v_component_of_wind",
+    "total_precipitation",
+    "surface_solar_radiation_downwards"
+  ],
+  "providers": {
+    "copernicus_seas5": {
+      "dataset": "seasonal-monthly-single-levels",
+      "originating_centre": "ecmwf",
+      "system": "51",
+      "forecast_start": "2017-01",
+      "hindcast_start": "1981-01",
+      "hindcast_end": "2016-12",
+      "lead_months": [1, 2, 3, 4, 5, 6],
+      "forecast_members": 51,
+      "hindcast_members": 25,
+      "release_rule": "normally available on the 6th at 12 UTC; record actual availability",
+      "authentication": "CDS account and ~/.cdsapirc",
+      "licences": ["CC-BY", "non-European contribution terms"],
+      "sample_forecast": {"year": "2024", "month": "01", "leadtime_month": ["1", "2"]},
+      "sample_hindcast": {"year": "2016", "month": "01", "leadtime_month": ["1", "2"]}
+    },
+    "copernicus_cfsv2": {
+      "dataset": "seasonal-monthly-single-levels",
+      "originating_centre": "ncep",
+      "system": "2",
+      "forecast_start": "2019-10",
+      "hindcast_start": "1993-01",
+      "hindcast_end": "2016-12",
+      "lead_months": [1, 2, 3, 4, 5, 6],
+      "release_rule": "normally available on the 10th at 12 UTC; record actual availability",
+      "authentication": "CDS account and ~/.cdsapirc",
+      "licences": ["CC-BY", "non-European contribution terms"],
+      "sample_forecast": {"year": "2024", "month": "01", "leadtime_month": ["1", "2"]},
+      "sample_hindcast": {"year": "2016", "month": "01", "leadtime_month": ["1", "2"]}
+    },
+    "noaa_cfsv2": {
+      "operational_start": "2011-04",
+      "reforecast_start": "1981-12",
+      "reforecast_end": "2011-03",
+      "lead_months": 9,
+      "format": "GRIB2",
+      "authentication": "none",
+      "licence": "US government public data",
+      "operational_aws": "s3://noaa-cfs-pds",
+      "historical_archive": "https://www.ncei.noaa.gov/products/weather-climate-models/climate-forecast-system",
+      "warning": "AWS objects are global; validate NCEI subset access before acquisition"
+    }
+  },
+  "climate_normal": {
+    "method": "expanding calendar-month mean using observations strictly before issue_date",
+    "minimum_years": 10,
+    "use_for_leads_after": 6,
+    "label": "climate_normal_not_dynamical_forecast"
+  }
+}

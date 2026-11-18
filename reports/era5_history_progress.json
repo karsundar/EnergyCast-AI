@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-11-14T23:40:20-06:00",
+  "updated_at": "2026-11-15T07:08:15-06:00",
+  "requested_period": {"start": "2004-01", "end": "2026-10", "month_count": 274},
+  "service_status": {
+    "message": "Number of available slots for this dataset has been reached. Please try again later",
+    "running_requests": 100,
+    "queued_requests": 1906
+  },
+  "summary": {"validated_months": 1, "queued_months": 0, "pending_months": 273, "failed_months": 0},
+  "months": {
+    "2004-01": {
+      "status": "validated",
+      "submitted_at": "2026-11-14T23:50:35-06:00",
+      "local_waiter_exit_code": null,
+      "artifact_available": true,
+      "path": "data/raw/era5_historical_weather/era5_2004_01.zip",
+      "bytes": 16570247,
+      "sha256": "cd50e4fec24b924f254c06f3b362885e422ffc45bc1ab79db25237778d08d8a3",
+      "note": "Completed CDS result was downloaded manually, copied into the project, safely extracted and validated. No additional CDS month was submitted."
+    }
+  },
+  "pending_range": {"start": "2004-02", "end": "2026-10", "month_count": 273},
+  "stop_reason": null
+}

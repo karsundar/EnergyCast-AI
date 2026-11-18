@@ -1,0 +1,1971 @@
+{
+  "status": "complete",
+  "workers": 8,
+  "lightgbm_threads_per_worker": 2,
+  "residual_transform_selection": [
+    {
+      "experiment": "E8",
+      "target": "total_energy_mwh",
+      "selected": null,
+      "validation_wape": {},
+      "interval_source": "2018-2020 development residuals"
+    },
+    {
+      "experiment": "E8",
+      "target": "peak_demand_mw",
+      "selected": null,
+      "validation_wape": {},
+      "interval_source": "2018-2020 development residuals"
+    },
+    {
+      "experiment": "E9",
+      "target": "total_energy_mwh",
+      "selected": "level",
+      "validation_wape": {
+        "level": 4.1768562005788406,
+        "growth": 4.267732725204889
+      },
+      "interval_source": "2018-2020 development residuals"
+    },
+    {
+      "experiment": "E9",
+      "target": "peak_demand_mw",
+      "selected": "level",
+      "validation_wape": {
+        "level": 5.813848232671307,
+        "growth": 5.969032817148612
+      },
+      "interval_source": "2018-2020 development residuals"
+    },
+    {
+      "experiment": "E10",
+      "target": "total_energy_mwh",
+      "selected": "level",
+      "validation_wape": {
+        "level": 2.6268522064394206,
+        "growth": 2.6859412672827903
+      },
+      "interval_source": "2018-2020 development residuals"
+    },
+    {
+      "experiment": "E10",
+      "target": "peak_demand_mw",
+      "selected": "level",
+      "validation_wape": {
+        "level": 4.44359502417123,
+        "growth": 4.567610441304335
+      },
+      "interval_source": "2018-2020 development residuals"
+    }
+  ],
+  "tasks": [
+    {
+      "task": "E9:total_energy_mwh:2021-02",
+      "seconds": 0.5018183420033893,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2020-12",
+      "seconds": 0.49252954999974463,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E8:peak_demand_mw:2021-01",
+      "seconds": 0.7689931540007819,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2021-01",
+      "seconds": 0.4694293930006097,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E10:total_energy_mwh:2020-12",
+      "seconds": 1.3398899889944005,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2021-02",
+      "seconds": 0.527903032998438,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2021-01",
+      "seconds": 0.3317868800004362,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E8:total_energy_mwh:2021-02",
+      "seconds": 0.33359947899589315,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2020-12",
+      "seconds": 0.5023041849999572,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E8:peak_demand_mw:2020-12",
+      "seconds": 0.839908984999056,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E8:peak_demand_mw:2021-02",
+      "seconds": 0.7027175779949175,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2020-12",
+      "seconds": 0.3214033619951806,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E9:peak_demand_mw:2021-01",
+      "seconds": 0.511398927999835,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2021-03",
+      "seconds": 0.33393951499601826,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2021-01",
+      "seconds": 1.5716559620050248,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2021-03",
+      "seconds": 0.4766733789947466,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2021-03",
+      "seconds": 0.5131573079997906,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2021-03",
+      "seconds": 0.7204058190036449,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2021-04",
+      "seconds": 0.3269471280000289,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2021-02",
+      "seconds": 1.647408277996874,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2021-04",
+      "seconds": 0.482423020999704,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2021-04",
+      "seconds": 0.6940107720001834,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2021-03",
+      "seconds": 1.383921681001084,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2021-04",
+      "seconds": 0.5054226799984463,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2020-12",
+      "seconds": 4.442096340004355,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E8:total_energy_mwh:2021-05",
+      "seconds": 0.3205202739991364,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2021-05",
+      "seconds": 0.5061394509975798,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E8:peak_demand_mw:2021-05",
+      "seconds": 0.7292026469949633,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2021-05",
+      "seconds": 0.5030139679947752,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2021-06",
+      "seconds": 0.31516233699949225,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2021-04",
+      "seconds": 1.7804548990025069,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2021-06",
+      "seconds": 0.7118834420034545,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2021-01",
+      "seconds": 4.5669300310037215,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E9:total_energy_mwh:2021-06",
+      "seconds": 0.4853889669975615,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2021-06",
+      "seconds": 0.5262349650001852,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2021-05",
+      "seconds": 1.644354388001375,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E10:peak_demand_mw:2021-02",
+      "seconds": 4.723653301996819,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2021-07",
+      "seconds": 0.3208292010021978,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2021-07",
+      "seconds": 0.49575858499883907,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2021-07",
+      "seconds": 0.8091698729986092,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E9:peak_demand_mw:2021-07",
+      "seconds": 0.5164627810008824,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2021-08",
+      "seconds": 0.33402386600209866,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2021-03",
+      "seconds": 4.748241724999389,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2021-06",
+      "seconds": 1.7987268759970902,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E9:total_energy_mwh:2021-08",
+      "seconds": 0.4729892550021759,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2021-08",
+      "seconds": 0.524340507996385,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E8:peak_demand_mw:2021-08",
+      "seconds": 0.8180167190002976,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2021-04",
+      "seconds": 4.612995816001785,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2021-09",
+      "seconds": 0.33366568999917945,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2021-07",
+      "seconds": 1.6455778759991517,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2021-09",
+      "seconds": 0.492652831999294,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2021-05",
+      "seconds": 4.389627377000579,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2021-09",
+      "seconds": 0.7694518440039246,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2021-09",
+      "seconds": 0.5235901269988972,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2021-10",
+      "seconds": 0.34241315699910047,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2021-08",
+      "seconds": 1.592593183995632,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2021-10",
+      "seconds": 0.5319458279991522,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2021-10",
+      "seconds": 0.8513739170011831,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2021-10",
+      "seconds": 0.551723584998399,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2021-11",
+      "seconds": 0.35807845200179145,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2021-06",
+      "seconds": 4.632800990999385,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2021-09",
+      "seconds": 1.7155624730003183,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2021-11",
+      "seconds": 0.5004808710000361,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2021-11",
+      "seconds": 0.5185660769930109,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2021-11",
+      "seconds": 0.8264643820002675,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2021-12",
+      "seconds": 0.32211272699350957,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2021-10",
+      "seconds": 1.6962403419965995,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2021-07",
+      "seconds": 4.8031624629948055,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E9:total_energy_mwh:2021-12",
+      "seconds": 0.5182968409935711,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2021-12",
+      "seconds": 0.5248378440010129,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E8:peak_demand_mw:2021-12",
+      "seconds": 0.8748616009979742,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2021-11",
+      "seconds": 1.535333952997462,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2021-08",
+      "seconds": 4.557131292000122,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E8:total_energy_mwh:2022-01",
+      "seconds": 0.33870814100373536,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2022-01",
+      "seconds": 0.47782247900613584,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E9:peak_demand_mw:2022-01",
+      "seconds": 0.5648450110020349,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2022-01",
+      "seconds": 0.9261030569978175,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2021-09",
+      "seconds": 4.646983674996591,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2022-02",
+      "seconds": 0.3259170719975373,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2021-12",
+      "seconds": 2.073733978999371,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2022-02",
+      "seconds": 0.5100812179953209,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2022-02",
+      "seconds": 0.7911104810045799,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2021-10",
+      "seconds": 4.715938853994885,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2022-02",
+      "seconds": 0.5353434610005934,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2022-01",
+      "seconds": 1.7149343249984668,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E8:total_energy_mwh:2022-03",
+      "seconds": 0.3591924700012896,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2022-03",
+      "seconds": 0.5096444139999221,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E9:peak_demand_mw:2022-03",
+      "seconds": 0.539128566000727,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2022-03",
+      "seconds": 0.8155069440035732,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2022-02",
+      "seconds": 1.3352422390016727,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2022-04",
+      "seconds": 0.35989988199435174,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2021-11",
+      "seconds": 4.876117808002164,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2022-04",
+      "seconds": 0.5137612760008778,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2022-04",
+      "seconds": 0.8719929979997687,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2022-04",
+      "seconds": 0.5206752439989941,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2022-03",
+      "seconds": 1.4840882930002408,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E10:peak_demand_mw:2021-12",
+      "seconds": 4.599487776002206,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E8:total_energy_mwh:2022-05",
+      "seconds": 0.33772356400004355,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2022-05",
+      "seconds": 0.5322389080029097,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E9:peak_demand_mw:2022-05",
+      "seconds": 0.5533766789958463,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2022-05",
+      "seconds": 0.8403292220027652,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E8:total_energy_mwh:2022-06",
+      "seconds": 0.340027165999345,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E10:peak_demand_mw:2022-01",
+      "seconds": 4.77343496800313,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2022-04",
+      "seconds": 1.7167858880056883,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2022-06",
+      "seconds": 0.5046559039983549,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2022-06",
+      "seconds": 0.5335252029981348,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2022-06",
+      "seconds": 0.7928453230051673,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E10:total_energy_mwh:2022-05",
+      "seconds": 1.4406939469990903,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E10:peak_demand_mw:2022-02",
+      "seconds": 4.49654885900236,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2022-07",
+      "seconds": 0.3128660279980977,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E9:total_energy_mwh:2022-07",
+      "seconds": 0.4797869779940811,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2022-07",
+      "seconds": 0.529781577999529,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E8:peak_demand_mw:2022-07",
+      "seconds": 0.8431199210026534,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E8:total_energy_mwh:2022-08",
+      "seconds": 0.33711267200123984,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E10:peak_demand_mw:2022-03",
+      "seconds": 4.6572884659981355,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2022-06",
+      "seconds": 1.6951677369943354,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2022-08",
+      "seconds": 0.5198727859969949,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2022-07",
+      "seconds": 1.4575281309953425,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2022-08",
+      "seconds": 0.5233888439979637,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2022-08",
+      "seconds": 0.8750817740001366,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E8:total_energy_mwh:2022-09",
+      "seconds": 0.3364406299951952,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2022-04",
+      "seconds": 4.845029914002225,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2022-09",
+      "seconds": 0.5302371030047652,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2022-09",
+      "seconds": 0.8366110089991707,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E9:peak_demand_mw:2022-09",
+      "seconds": 0.509861093996733,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2022-10",
+      "seconds": 0.30991085300047416,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2022-05",
+      "seconds": 4.9512963840024895,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2022-08",
+      "seconds": 1.7097863460003282,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2022-10",
+      "seconds": 0.49485257099877344,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2022-10",
+      "seconds": 0.797072476001631,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2022-10",
+      "seconds": 0.5351311560007161,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2022-09",
+      "seconds": 1.522380399001122,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2022-11",
+      "seconds": 0.3270372819970362,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2022-06",
+      "seconds": 4.850982472002215,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2022-11",
+      "seconds": 0.4795902219993877,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2022-11",
+      "seconds": 0.5428178959991783,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2022-11",
+      "seconds": 0.8540889239957323,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2022-07",
+      "seconds": 4.8596398340014275,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E8:total_energy_mwh:2022-12",
+      "seconds": 0.3272084199998062,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2022-10",
+      "seconds": 1.6246545840040199,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2022-12",
+      "seconds": 0.5113070180013892,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2022-12",
+      "seconds": 0.5361513960015145,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2022-12",
+      "seconds": 0.7619938510033535,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E10:total_energy_mwh:2022-11",
+      "seconds": 1.7218621380015975,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2023-01",
+      "seconds": 0.34355129699542886,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E10:peak_demand_mw:2022-08",
+      "seconds": 4.863189135998255,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2023-01",
+      "seconds": 0.50434258000314,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E9:peak_demand_mw:2023-01",
+      "seconds": 0.5517104220052715,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2023-01",
+      "seconds": 0.8661520030000247,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2022-12",
+      "seconds": 1.453055090001726,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2022-09",
+      "seconds": 4.747157058001903,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E8:total_energy_mwh:2023-02",
+      "seconds": 0.324060068000108,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2023-02",
+      "seconds": 0.4849136510019889,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E9:peak_demand_mw:2023-02",
+      "seconds": 0.5392132600027253,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2023-02",
+      "seconds": 0.8333215509992442,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2023-01",
+      "seconds": 1.4662320759962313,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E8:total_energy_mwh:2023-03",
+      "seconds": 0.34481898300145986,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2022-10",
+      "seconds": 4.85901929299871,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2023-03",
+      "seconds": 0.5076516929984791,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2023-03",
+      "seconds": 0.5364069439965533,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2023-03",
+      "seconds": 0.9033960960005061,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E10:total_energy_mwh:2023-02",
+      "seconds": 1.491148102999432,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E8:total_energy_mwh:2023-04",
+      "seconds": 0.3450794800010044,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E10:peak_demand_mw:2022-11",
+      "seconds": 4.79093114999705,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2023-04",
+      "seconds": 0.7718597979983315,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E9:total_energy_mwh:2023-04",
+      "seconds": 0.5078760100004729,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E9:peak_demand_mw:2023-04",
+      "seconds": 0.5326793679996626,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2023-03",
+      "seconds": 1.393532945003244,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2023-05",
+      "seconds": 0.3547856059958576,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2022-12",
+      "seconds": 4.893475553995813,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2023-05",
+      "seconds": 0.511378560004232,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2023-05",
+      "seconds": 0.9026565550011583,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2023-05",
+      "seconds": 0.5226561370000127,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2023-04",
+      "seconds": 1.565398828999605,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E8:total_energy_mwh:2023-06",
+      "seconds": 0.36716149999847403,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2023-01",
+      "seconds": 4.898257993001607,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2023-06",
+      "seconds": 0.48795098600385245,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2023-06",
+      "seconds": 0.8495069529963075,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E9:peak_demand_mw:2023-06",
+      "seconds": 0.5268960770044941,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2023-07",
+      "seconds": 0.36327013700065436,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2023-05",
+      "seconds": 1.7743200679979054,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2023-02",
+      "seconds": 5.025166040002659,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2023-07",
+      "seconds": 0.498442033000174,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2023-07",
+      "seconds": 0.5408160329970997,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2023-06",
+      "seconds": 1.5397023549958249,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2023-07",
+      "seconds": 0.871090049004124,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2023-08",
+      "seconds": 0.3654373809986282,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2023-03",
+      "seconds": 4.96125386699714,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2023-08",
+      "seconds": 0.4999118159976206,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2023-08",
+      "seconds": 0.8590573220062652,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2023-07",
+      "seconds": 1.2222664290020475,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2023-08",
+      "seconds": 0.5265133130014874,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2023-09",
+      "seconds": 0.3551358929980779,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2023-04",
+      "seconds": 5.008833619998768,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E8:peak_demand_mw:2023-09",
+      "seconds": 0.7728914190010983,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2023-09",
+      "seconds": 0.49338735299534164,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2023-09",
+      "seconds": 0.5380169870040845,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E10:total_energy_mwh:2023-08",
+      "seconds": 1.2864679240010446,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2023-10",
+      "seconds": 0.37557921299594454,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E10:peak_demand_mw:2023-05",
+      "seconds": 4.964197340996179,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2023-10",
+      "seconds": 0.5039623190023121,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E9:peak_demand_mw:2023-10",
+      "seconds": 0.5335548889997881,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2023-10",
+      "seconds": 0.9131446450046496,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2023-09",
+      "seconds": 1.624391770004877,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2023-11",
+      "seconds": 0.36261995600216324,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2023-06",
+      "seconds": 5.062409728001512,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E9:total_energy_mwh:2023-11",
+      "seconds": 0.5287431670003571,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2023-11",
+      "seconds": 0.874349144003645,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2023-11",
+      "seconds": 0.544888506999996,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E10:total_energy_mwh:2023-10",
+      "seconds": 1.573122986999806,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E8:total_energy_mwh:2023-12",
+      "seconds": 0.3465355259977514,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E10:peak_demand_mw:2023-07",
+      "seconds": 5.046137172997987,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2023-12",
+      "seconds": 0.5203291969955899,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E8:peak_demand_mw:2023-12",
+      "seconds": 0.8866089099974488,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E9:peak_demand_mw:2023-12",
+      "seconds": 0.5341659640034777,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2023-11",
+      "seconds": 1.5791108970006462,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2023-08",
+      "seconds": 4.957297794004262,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2024-01",
+      "seconds": 0.3720153250033036,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2024-01",
+      "seconds": 0.5191896709948196,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2024-01",
+      "seconds": 0.5433735160040669,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2024-01",
+      "seconds": 0.9682332779993885,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2023-12",
+      "seconds": 1.5073232639988419,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E10:peak_demand_mw:2023-09",
+      "seconds": 5.033168623005622,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2024-02",
+      "seconds": 0.3850366030019359,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2024-02",
+      "seconds": 0.5250335019954946,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2024-02",
+      "seconds": 0.5432055779965594,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2024-01",
+      "seconds": 1.1124594089997117,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2024-02",
+      "seconds": 0.8705264009986422,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E8:total_energy_mwh:2024-03",
+      "seconds": 0.36720507300196914,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2023-10",
+      "seconds": 5.033279955998296,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2024-03",
+      "seconds": 0.5168992190010613,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2024-03",
+      "seconds": 0.5392801049965783,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2024-03",
+      "seconds": 0.9610533049999503,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E8:total_energy_mwh:2024-04",
+      "seconds": 0.385985091998009,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E10:total_energy_mwh:2024-02",
+      "seconds": 1.7535770350004896,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2023-11",
+      "seconds": 5.229268700997636,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2024-04",
+      "seconds": 0.4886973110042163,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2024-04",
+      "seconds": 0.8162700409957324,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E10:total_energy_mwh:2024-03",
+      "seconds": 1.4577061029995093,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2024-04",
+      "seconds": 0.5439791600001627,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2024-05",
+      "seconds": 0.39499110599717824,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2023-12",
+      "seconds": 5.1695637090015225,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E9:total_energy_mwh:2024-05",
+      "seconds": 0.5190557440000703,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2024-05",
+      "seconds": 0.9566742179958965,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2024-05",
+      "seconds": 0.5412839620039449,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E10:total_energy_mwh:2024-04",
+      "seconds": 1.479317439996521,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2024-06",
+      "seconds": 0.38761437300127,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E10:peak_demand_mw:2024-01",
+      "seconds": 5.117257539997809,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2024-06",
+      "seconds": 0.5082145320047857,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E8:peak_demand_mw:2024-06",
+      "seconds": 0.9960577540041413,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2024-06",
+      "seconds": 0.5361795729986625,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2024-05",
+      "seconds": 1.6415911590011092,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2024-07",
+      "seconds": 0.3836181999940891,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2024-02",
+      "seconds": 5.13681444300164,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2024-07",
+      "seconds": 0.50128743499954,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2024-07",
+      "seconds": 0.5207198049974977,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2024-07",
+      "seconds": 0.7989402979947045,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2024-06",
+      "seconds": 1.5109438299987232,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E8:total_energy_mwh:2024-08",
+      "seconds": 0.39159530700271716,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2024-03",
+      "seconds": 5.093895263002196,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2024-08",
+      "seconds": 0.5441902890015626,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2024-08",
+      "seconds": 0.5330402899999171,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2024-08",
+      "seconds": 0.9602297689998522,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E10:total_energy_mwh:2024-07",
+      "seconds": 1.5453252049992443,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2024-09",
+      "seconds": 0.39182091399561614,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E10:peak_demand_mw:2024-04",
+      "seconds": 5.097352087002946,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E9:total_energy_mwh:2024-09",
+      "seconds": 0.5286882429936668,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E9:peak_demand_mw:2024-09",
+      "seconds": 0.541775008001423,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E8:peak_demand_mw:2024-09",
+      "seconds": 0.9553342770013842,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2024-08",
+      "seconds": 1.6049314350020722,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2024-10",
+      "seconds": 0.4094061680007144,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2024-05",
+      "seconds": 5.192435150995152,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2024-10",
+      "seconds": 0.5066733519997797,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2024-09",
+      "seconds": 1.252142121003999,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E8:peak_demand_mw:2024-10",
+      "seconds": 0.9554519170051208,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2024-10",
+      "seconds": 0.5413768040016294,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2024-11",
+      "seconds": 0.41816131499945186,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2024-06",
+      "seconds": 5.163350948001607,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2024-11",
+      "seconds": 0.4942353890000959,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2024-11",
+      "seconds": 0.5220402420018218,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2024-11",
+      "seconds": 1.0341574900012347,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2024-10",
+      "seconds": 1.4744909739965806,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2024-12",
+      "seconds": 0.40429621799557935,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2024-07",
+      "seconds": 5.238262268998369,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2024-12",
+      "seconds": 0.5118157830002019,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2024-12",
+      "seconds": 0.964064526000584,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2024-11",
+      "seconds": 1.2877918130034232,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2024-12",
+      "seconds": 0.5260179950055317,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2025-01",
+      "seconds": 0.3975989279933856,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2024-08",
+      "seconds": 5.261013615003321,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2025-01",
+      "seconds": 0.7613086450000992,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2025-01",
+      "seconds": 0.5434697399978177,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2025-01",
+      "seconds": 0.5615244170039659,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2024-12",
+      "seconds": 1.6085844970002654,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:total_energy_mwh:2025-02",
+      "seconds": 0.38776111399783986,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2024-09",
+      "seconds": 5.166012879002665,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E9:total_energy_mwh:2025-02",
+      "seconds": 0.5348728220051271,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2025-02",
+      "seconds": 0.7876148959985585,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2025-01",
+      "seconds": 1.4052684920025058,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2025-02",
+      "seconds": 0.5547008280045702,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E8:total_energy_mwh:2025-03",
+      "seconds": 0.3954115840024315,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2024-10",
+      "seconds": 5.235229377998621,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E9:total_energy_mwh:2025-03",
+      "seconds": 0.5139049790013814,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2025-03",
+      "seconds": 1.0269913469965104,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E10:total_energy_mwh:2025-02",
+      "seconds": 1.229809029995522,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:peak_demand_mw:2025-03",
+      "seconds": 0.550455308999517,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E8:total_energy_mwh:2025-04",
+      "seconds": 0.4007491520023905,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2024-11",
+      "seconds": 5.036565141999745,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E9:total_energy_mwh:2025-04",
+      "seconds": 0.5445553280005697,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E8:peak_demand_mw:2025-04",
+      "seconds": 0.910623317999125,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    },
+    {
+      "task": "E9:peak_demand_mw:2025-04",
+      "seconds": 0.5597118099976797,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2025-03",
+      "seconds": 1.542061874002684,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2024-12",
+      "seconds": 4.9521830289959325,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:total_energy_mwh:2025-04",
+      "seconds": 1.4505015540053137,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2025-01",
+      "seconds": 5.344744871996227,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2025-02",
+      "seconds": 5.453450746004819,
+      "rows": 108,
+      "worker_peak_rss_kib": 314372
+    },
+    {
+      "task": "E10:peak_demand_mw:2025-03",
+      "seconds": 5.308858042997599,
+      "rows": 108,
+      "worker_peak_rss_kib": 313348
+    },
+    {
+      "task": "E10:peak_demand_mw:2025-04",
+      "seconds": 5.390075490999152,
+      "rows": 108,
+      "worker_peak_rss_kib": 314116
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# Verified on AMD Radeon AI PRO R9700. Keep this stack exact.
+torch==2.13.0+rocm10.1.0
+triton==3.8.0+git669b31ac.rocm10.1.0
+rocm==10.1.0
+rocm-bootstrap==0.3.0
+rocm-sdk-core==10.1.0
+rocm-sdk-device-gfx1201==10.1.0
+rocm-sdk-libraries==10.1.0
+amd-torch-device-gfx12-0==2.13.0+rocm10.1.0
+amd-torch-device-gfx1201==2.13.0+rocm10.1.0
+pandas==3.0.6

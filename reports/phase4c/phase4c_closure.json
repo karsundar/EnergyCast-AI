@@ -1,0 +1,104 @@
+{
+  "E13": "smoke_and_validation_complete_full_finetuning_deferred",
+  "E15": "complete",
+  "E16": "complete_system_target_met_regional_undercoverage_documented",
+  "E17": "smoke_complete_full_backtest_pending",
+  "metrics": [
+    {
+      "experiment": "E15",
+      "scope": "system",
+      "target_name": "peak_demand_mw",
+      "observations": 636,
+      "wape": 6.77322906041123,
+      "bias": -4059.616863968922,
+      "normalized_bias_pct": -5.8511653059978865,
+      "coverage_p10_p90": 0.46226415094339623,
+      "mean_interval_width": 6586.340127489765,
+      "mean_pinball_loss": 1536.7639587944952
+    },
+    {
+      "experiment": "E15",
+      "scope": "system",
+      "target_name": "total_energy_mwh",
+      "observations": 636,
+      "wape": 2.8827763576490892,
+      "bias": -804516.9768380179,
+      "normalized_bias_pct": -2.1576631926263694,
+      "coverage_p10_p90": 0.4937106918238994,
+      "mean_interval_width": 2048670.2332241223,
+      "mean_pinball_loss": 380669.8628215222
+    },
+    {
+      "experiment": "E15",
+      "scope": "regional",
+      "target_name": "peak_demand_mw",
+      "observations": 5088,
+      "wape": 5.464085841677643,
+      "bias": -65.6140864324349,
+      "normalized_bias_pct": -0.7343805068746543,
+      "coverage_p10_p90": 0.577437106918239,
+      "mean_interval_width": 1078.4814435901446,
+      "mean_pinball_loss": 165.21147495151848
+    },
+    {
+      "experiment": "E15",
+      "scope": "regional",
+      "target_name": "total_energy_mwh",
+      "observations": 5088,
+      "wape": 4.22692821605835,
+      "bias": -109915.2607047531,
+      "normalized_bias_pct": -2.3582857208327357,
+      "coverage_p10_p90": 0.5247641509433962,
+      "mean_interval_width": 350432.965726998,
+      "mean_pinball_loss": 70904.46800740172
+    },
+    {
+      "experiment": "E16",
+      "scope": "system",
+      "target_name": "peak_demand_mw",
+      "observations": 636,
+      "wape": 6.77322906041123,
+      "bias": -4059.616863968922,
+      "normalized_bias_pct": -5.8511653059978865,
+      "coverage_p10_p90": 0.8553459119496856,
+      "mean_interval_width": 13249.732800452039,
+      "mean_pinball_loss": 1369.5122665462707
+    },
+    {
+      "experiment": "E16",
+      "scope": "system",
+      "target_name": "total_energy_mwh",
+      "observations": 636,
+      "wape": 2.8827763576490892,
+      "bias": -804516.9768380179,
+      "normalized_bias_pct": -2.1576631926263694,
+      "coverage_p10_p90": 0.8081761006289309,
+      "mean_interval_width": 4099159.4676836752,
+      "mean_pinball_loss": 353778.23312489124
+    },
+    {
+      "experiment": "E16",
+      "scope": "regional",
+      "target_name": "peak_demand_mw",
+      "observations": 5088,
+      "wape": 5.464085841677643,
+      "bias": -65.6140864324349,
+      "normalized_bias_pct": -0.7343805068746543,
+      "coverage_p10_p90": 0.7590408805031447,
+      "mean_interval_width": 1646.999733792073,
+      "mean_pinball_loss": 168.07331753690735
+    },
+    {
+      "experiment": "E16",
+      "scope": "regional",
+      "target_name": "total_energy_mwh",
+      "observations": 5088,
+      "wape": 4.22692821605835,
+      "bias": -109915.2607047531,
+      "normalized_bias_pct": -2.3582857208327357,
+      "coverage_p10_p90": 0.6865172955974843,
+      "mean_interval_width": 628478.205960238,
+      "mean_pinball_loss": 69440.4326244417
+    }
+  ]
+}

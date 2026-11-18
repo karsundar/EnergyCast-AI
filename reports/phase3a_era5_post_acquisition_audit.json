@@ -1,0 +1,1010 @@
+{
+  "annual_caches": [
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": null,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 8784
+      },
+      "duplicate_timestamps": 0,
+      "end": "2004-12-31T23:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2004.nc",
+      "request_sha256": "b541003d22b9cd34133efcaebbac712500150f8b9cfea82abfcdbbea3ed941f4",
+      "sha256": "d775054948211860c92b5527720d3cb281d768ef78dcff5c66c455eba47a5c81",
+      "size_bytes": 200934430,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2004-01-01T00:00:00",
+      "timestamp_count": 8784,
+      "year": 2004
+    },
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": 1.0,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 8760
+      },
+      "duplicate_timestamps": 0,
+      "end": "2005-12-31T23:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2005.nc",
+      "request_sha256": "b7bcc3df4cee60bb826d7f3f68a5412859b0ba4b0a1b2e20785ae43ca05d4241",
+      "sha256": "692abe148f60c204b2de5ee454e69ac7bb7e466725d7cefcb12f7df35189958f",
+      "size_bytes": 197126923,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2005-01-01T00:00:00",
+      "timestamp_count": 8760,
+      "year": 2005
+    },
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": 1.0,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 8760
+      },
+      "duplicate_timestamps": 0,
+      "end": "2006-12-31T23:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2006.nc",
+      "request_sha256": "c0b4f2d129023679be251fa2b098319149fe1458d897468e364b6cf8700d3cab",
+      "sha256": "10f4c3db62648c8d9bae4624698888e6f74772b9624dbdfe667c2aaf362b180b",
+      "size_bytes": 197284043,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2006-01-01T00:00:00",
+      "timestamp_count": 8760,
+      "year": 2006
+    },
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": 1.0,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 8760
+      },
+      "duplicate_timestamps": 0,
+      "end": "2007-12-31T23:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2007.nc",
+      "request_sha256": "c738df7ea0e81fa95b16a99b34d8a69dca90fa9b29a46ceb1f4d6150b247bb93",
+      "sha256": "0bcabe63ed13f215e1e998f017a248e7940dcfaf2634c89c73b055e56382cff8",
+      "size_bytes": 200098847,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2007-01-01T00:00:00",
+      "timestamp_count": 8760,
+      "year": 2007
+    },
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": 1.0,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 8784
+      },
+      "duplicate_timestamps": 0,
+      "end": "2008-12-31T23:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2008.nc",
+      "request_sha256": "34402d544457778c21850901bc26c0397dd51c46d787e1931e0b2a473632a03d",
+      "sha256": "99fa52d7cd5ddf0fe381726217f74d7710c25ae56ae0255e69b3ea9fc2c0b0b9",
+      "size_bytes": 198237066,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2008-01-01T00:00:00",
+      "timestamp_count": 8784,
+      "year": 2008
+    },
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": 1.0,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 8760
+      },
+      "duplicate_timestamps": 0,
+      "end": "2009-12-31T23:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2009.nc",
+      "request_sha256": "e357b438c07b029b04f3303f2ed544ce7c04259c6ab4d80eca4e862eda54108b",
+      "sha256": "4f11f2b46d0b93e4bc952d49d8364b2ee78dd698683f7b539bd8fd97278a324c",
+      "size_bytes": 197779782,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2009-01-01T00:00:00",
+      "timestamp_count": 8760,
+      "year": 2009
+    },
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": 1.0,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 8760
+      },
+      "duplicate_timestamps": 0,
+      "end": "2010-12-31T23:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2010.nc",
+      "request_sha256": "b64a0d9aa56dee2d71361c56ce2d493022d013e74e03f5d22aecf629fa4fa710",
+      "sha256": "79849777abdcc44591760e3dfa97743bdc6b80f95663d81ce3a89bb60b32490f",
+      "size_bytes": 197635846,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2010-01-01T00:00:00",
+      "timestamp_count": 8760,
+      "year": 2010
+    },
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": 1.0,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 8760
+      },
+      "duplicate_timestamps": 0,
+      "end": "2011-12-31T23:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2011.nc",
+      "request_sha256": "a8dc5bceb6ee8ee1b431772b73b8157950248317591ad36a509e878946e90427",
+      "sha256": "382b7199f81af4cb4b22fb9b15da645e4a9404f41929dbd4d8a8807b909a9052",
+      "size_bytes": 194839429,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2011-01-01T00:00:00",
+      "timestamp_count": 8760,
+      "year": 2011
+    },
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": 1.0,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 8784
+      },
+      "duplicate_timestamps": 0,
+      "end": "2012-12-31T23:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2012.nc",
+      "request_sha256": "d0a957bfb8440ff8efcef1ba0a1c9d199a7a2807f7a0dabcb7e0b60748bda08c",
+      "sha256": "a71d9aba40dbef3f82d58942756dd36952e8ef402980e5f0ecee8beb332560e2",
+      "size_bytes": 197451749,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2012-01-01T00:00:00",
+      "timestamp_count": 8784,
+      "year": 2012
+    },
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": 1.0,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 8760
+      },
+      "duplicate_timestamps": 0,
+      "end": "2013-12-31T23:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2013.nc",
+      "request_sha256": "f904339d1592c649f303f84e9d75970cfc2bc55a6306bc752e6fd30fbc59904d",
+      "sha256": "f85cf2e7744d829a54bcca6f3012866f1e05c3ca855399b00c8cca394190e924",
+      "size_bytes": 197995117,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2013-01-01T00:00:00",
+      "timestamp_count": 8760,
+      "year": 2013
+    },
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": 1.0,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 8760
+      },
+      "duplicate_timestamps": 0,
+      "end": "2014-12-31T23:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2014.nc",
+      "request_sha256": "606f74a1c90b9a562ec809e22ed76f8547eb189789efefdbf278586cf8af1508",
+      "sha256": "a8465c1e7da7b55cdb53da53a4fe7dacbcd186314f0e4358d7b844943e224c30",
+      "size_bytes": 198250187,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2014-01-01T00:00:00",
+      "timestamp_count": 8760,
+      "year": 2014
+    },
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": 1.0,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 8760
+      },
+      "duplicate_timestamps": 0,
+      "end": "2015-12-31T23:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2015.nc",
+      "request_sha256": "194c4124d19b2b201c1a57734bc70a649935a43dcddd56726dd970ae8495d269",
+      "sha256": "777fb0db89a302c39ce6dd2bfecfd3570dc6c0d0c6004231a74f627cd55acf97",
+      "size_bytes": 199529249,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2015-01-01T00:00:00",
+      "timestamp_count": 8760,
+      "year": 2015
+    },
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": 1.0,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 8784
+      },
+      "duplicate_timestamps": 0,
+      "end": "2016-12-31T23:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2016.nc",
+      "request_sha256": "2d7c9dec301f9c8ffa13cec3d573a9c64c93370fab09bb9ab7866dc673b884c7",
+      "sha256": "8abad63fd4dd45178c435fa22b4f5d87f3cc0169d0639c2860d41aa0a6117b0d",
+      "size_bytes": 199459544,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2016-01-01T00:00:00",
+      "timestamp_count": 8784,
+      "year": 2016
+    },
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": 1.0,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 8760
+      },
+      "duplicate_timestamps": 0,
+      "end": "2017-12-31T23:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2017.nc",
+      "request_sha256": "71e9ab605c5d6afc8db0da2ac20763e229148ff207c6e46d4367705238540a0c",
+      "sha256": "bcf542c5de52f14b54ede2955d3732ee755e4a890fe3f8909b83c71eaf3d3c06",
+      "size_bytes": 198511327,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2017-01-01T00:00:00",
+      "timestamp_count": 8760,
+      "year": 2017
+    },
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": 1.0,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 8760
+      },
+      "duplicate_timestamps": 0,
+      "end": "2018-12-31T23:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2018.nc",
+      "request_sha256": "22abfea1eb61840fc489d9be2b4369df635e737c6c30a812817cd7f95e6dbd6e",
+      "sha256": "2eb3fe1e78b50f8c2039e219b20931fcc9a68926b4c18052759aba0567223907",
+      "size_bytes": 199362449,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2018-01-01T00:00:00",
+      "timestamp_count": 8760,
+      "year": 2018
+    },
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": 1.0,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 8760
+      },
+      "duplicate_timestamps": 0,
+      "end": "2019-12-31T23:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2019.nc",
+      "request_sha256": "a57037d2712ca11d6bc78bdca6ad750d13c338a2c437db878573f3f68ef43ff9",
+      "sha256": "a9022ec1b40d784b15eb0a191180dace7ff6a7c1d13a3068a7dd4100a52df99f",
+      "size_bytes": 199181642,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2019-01-01T00:00:00",
+      "timestamp_count": 8760,
+      "year": 2019
+    },
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": 1.0,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 8784
+      },
+      "duplicate_timestamps": 0,
+      "end": "2020-12-31T23:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2020.nc",
+      "request_sha256": "04e19bb599cd471278cc2ec46a966c4d929a3ebf2ed459e0562d7dbf2f9d1d9e",
+      "sha256": "e5b7d2f1162365e21504b7987d37f9fadb057e2b8e36363f5aa819395624452c",
+      "size_bytes": 198323478,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2020-01-01T00:00:00",
+      "timestamp_count": 8784,
+      "year": 2020
+    },
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": 1.0,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 8760
+      },
+      "duplicate_timestamps": 0,
+      "end": "2021-12-31T23:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2021.nc",
+      "request_sha256": "2a0fed4ca1a942329b4a3a8800ba9a94819a13af653572ecf16fc1c052cd1f53",
+      "sha256": "e91441d5575f5c767993cc71286bd40825774e0dccf523816dcb1badc682f045",
+      "size_bytes": 198791265,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2021-01-01T00:00:00",
+      "timestamp_count": 8760,
+      "year": 2021
+    },
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": 1.0,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 8760
+      },
+      "duplicate_timestamps": 0,
+      "end": "2022-12-31T23:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2022.nc",
+      "request_sha256": "832f2fee0830f043565723921e48dbadb119b375203d17d8f2889e7e8b5b973c",
+      "sha256": "ec8bb0432355f820f915128b4dc88a25ce007e3d39f68aed464c11c94f3bb0ce",
+      "size_bytes": 197282499,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2022-01-01T00:00:00",
+      "timestamp_count": 8760,
+      "year": 2022
+    },
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": 1.0,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 8760
+      },
+      "duplicate_timestamps": 0,
+      "end": "2023-12-31T23:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2023.nc",
+      "request_sha256": "eb77cd6f44cf99411ef835a2e8012da3cd1bdc09e1af78b02227aa0fc0b78a84",
+      "sha256": "2cf88ae80c92c0b8f82a130c136eb52333fe80a5346f3afc1020afe9fe2e1115",
+      "size_bytes": 197287671,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2023-01-01T00:00:00",
+      "timestamp_count": 8760,
+      "year": 2023
+    },
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": 1.0,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 8784
+      },
+      "duplicate_timestamps": 0,
+      "end": "2024-12-31T23:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2024.nc",
+      "request_sha256": "3bddf12b963f46efe2c3ce317cad2cbb0c220bae3e1e9a551611cf00d58b5d22",
+      "sha256": "69a13e321fc15dc92f159b2cb889c8b0dba73e7d27c76f99a58559c7ab16a782",
+      "size_bytes": 198307545,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2024-01-01T00:00:00",
+      "timestamp_count": 8784,
+      "year": 2024
+    },
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": 1.0,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 8760
+      },
+      "duplicate_timestamps": 0,
+      "end": "2025-12-31T23:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2025.nc",
+      "request_sha256": "1da5e4ceaef3e50e0a3f3386450c43000f775bd2e88431719321483c637fbe4a",
+      "sha256": "5a302b03dbe2f335995697c252fee0a8f0ea1668c8d897884f87379c35b9fb5c",
+      "size_bytes": 197736144,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2025-01-01T00:00:00",
+      "timestamp_count": 8760,
+      "year": 2025
+    },
+    {
+      "checksum_valid": true,
+      "cross_year_start_delta_hours": 1.0,
+      "dimensions": {
+        "latitude": 44,
+        "longitude": 54,
+        "valid_time": 3630
+      },
+      "duplicate_timestamps": 0,
+      "end": "2026-06-01T05:00:00",
+      "latitude_bounds": [
+        25.75,
+        36.5
+      ],
+      "longitude_bounds_0_360": [
+        253.25,
+        266.5
+      ],
+      "missing_hours": 0,
+      "missing_variables": [],
+      "null_values": {
+        "d2m": 0,
+        "ssrd": 0,
+        "t2m": 0,
+        "tp": 0,
+        "u10": 0,
+        "v10": 0
+      },
+      "path": "data/raw/era5_historical_weather/aws/era5_texas_2026.nc",
+      "request_sha256": "349fcb19e670cc2f2f08153837a6c6500e0242f9235488ace22e2748ded588f3",
+      "sha256": "ff1bdb278dc1b280ec341add3694ea72e2d0ff17d536a4e49dd99bc484a0e3b0",
+      "size_bytes": 81162571,
+      "snapshot": "VKGPX45BPEQJMVZZXZEG",
+      "spatial_consistent": true,
+      "start": "2026-01-01T00:00:00",
+      "timestamp_count": 3630,
+      "year": 2026
+    }
+  ],
+  "created_at": "2026-11-15T14:40:44.812355+00:00",
+  "elapsed_seconds": 49.65815200700035,
+  "errors": [],
+  "partitions": {
+    "coverage": {
+      "end_month": "2026-05",
+      "start": "2004-01-01T00:00:00+00:00"
+    },
+    "duplicate_keys": {
+      "daily": 0,
+      "hourly": 0,
+      "monthly": 0
+    },
+    "negative_solar_radiation_detail": {
+      "count": 2376,
+      "interpretation": "source-level negative accumulated SSRD values; retained and flagged",
+      "minimum_j_m2": -0.001429965253919363,
+      "timestamps": [
+        "2004-12-04 05:00:00+00:00"
+      ],
+      "unique_grid_cells": 2376
+    },
+    "null_counts_from_parquet_statistics": {
+      "daily.cdd_65f": 0,
+      "daily.completeness_pct": 0,
+      "daily.expected_observation_count": 0,
+      "daily.hdd_65f": 0,
+      "daily.latitude": 0,
+      "daily.local_date": 0,
+      "daily.longitude": 0,
+      "daily.lsm": 0,
+      "daily.observation_count": 0,
+      "daily.precipitation_total_mm": 0,
+      "daily.relative_humidity_mean_pct": 0,
+      "daily.sdor": 0,
+      "daily.slor": 0,
+      "daily.solar_energy_total_mj_m2": 0,
+      "daily.source_file": 0,
+      "daily.source_provider": 0,
+      "daily.source_snapshot": 0,
+      "daily.temperature_max_c": 0,
+      "daily.temperature_mean_c": 0,
+      "daily.temperature_mean_f": 0,
+      "daily.temperature_min_c": 0,
+      "daily.wind_speed_mean_mps": 0,
+      "daily.z_sfc": 0,
+      "hourly.dewpoint_c": 0,
+      "hourly.latitude": 0,
+      "hourly.longitude": 0,
+      "hourly.lsm": 0,
+      "hourly.precipitation_mm": 0,
+      "hourly.relative_humidity_pct": 0,
+      "hourly.sdor": 0,
+      "hourly.slor": 0,
+      "hourly.solar_mean_flux_w_m2": 0,
+      "hourly.solar_radiation_j_m2": 0,
+      "hourly.solar_radiation_mj_m2": 0,
+      "hourly.source_file": 0,
+      "hourly.source_provider": 0,
+      "hourly.source_snapshot": 0,
+      "hourly.temperature_c": 0,
+      "hourly.temperature_f": 0,
+      "hourly.timestamp_local": 0,
+      "hourly.timestamp_utc": 0,
+      "hourly.wind_speed_mps": 0,
+      "hourly.wind_u_mps": 0,
+      "hourly.wind_v_mps": 0,
+      "hourly.z_sfc": 0,
+      "monthly.boundary_complete": 0,
+      "monthly.cdd_65f": 0,
+      "monthly.completeness_pct": 0,
+      "monthly.expected_observation_count": 0,
+      "monthly.hdd_65f": 0,
+      "monthly.latitude": 0,
+      "monthly.longitude": 0,
+      "monthly.month": 0,
+      "monthly.observation_count": 0,
+      "monthly.precipitation_total_mm": 0,
+      "monthly.relative_humidity_mean_pct": 0,
+      "monthly.solar_energy_total_mj_m2": 0,
+      "monthly.source_file": 0,
+      "monthly.source_provider": 0,
+      "monthly.source_snapshot": 0,
+      "monthly.temperature_max_c": 0,
+      "monthly.temperature_mean_c": 0,
+      "monthly.temperature_min_c": 0,
+      "monthly.wind_speed_mean_mps": 0,
+      "monthly.year": 0
+    },
+    "physical_range_flags": {
+      "negative_precipitation": 0,
+      "negative_solar_radiation": 2376,
+      "relative_humidity_outside_0_100": 0,
+      "temperature_c_outside_minus90_60": 0,
+      "wind_speed_above_100_mps": 0
+    },
+    "schema_variant_counts": {
+      "daily": 1,
+      "hourly": 1,
+      "monthly": 1
+    },
+    "totals": {
+      "daily_bytes": 860909730,
+      "daily_files": 269,
+      "daily_rows": 19452312,
+      "hourly_bytes": 14859150936,
+      "hourly_files": 269,
+      "hourly_rows": 466855488,
+      "monthly_bytes": 30105329,
+      "monthly_files": 269,
+      "monthly_rows": 639144
+    }
+  },
+  "provider": "aws_earthmover",
+  "provider_snapshot": "VKGPX45BPEQJMVZZXZEG",
+  "remaining_2026_months": [
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09",
+    "2026-10"
+  ],
+  "source_timestamp_count": 196494,
+  "status": "validated",
+  "storage_bytes": {
+    "annual_raw": 4442584511,
+    "daily": 860909730,
+    "hourly": 14859150936,
+    "monthly": 30105329,
+    "total": 20193169677,
+    "validation": 419171
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "provider": "copernicus_cds",
+  "originating_centre": "ecmwf",
+  "system": "51",
+  "dataset": "seasonal-monthly-single-levels",
+  "product": "monthly_mean_individual_members",
+  "samples": {
+    "hindcast": {
+      "issue_date": "2016-01-01T00:00:00Z",
+      "members": 25,
+      "member_ids": "0-24",
+      "bytes": 188049,
+      "sha256": "453571ed2c0d618c6b8498b27f1bf010c37045974a03cfbacd1fb83efb24b55f",
+      "request_seconds": 40.70271300099557
+    },
+    "forecast": {
+      "issue_date": "2024-01-01T00:00:00Z",
+      "members": 51,
+      "member_ids": "0-50",
+      "bytes": 293874,
+      "sha256": "f84f4f4f67d866c71f74f3d667b624253399f0806d5a05c643d9064c1a4f0cc5",
+      "request_seconds": 37.2557988769986
+    }
+  },
+  "common": {
+    "lead_months": [1, 2],
+    "latitude": {"first": 36.5, "last": 26.5, "count": 11, "resolution_degrees": 1.0},
+    "longitude": {"first": -106.5, "last": -93.5, "count": 14, "resolution_degrees": 1.0},
+    "variables": {"t2m": "K", "d2m": "K", "u10": "m s**-1", "v10": "m s**-1", "tprate": "m s**-1", "msdsrf": "W m**-2"},
+    "missing_values": 0,
+    "nonfinite_values": 0,
+    "grid_match": true,
+    "variable_match": true,
+    "unit_match": true,
+    "texas_subset_confirmed": true
+  },
+  "notes": [
+    "Existing runner samples have .zip suffixes but NetCDF4/HDF5 signatures; future outputs use .nc.",
+    "The manual GRIB sample is global and retained only for metadata validation.",
+    "No bulk acquisition is authorized by this bounded validation."
+  ]
+}

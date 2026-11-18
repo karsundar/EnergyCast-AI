@@ -1,0 +1,9 @@
+{
+  "completed": [
+    "E17:peak_demand_mw:2020-12",
+    "E17:total_energy_mwh:2020-12"
+  ],
+  "pending_tasks": 0,
+  "workers": 1,
+  "lightgbm_threads_per_worker": 2
+}

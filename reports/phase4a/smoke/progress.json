@@ -1,0 +1,9 @@
+{
+  "completed": [
+    "E4:peak_demand_mw:2020-12",
+    "E4:total_energy_mwh:2020-12",
+    "E5:peak_demand_mw:2020-12",
+    "E5:total_energy_mwh:2020-12"
+  ],
+  "elapsed_seconds": 0.5788002379995305
+}

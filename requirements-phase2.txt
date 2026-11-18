@@ -1,0 +1,5 @@
+-r requirements-phase1.txt
+lightgbm==4.7.0
+matplotlib==3.11.2
+scikit-learn==1.9.1
+statsmodels==0.15.0

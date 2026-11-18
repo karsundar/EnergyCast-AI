@@ -1,0 +1,676 @@
+{
+  "created_at": "2026-11-15T04:50:13.021520+00:00",
+  "phase": "2B",
+  "status": "reporting_complete",
+  "torch": "2.13.0+rocm10.1.0",
+  "hip": "7.16.26385",
+  "gpu": "AMD Radeon AI PRO R9700",
+  "alignment": {
+    "tft_rows": 12744,
+    "common_keys_per_model": 12744,
+    "common_tft_rows": 12744,
+    "common_baseline_rows": 50976,
+    "baseline_models": [
+      "seasonal_naive",
+      "drift_seasonal_naive",
+      "holt_winters",
+      "lightgbm_direct"
+    ],
+    "max_actual_alignment_delta": 0.0,
+    "timestamp_horizon_alignment": true,
+    "p50_selected": "column p50 from mode='quantiles' output index 1 for [0.1, 0.5, 0.9]"
+  },
+  "loss_convergence": {
+    "total_energy_mwh": {
+      "available": true,
+      "epochs_logged": 20,
+      "first_validation_loss": 757986.5,
+      "best_epoch": 9,
+      "best_validation_loss": 363303.75,
+      "last_epoch": 19,
+      "last_validation_loss": 399056.875,
+      "last_training_loss": 110512.8203125,
+      "early_stopping_patience": 10,
+      "history": [
+        {
+          "epoch": 0,
+          "val_loss": 757986.5,
+          "val_MAE": 1151341.125,
+          "val_RMSE": 1668939.625,
+          "train_loss_epoch": 538675.4375
+        },
+        {
+          "epoch": 1,
+          "val_loss": 520662.15625,
+          "val_MAE": 768114.4375,
+          "val_RMSE": 1090748.125,
+          "train_loss_epoch": 261726.671875
+        },
+        {
+          "epoch": 2,
+          "val_loss": 499276.0625,
+          "val_MAE": 668949.625,
+          "val_RMSE": 926274.0,
+          "train_loss_epoch": 204230.53125
+        },
+        {
+          "epoch": 3,
+          "val_loss": 468793.21875,
+          "val_MAE": 643642.8125,
+          "val_RMSE": 894631.8125,
+          "train_loss_epoch": 187923.578125
+        },
+        {
+          "epoch": 4,
+          "val_loss": 487371.34375,
+          "val_MAE": 648616.6875,
+          "val_RMSE": 891941.1875,
+          "train_loss_epoch": 174857.609375
+        },
+        {
+          "epoch": 5,
+          "val_loss": 492911.15625,
+          "val_MAE": 667204.75,
+          "val_RMSE": 920179.0625,
+          "train_loss_epoch": 167459.421875
+        },
+        {
+          "epoch": 6,
+          "val_loss": 400823.40625,
+          "val_MAE": 540809.375,
+          "val_RMSE": 769478.5625,
+          "train_loss_epoch": 159883.328125
+        },
+        {
+          "epoch": 7,
+          "val_loss": 425135.1875,
+          "val_MAE": 582054.5625,
+          "val_RMSE": 820561.9375,
+          "train_loss_epoch": 152585.359375
+        },
+        {
+          "epoch": 8,
+          "val_loss": 390370.40625,
+          "val_MAE": 517614.4375,
+          "val_RMSE": 748153.9375,
+          "train_loss_epoch": 144583.875
+        },
+        {
+          "epoch": 9,
+          "val_loss": 363303.75,
+          "val_MAE": 490040.15625,
+          "val_RMSE": 721499.4375,
+          "train_loss_epoch": 137578.734375
+        },
+        {
+          "epoch": 10,
+          "val_loss": 428201.59375,
+          "val_MAE": 567358.5,
+          "val_RMSE": 835717.125,
+          "train_loss_epoch": 132878.5
+        },
+        {
+          "epoch": 11,
+          "val_loss": 394669.4375,
+          "val_MAE": 522377.28125,
+          "val_RMSE": 774675.3125,
+          "train_loss_epoch": 129477.0859375
+        },
+        {
+          "epoch": 12,
+          "val_loss": 443871.125,
+          "val_MAE": 550747.0625,
+          "val_RMSE": 807737.9375,
+          "train_loss_epoch": 125359.0703125
+        },
+        {
+          "epoch": 13,
+          "val_loss": 397681.71875,
+          "val_MAE": 497000.75,
+          "val_RMSE": 742894.875,
+          "train_loss_epoch": 121445.6875
+        },
+        {
+          "epoch": 14,
+          "val_loss": 404091.25,
+          "val_MAE": 520677.9375,
+          "val_RMSE": 774402.125,
+          "train_loss_epoch": 117940.9140625
+        },
+        {
+          "epoch": 15,
+          "val_loss": 403049.0625,
+          "val_MAE": 519238.0,
+          "val_RMSE": 760401.0625,
+          "train_loss_epoch": 115352.984375
+        },
+        {
+          "epoch": 16,
+          "val_loss": 410000.0625,
+          "val_MAE": 522465.84375,
+          "val_RMSE": 774799.9375,
+          "train_loss_epoch": 113515.1875
+        },
+        {
+          "epoch": 17,
+          "val_loss": 407671.21875,
+          "val_MAE": 520487.40625,
+          "val_RMSE": 769667.0,
+          "train_loss_epoch": 111030.6796875
+        },
+        {
+          "epoch": 18,
+          "val_loss": 401384.28125,
+          "val_MAE": 510593.3125,
+          "val_RMSE": 763146.3125,
+          "train_loss_epoch": 110309.3515625
+        },
+        {
+          "epoch": 19,
+          "val_loss": 399056.875,
+          "val_MAE": 510937.8125,
+          "val_RMSE": 769798.25,
+          "train_loss_epoch": 110512.8203125
+        }
+      ]
+    },
+    "peak_demand_mw": {
+      "available": true,
+      "epochs_logged": 16,
+      "first_validation_loss": 1032.9613037109375,
+      "best_epoch": 5,
+      "best_validation_loss": 727.5133056640625,
+      "last_epoch": 15,
+      "last_validation_loss": 773.1775512695312,
+      "last_training_loss": 325.9422607421875,
+      "early_stopping_patience": 10,
+      "history": [
+        {
+          "epoch": 0,
+          "val_loss": 1032.9613037109375,
+          "val_MAE": 1400.1318359375,
+          "val_RMSE": 2017.4034423828125,
+          "train_loss_epoch": 926.9451293945312
+        },
+        {
+          "epoch": 1,
+          "val_loss": 849.9727783203125,
+          "val_MAE": 1246.3050537109375,
+          "val_RMSE": 1768.6298828125,
+          "train_loss_epoch": 598.6001586914062
+        },
+        {
+          "epoch": 2,
+          "val_loss": 796.1844482421875,
+          "val_MAE": 1161.0322265625,
+          "val_RMSE": 1668.8658447265625,
+          "train_loss_epoch": 523.5057373046875
+        },
+        {
+          "epoch": 3,
+          "val_loss": 779.9855346679688,
+          "val_MAE": 1163.36767578125,
+          "val_RMSE": 1683.6138916015625,
+          "train_loss_epoch": 478.25140380859375
+        },
+        {
+          "epoch": 4,
+          "val_loss": 793.6898803710938,
+          "val_MAE": 1159.623291015625,
+          "val_RMSE": 1674.7542724609375,
+          "train_loss_epoch": 447.9506530761719
+        },
+        {
+          "epoch": 5,
+          "val_loss": 727.5133056640625,
+          "val_MAE": 1086.957275390625,
+          "val_RMSE": 1584.7216796875,
+          "train_loss_epoch": 426.0108337402344
+        },
+        {
+          "epoch": 6,
+          "val_loss": 739.8267822265625,
+          "val_MAE": 1091.7413330078125,
+          "val_RMSE": 1591.324951171875,
+          "train_loss_epoch": 410.2737426757813
+        },
+        {
+          "epoch": 7,
+          "val_loss": 730.2196655273438,
+          "val_MAE": 1080.8204345703125,
+          "val_RMSE": 1580.9010009765625,
+          "train_loss_epoch": 398.0096130371094
+        },
+        {
+          "epoch": 8,
+          "val_loss": 732.6033325195312,
+          "val_MAE": 1091.5185546875,
+          "val_RMSE": 1599.8480224609375,
+          "train_loss_epoch": 382.2086181640625
+        },
+        {
+          "epoch": 9,
+          "val_loss": 735.082763671875,
+          "val_MAE": 1078.5640869140625,
+          "val_RMSE": 1594.08642578125,
+          "train_loss_epoch": 366.3318176269531
+        },
+        {
+          "epoch": 10,
+          "val_loss": 736.4343872070312,
+          "val_MAE": 1077.72998046875,
+          "val_RMSE": 1602.4625244140625,
+          "train_loss_epoch": 353.3880310058594
+        },
+        {
+          "epoch": 11,
+          "val_loss": 747.1788330078125,
+          "val_MAE": 1094.3514404296875,
+          "val_RMSE": 1640.9549560546875,
+          "train_loss_epoch": 344.72607421875
+        },
+        {
+          "epoch": 12,
+          "val_loss": 743.133544921875,
+          "val_MAE": 1079.1392822265625,
+          "val_RMSE": 1604.1522216796875,
+          "train_loss_epoch": 337.6561279296875
+        },
+        {
+          "epoch": 13,
+          "val_loss": 768.4334716796875,
+          "val_MAE": 1105.22412109375,
+          "val_RMSE": 1652.1636962890625,
+          "train_loss_epoch": 330.8634338378906
+        },
+        {
+          "epoch": 14,
+          "val_loss": 779.8004760742188,
+          "val_MAE": 1112.233154296875,
+          "val_RMSE": 1666.216552734375,
+          "train_loss_epoch": 330.3767395019531
+        },
+        {
+          "epoch": 15,
+          "val_loss": 773.1775512695312,
+          "val_MAE": 1101.93359375,
+          "val_RMSE": 1632.927490234375,
+          "train_loss_epoch": 325.9422607421875
+        }
+      ]
+    }
+  },
+  "interpretation": {
+    "total_energy_mwh": {
+      "checkpoint": "models/tft/small/total_energy_mwh/epoch=009-val_loss=363303.750000-v1.ckpt",
+      "training_sequences": 1089,
+      "validation_sequences": 225,
+      "test_sequences": 531,
+      "encoder_length": 36,
+      "decoder_length": 12,
+      "target_normalizer": "GroupNormalizer(\n\tmethod='standard',\n\tgroups=['geography'],\n\tcenter=True,\n\tscale_by_group=False,\n\ttransformation='softplus',\n\tmethod_kwargs={}\n)",
+      "prediction_rescaling": "PyTorch Forecasting predict(mode='quantiles') applies transform_output using checkpoint output_transformer and per-sample target_scale",
+      "importance": {
+        "static_variables": {
+          "geography": 0.24885946302225107,
+          "encoder_length": 0.20316043995541674,
+          "target_value_center": 0.39446980120499603,
+          "target_value_scale": 0.15351029581733616
+        },
+        "encoder_variables": {
+          "month_of_year": 0.04934882368256434,
+          "quarter": 0.045535426742614786,
+          "season": 0.017237018397829512,
+          "time_idx": 0.08399466194184924,
+          "days_in_month": 0.11674316965056257,
+          "weekday_count": 0.06846602804533983,
+          "weekend_count": 0.057529585597019324,
+          "holiday_count": 0.06147490927923928,
+          "month_sin": 0.10530034230738494,
+          "month_cos": 0.04611526431533859,
+          "relative_time_idx": 0.014390685822568774,
+          "target_value": 0.3338640842176888
+        },
+        "decoder_variables": {
+          "month_of_year": 0.16559610828178353,
+          "quarter": 0.01621017522071876,
+          "season": 0.043743449483237655,
+          "time_idx": 0.1605175465135968,
+          "days_in_month": 0.099809592368025,
+          "weekday_count": 0.02981543664944666,
+          "weekend_count": 0.019812273144722798,
+          "holiday_count": 0.032333481667105604,
+          "month_sin": 0.31021540471087594,
+          "month_cos": 0.08010226290966019,
+          "relative_time_idx": 0.04184426905082707
+        }
+      },
+      "charts": [
+        "reports/charts/phase2b_total_energy_mwh_attention.png",
+        "reports/charts/phase2b_total_energy_mwh_static_variables.png",
+        "reports/charts/phase2b_total_energy_mwh_encoder_variables.png",
+        "reports/charts/phase2b_total_energy_mwh_decoder_variables.png"
+      ]
+    },
+    "peak_demand_mw": {
+      "checkpoint": "models/tft/small/peak_demand_mw/epoch=005-val_loss=727.513306.ckpt",
+      "training_sequences": 1089,
+      "validation_sequences": 225,
+      "test_sequences": 531,
+      "encoder_length": 36,
+      "decoder_length": 12,
+      "target_normalizer": "GroupNormalizer(\n\tmethod='standard',\n\tgroups=['geography'],\n\tcenter=True,\n\tscale_by_group=False,\n\ttransformation='softplus',\n\tmethod_kwargs={}\n)",
+      "prediction_rescaling": "PyTorch Forecasting predict(mode='quantiles') applies transform_output using checkpoint output_transformer and per-sample target_scale",
+      "importance": {
+        "static_variables": {
+          "geography": 0.18969399245230167,
+          "encoder_length": 0.3499158776624989,
+          "target_value_center": 0.13765851809483354,
+          "target_value_scale": 0.3227316117903659
+        },
+        "encoder_variables": {
+          "month_of_year": 0.03718036995335588,
+          "quarter": 0.13495260691340805,
+          "season": 0.4061452774476317,
+          "time_idx": 0.08473548778378429,
+          "days_in_month": 0.02784986669429341,
+          "weekday_count": 0.023086606621896204,
+          "weekend_count": 0.04405986022820208,
+          "holiday_count": 0.05898781557702069,
+          "month_sin": 0.043732144693806145,
+          "month_cos": 0.02646520525258371,
+          "relative_time_idx": 0.015641749129320513,
+          "target_value": 0.09716300970469739
+        },
+        "decoder_variables": {
+          "month_of_year": 0.058270035520865834,
+          "quarter": 0.09002443381828959,
+          "season": 0.007611430916282015,
+          "time_idx": 0.09435057347794748,
+          "days_in_month": 0.05964437179677233,
+          "weekday_count": 0.09892652911079156,
+          "weekend_count": 0.11363944279126928,
+          "holiday_count": 0.12196893119475131,
+          "month_sin": 0.10164948298819243,
+          "month_cos": 0.17408022423235772,
+          "relative_time_idx": 0.07983454415248041
+        }
+      },
+      "charts": [
+        "reports/charts/phase2b_peak_demand_mw_attention.png",
+        "reports/charts/phase2b_peak_demand_mw_static_variables.png",
+        "reports/charts/phase2b_peak_demand_mw_encoder_variables.png",
+        "reports/charts/phase2b_peak_demand_mw_decoder_variables.png"
+      ]
+    }
+  },
+  "seasonal_pattern_diagnostics": [
+    {
+      "target_name": "peak_demand_mw",
+      "geography": "COAST",
+      "monthly_profile_correlation": 0.9054071307938967,
+      "actual_seasonal_range": 7226.02565842373,
+      "forecast_seasonal_range": 4395.886007018007,
+      "seasonal_amplitude_ratio": 0.6083407691603625
+    },
+    {
+      "target_name": "peak_demand_mw",
+      "geography": "EAST",
+      "monthly_profile_correlation": 0.6215827966593959,
+      "actual_seasonal_range": 970.0023132542374,
+      "forecast_seasonal_range": 510.8555742684057,
+      "seasonal_amplitude_ratio": 0.5266539752410988
+    },
+    {
+      "target_name": "peak_demand_mw",
+      "geography": "ERCOT_SYSTEM",
+      "monthly_profile_correlation": 0.8465312110526713,
+      "actual_seasonal_range": 25430.887448186455,
+      "forecast_seasonal_range": 15742.027409957635,
+      "seasonal_amplitude_ratio": 0.6190121143837723
+    },
+    {
+      "target_name": "peak_demand_mw",
+      "geography": "FAR_WEST",
+      "monthly_profile_correlation": 0.8927222947740531,
+      "actual_seasonal_range": 491.51199638983053,
+      "forecast_seasonal_range": 741.7528655488613,
+      "seasonal_amplitude_ratio": 1.5091246419152677
+    },
+    {
+      "target_name": "peak_demand_mw",
+      "geography": "NORTH",
+      "monthly_profile_correlation": 0.8324180472939835,
+      "actual_seasonal_range": 647.6450000847456,
+      "forecast_seasonal_range": 493.78811076536,
+      "seasonal_amplitude_ratio": 0.7624363821240755
+    },
+    {
+      "target_name": "peak_demand_mw",
+      "geography": "NORTH_CENTRAL",
+      "monthly_profile_correlation": 0.8138243572497806,
+      "actual_seasonal_range": 10491.836342322036,
+      "forecast_seasonal_range": 6437.471398305082,
+      "seasonal_amplitude_ratio": 0.6135695590616077
+    },
+    {
+      "target_name": "peak_demand_mw",
+      "geography": "SOUTHERN",
+      "monthly_profile_correlation": 0.4998880666193643,
+      "actual_seasonal_range": 1662.8287538644063,
+      "forecast_seasonal_range": 1032.076395325742,
+      "seasonal_amplitude_ratio": 0.6206750953320967
+    },
+    {
+      "target_name": "peak_demand_mw",
+      "geography": "SOUTH_CENTRAL",
+      "monthly_profile_correlation": 0.7335853158343522,
+      "actual_seasonal_range": 5076.499219305084,
+      "forecast_seasonal_range": 2397.40449549788,
+      "seasonal_amplitude_ratio": 0.4722554642342795
+    },
+    {
+      "target_name": "peak_demand_mw",
+      "geography": "WEST",
+      "monthly_profile_correlation": 0.6130780764001024,
+      "actual_seasonal_range": 692.8052522203386,
+      "forecast_seasonal_range": 331.35808188228293,
+      "seasonal_amplitude_ratio": 0.47828459847890753
+    },
+    {
+      "target_name": "total_energy_mwh",
+      "geography": "COAST",
+      "monthly_profile_correlation": 0.9382036257079907,
+      "actual_seasonal_range": 4683325.470525695,
+      "forecast_seasonal_range": 3092940.999999999,
+      "seasonal_amplitude_ratio": 0.6604155571645167
+    },
+    {
+      "target_name": "total_energy_mwh",
+      "geography": "EAST",
+      "monthly_profile_correlation": 0.8878091739619431,
+      "actual_seasonal_range": 554907.968049017,
+      "forecast_seasonal_range": 348164.06144067785,
+      "seasonal_amplitude_ratio": 0.6274266752102634
+    },
+    {
+      "target_name": "total_energy_mwh",
+      "geography": "ERCOT_SYSTEM",
+      "monthly_profile_correlation": 0.8961272076497029,
+      "actual_seasonal_range": 15577047.196850445,
+      "forecast_seasonal_range": 10966408.338983048,
+      "seasonal_amplitude_ratio": 0.7040107281179946
+    },
+    {
+      "target_name": "total_energy_mwh",
+      "geography": "FAR_WEST",
+      "monthly_profile_correlation": 0.604058522975404,
+      "actual_seasonal_range": 614028.9408021518,
+      "forecast_seasonal_range": 360295.54025423713,
+      "seasonal_amplitude_ratio": 0.5867728967034619
+    },
+    {
+      "target_name": "total_energy_mwh",
+      "geography": "NORTH",
+      "monthly_profile_correlation": 0.8536770489308131,
+      "actual_seasonal_range": 377551.21030654246,
+      "forecast_seasonal_range": 358788.07521186443,
+      "seasonal_amplitude_ratio": 0.9503030725833356
+    },
+    {
+      "target_name": "total_energy_mwh",
+      "geography": "NORTH_CENTRAL",
+      "monthly_profile_correlation": 0.9527089844877199,
+      "actual_seasonal_range": 5646381.141158661,
+      "forecast_seasonal_range": 4239205.118644067,
+      "seasonal_amplitude_ratio": 0.7507826717085848
+    },
+    {
+      "target_name": "total_energy_mwh",
+      "geography": "SOUTHERN",
+      "monthly_profile_correlation": 0.9087601171397525,
+      "actual_seasonal_range": 1230755.2232393897,
+      "forecast_seasonal_range": 845614.2669491526,
+      "seasonal_amplitude_ratio": 0.6870694115142303
+    },
+    {
+      "target_name": "total_energy_mwh",
+      "geography": "SOUTH_CENTRAL",
+      "monthly_profile_correlation": 0.9310991625425002,
+      "actual_seasonal_range": 2913560.6560784904,
+      "forecast_seasonal_range": 2065503.8559322036,
+      "seasonal_amplitude_ratio": 0.708927700414609
+    },
+    {
+      "target_name": "total_energy_mwh",
+      "geography": "WEST",
+      "monthly_profile_correlation": 0.8732127222698273,
+      "actual_seasonal_range": 359587.4140468474,
+      "forecast_seasonal_range": 247058.5084745763,
+      "seasonal_amplitude_ratio": 0.6870610561536208
+    }
+  ],
+  "future_placeholder_invariance": {
+    "total_energy_mwh": {
+      "placeholder_values_tested": [
+        0.0,
+        1000000000.0
+      ],
+      "max_prediction_delta": 0.0,
+      "invariant_at_absolute_tolerance": 1e-05,
+      "passed": true,
+      "decoder_known_variables": [
+        "month_of_year",
+        "quarter",
+        "season",
+        "time_idx",
+        "days_in_month",
+        "weekday_count",
+        "weekend_count",
+        "holiday_count",
+        "month_sin",
+        "month_cos"
+      ],
+      "decoder_unknown_variables": [
+        "target_value"
+      ]
+    },
+    "peak_demand_mw": {
+      "placeholder_values_tested": [
+        0.0,
+        1000000000.0
+      ],
+      "max_prediction_delta": 0.0,
+      "invariant_at_absolute_tolerance": 1e-05,
+      "passed": true,
+      "decoder_known_variables": [
+        "month_of_year",
+        "quarter",
+        "season",
+        "time_idx",
+        "days_in_month",
+        "weekday_count",
+        "weekend_count",
+        "holiday_count",
+        "month_sin",
+        "month_cos"
+      ],
+      "decoder_unknown_variables": [
+        "target_value"
+      ]
+    }
+  },
+  "quantile_crossing_rate": 0.0,
+  "diagnostic_findings": {
+    "confirmed": [
+      "TFT timestamps, horizons, actual values, regional definitions, and units align exactly on the common evaluation keys.",
+      "TFT quantile predictions are returned in original target units through the checkpoint target normalizer; P50 is quantile index 1.",
+      "The original TFT headline used only complete 12-month windows while Phase 2A included shorter end-of-series horizons; the final comparison uses their exact intersection.",
+      "Phase 2A models are refit at every forecast origin; TFT weights remain fixed after training through 2017 while later observed targets are used only as encoder history.",
+      "TFT forecasts have strong negative bias and severely under-cover the nominal P10-P90 interval.",
+      "No target-derived variable is a known decoder input, and future placeholder invariance passed."
+    ],
+    "hypotheses": [
+      "The small capacity and fixed pre-2018 weights may not adapt to the post-2020 level shift as effectively as rolling-refit Holt-Winters.",
+      "Calendar-only covariates and quantile-loss optimization may be insufficient for rare peak and regime-shift behavior.",
+      "The 36-month encoder may capture seasonality but not the longer structural trend; this was not tested by retraining."
+    ],
+    "confirmed_defect_requiring_retraining": false
+  },
+  "system_tft_metrics": [
+    {
+      "breakdown": "period_category",
+      "model": "tft_small",
+      "target_name": "peak_demand_mw",
+      "geography": NaN,
+      "horizon": NaN,
+      "observations": 708.0,
+      "mae": 10301.32018533969,
+      "rmse": 12235.583606079068,
+      "mape": 13.856520215673243,
+      "wape": 14.71178178810966,
+      "mase": 2.774102963737998,
+      "forecast_bias": -9955.147633176555,
+      "directional_accuracy": 0.7655367231638418,
+      "yoy_growth_mae": 0.14809953155539646,
+      "peak_demand_mae": 10301.32018533969,
+      "interval_coverage": 0.2570621468926554,
+      "p10_quantile_loss": 1327.3354384468928,
+      "p50_quantile_loss": 5150.660092669845,
+      "p90_quantile_loss": 5722.946526570587,
+      "season": NaN,
+      "period_category": "all_test"
+    },
+    {
+      "breakdown": "period_category",
+      "model": "tft_small",
+      "target_name": "total_energy_mwh",
+      "geography": NaN,
+      "horizon": NaN,
+      "observations": 708.0,
+      "mae": 6881873.204775002,
+      "rmse": 7808420.627289085,
+      "mape": 17.47778109315408,
+      "wape": 18.23763703555801,
+      "mase": 5.5880604054510705,
+      "forecast_bias": -6773216.761191172,
+      "directional_accuracy": 0.7937853107344632,
+      "yoy_growth_mae": 0.18515162043547811,
+      "peak_demand_mae": NaN,
+      "interval_coverage": 0.046610169491525424,
+      "p10_quantile_loss": 834055.2806388913,
+      "p50_quantile_loss": 3440936.602387501,
+      "p90_quantile_loss": 5040948.722431831,
+      "season": NaN,
+      "period_category": "all_test"
+    }
+  ],
+  "charts": [
+    "reports/charts/phase2b_actual_vs_predicted.png",
+    "reports/charts/phase2b_residual_distributions.png",
+    "reports/charts/phase2b_regional_error_heatmap.png",
+    "reports/charts/phase2b_comparable_wape_by_horizon.png"
+  ],
+  "best_validated_model": "holt_winters",
+  "tft_status": "experimental"
+}

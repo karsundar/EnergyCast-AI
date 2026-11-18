@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "workload": "E0-E5, two targets, one system origin, horizon 1",
+  "lightgbm_threads_per_worker": 2,
+  "blas_threads_per_worker": 1,
+  "runs": [
+    {
+      "workers": 1,
+      "wall_seconds": 1.2454459519994998,
+      "tasks": 12,
+      "tasks_per_second": 9.635102977158192,
+      "prediction_sha256": "627f6071c13e9e07ed6f967e9675644f263e411b076460329925adf4b9240da2",
+      "exactly_matches_sequential": true,
+      "aggregate_worker_peak_rss_kib": 309168,
+      "max_worker_peak_rss_kib": 309168,
+      "speedup_vs_first": 1.0
+    },
+    {
+      "workers": 4,
+      "wall_seconds": 2.4878387420012587,
+      "tasks": 12,
+      "tasks_per_second": 4.823463754868212,
+      "prediction_sha256": "627f6071c13e9e07ed6f967e9675644f263e411b076460329925adf4b9240da2",
+      "exactly_matches_sequential": true,
+      "aggregate_worker_peak_rss_kib": 927504,
+      "max_worker_peak_rss_kib": 309168,
+      "speedup_vs_first": 0.5006136173430769
+    },
+    {
+      "workers": 8,
+      "wall_seconds": 2.4577167619991087,
+      "tasks": 12,
+      "tasks_per_second": 4.882580525771892,
+      "prediction_sha256": "627f6071c13e9e07ed6f967e9675644f263e411b076460329925adf4b9240da2",
+      "exactly_matches_sequential": true,
+      "aggregate_worker_peak_rss_kib": 927504,
+      "max_worker_peak_rss_kib": 309168,
+      "speedup_vs_first": 0.5067491792611827
+    },
+    {
+      "workers": 16,
+      "wall_seconds": 2.5439409680002427,
+      "tasks": 12,
+      "tasks_per_second": 4.71709058934376,
+      "prediction_sha256": "627f6071c13e9e07ed6f967e9675644f263e411b076460329925adf4b9240da2",
+      "exactly_matches_sequential": true,
+      "aggregate_worker_peak_rss_kib": 927504,
+      "max_worker_peak_rss_kib": 309168,
+      "speedup_vs_first": 0.48957344830942673
+    }
+  ],
+  "consistency_diagnostics": []
+}

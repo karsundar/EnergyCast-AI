@@ -1,0 +1,34 @@
+{
+  "enabled": false,
+  "dataset": "seasonal-monthly-single-levels",
+  "authentication": "local ~/.cdsapirc only",
+  "license_gate": [
+    "CC-BY licence",
+    "Additional licence to use non-European contributions"
+  ],
+  "common": {
+    "originating_centre": "ecmwf",
+    "system": "51",
+    "month": "01",
+    "leadtime_month": ["1", "2"],
+    "variable": ["2m_temperature", "total_precipitation"],
+    "area": [36.5, -106.75, 25.75, -93.5],
+    "data_format": "netcdf"
+  },
+  "forecast_sample": {
+    "year": "2024",
+    "label": "archived_realtime_forecast"
+  },
+  "matching_hindcast_sample": {
+    "year": "2016",
+    "label": "retrospective_hindcast"
+  },
+  "required_dimensions": [
+    "forecast_reference_time",
+    "leadtime_month",
+    "number",
+    "latitude",
+    "longitude"
+  ],
+  "validation_required_before_bulk": true
+}

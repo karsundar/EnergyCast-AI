@@ -1,0 +1,43 @@
+{
+  "status": "primary_complete_secondary_pending",
+  "as_of": "2026-11-15",
+  "plan": "priority",
+  "texas_area_nwse": [36.5, -106.75, 25.75, -93.5],
+  "lead_months": [1, 2, 3, 4, 5, 6],
+  "providers": {
+    "ecmwf_seas5_system_51": {
+      "role": "primary",
+      "requests": 227,
+      "hindcast_requests": 156,
+      "forecast_requests": 71,
+      "expected_rows": 6949404,
+      "estimated_raw_bytes": 150602094,
+      "estimated_processed_bytes": 434910375,
+      "estimated_runtime_hours_excluding_queue": [2.8, 11.3],
+      "actual_validated_requests": 227,
+      "actual_rows": 6949404,
+      "actual_raw_bytes": 110580266,
+      "actual_processed_bytes": 437198418,
+      "actual_request_seconds": 16180.3,
+      "completed_at": "2026-11-16T07:34:41.498192+00:00",
+      "validation_status": "complete"
+    },
+    "cds_ncep_cfsv2_system_2": {
+      "role": "secondary",
+      "requests": 227,
+      "hindcast_requests": 156,
+      "forecast_requests": 71,
+      "expected_rows": 12170928,
+      "estimated_raw_bytes": 216726582,
+      "estimated_processed_bytes": 754021014,
+      "estimated_runtime_hours_excluding_queue": [2.8, 11.3]
+    },
+    "climate_normals": {"role": "fallback_for_leads_7_to_12", "network_requests": 0},
+    "noaa_direct_cfsv2": {"role": "excluded_from_bulk"}
+  },
+  "concurrency": 1,
+  "minimum_free_gib": 8,
+  "bulk_started": true,
+  "primary_bulk_complete": true,
+  "secondary_bulk_started": false
+}

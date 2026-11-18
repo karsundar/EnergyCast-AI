@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "model_revision": "ff35bf3168857dce1984939b85d8955976f12f32",
+  "torch_environment": {
+    "precision": "bf16",
+    "batch_size": 64,
+    "hip_visible_devices": null
+  },
+  "timings": [
+    {
+      "origin": "2020-12-01",
+      "seconds": 1.425005441000394,
+      "rows": 2,
+      "batch_size": 64,
+      "precision": "bf16",
+      "peak_vram_bytes": 279525888
+    }
+  ]
+}

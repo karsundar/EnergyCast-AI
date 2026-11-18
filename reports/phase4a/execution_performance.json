@@ -1,0 +1,2140 @@
+{
+  "workers": 8,
+  "lightgbm_threads_per_worker": 2,
+  "blas_threads_per_worker": 1,
+  "wall_seconds": 199.86673687300026,
+  "experiments": {
+    "E4": {
+      "tasks": 106,
+      "task_cpu_wall_seconds": 735.6598077909985,
+      "peak_worker_rss_kib": 627908
+    },
+    "E5": {
+      "tasks": 106,
+      "task_cpu_wall_seconds": 802.6829459370001,
+      "peak_worker_rss_kib": 627908
+    }
+  },
+  "tasks": [
+    {
+      "key": "E4:total_energy_mwh:2020-12",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2020-12-01",
+      "duration_seconds": 6.660253148000265,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2020-12",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2020-12-01",
+      "duration_seconds": 6.651618959000189,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2020-12",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2020-12-01",
+      "duration_seconds": 7.850433482999506,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2020-12",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2020-12-01",
+      "duration_seconds": 7.333811483000318,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2021-01",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2021-01-01",
+      "duration_seconds": 7.134383714999785,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2021-01",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2021-01-01",
+      "duration_seconds": 7.123996633999923,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2021-01",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2021-01-01",
+      "duration_seconds": 7.581149245001143,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2021-01",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2021-01-01",
+      "duration_seconds": 7.823278464999021,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2021-02",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2021-02-01",
+      "duration_seconds": 6.644792041999608,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2021-02",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2021-02-01",
+      "duration_seconds": 6.582880739000757,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2021-02",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2021-02-01",
+      "duration_seconds": 7.347266605000186,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2021-03",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2021-03-01",
+      "duration_seconds": 6.934070414999951,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2021-02",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2021-02-01",
+      "duration_seconds": 7.763396673999523,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2021-03",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2021-03-01",
+      "duration_seconds": 7.024082424999506,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2021-03",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2021-03-01",
+      "duration_seconds": 7.29063421399951,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2021-03",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2021-03-01",
+      "duration_seconds": 7.426863640999727,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2021-04",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2021-04-01",
+      "duration_seconds": 6.657304326001395,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2021-04",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2021-04-01",
+      "duration_seconds": 6.749634241999956,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2021-05",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2021-05-01",
+      "duration_seconds": 7.041459787998974,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2021-04",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2021-04-01",
+      "duration_seconds": 7.315925405000598,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2021-04",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2021-04-01",
+      "duration_seconds": 7.705496125001446,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2021-05",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2021-05-01",
+      "duration_seconds": 7.130818714998895,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2021-05",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2021-05-01",
+      "duration_seconds": 7.42086521300007,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2021-06",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2021-06-01",
+      "duration_seconds": 6.696056332000808,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2021-05",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2021-05-01",
+      "duration_seconds": 7.363856777999899,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2021-06",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2021-06-01",
+      "duration_seconds": 6.738422950000313,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2021-06",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2021-06-01",
+      "duration_seconds": 7.315622873999018,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2021-07",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2021-07-01",
+      "duration_seconds": 7.144755023999096,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2021-07",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2021-07-01",
+      "duration_seconds": 7.093605568999919,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2021-06",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2021-06-01",
+      "duration_seconds": 7.823315184999956,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2021-07",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2021-07-01",
+      "duration_seconds": 7.346631639999032,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2021-07",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2021-07-01",
+      "duration_seconds": 7.265125578000152,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2021-08",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2021-08-01",
+      "duration_seconds": 6.634580003999872,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2021-08",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2021-08-01",
+      "duration_seconds": 6.777748188998885,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2021-09",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2021-09-01",
+      "duration_seconds": 7.178284012999939,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2021-08",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2021-08-01",
+      "duration_seconds": 7.603945447999649,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2021-09",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2021-09-01",
+      "duration_seconds": 7.137194400998851,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2021-08",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2021-08-01",
+      "duration_seconds": 7.831650912001351,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2021-10",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2021-10-01",
+      "duration_seconds": 6.656584919001034,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2021-10",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2021-10-01",
+      "duration_seconds": 6.6899801029994705,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2021-09",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2021-09-01",
+      "duration_seconds": 7.259643903000324,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2021-09",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2021-09-01",
+      "duration_seconds": 7.362493885999356,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2021-11",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2021-11-01",
+      "duration_seconds": 7.169413074998374,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2021-11",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2021-11-01",
+      "duration_seconds": 7.166619143999924,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2021-10",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2021-10-01",
+      "duration_seconds": 7.702059328999894,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2021-10",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2021-10-01",
+      "duration_seconds": 7.748398704001374,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2021-12",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2021-12-01",
+      "duration_seconds": 6.763591367000117,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2021-12",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2021-12-01",
+      "duration_seconds": 6.66853638000066,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2021-11",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2021-11-01",
+      "duration_seconds": 7.3538663769995765,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2021-11",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2021-11-01",
+      "duration_seconds": 7.3531164240012,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2022-01",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2022-01-01",
+      "duration_seconds": 6.953150567000193,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2022-01",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2022-01-01",
+      "duration_seconds": 6.959311221000462,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2021-12",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2021-12-01",
+      "duration_seconds": 7.910448914000881,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2021-12",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2021-12-01",
+      "duration_seconds": 7.778554049000377,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2022-02",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2022-02-01",
+      "duration_seconds": 6.776292279999325,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2022-02",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2022-02-01",
+      "duration_seconds": 6.783349744999214,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2022-01",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2022-01-01",
+      "duration_seconds": 7.301711269999942,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2022-01",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2022-01-01",
+      "duration_seconds": 7.403160646999822,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2022-02",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2022-02-01",
+      "duration_seconds": 7.401763342999402,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2022-03",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2022-03-01",
+      "duration_seconds": 6.747077141000773,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2022-02",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2022-02-01",
+      "duration_seconds": 7.560119494999526,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2022-03",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2022-03-01",
+      "duration_seconds": 7.146732690000135,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2022-04",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2022-04-01",
+      "duration_seconds": 6.752953147000881,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2022-04",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2022-04-01",
+      "duration_seconds": 6.769521989999703,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2022-03",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2022-03-01",
+      "duration_seconds": 7.503299037000033,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2022-03",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2022-03-01",
+      "duration_seconds": 7.763791659999697,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2022-05",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2022-05-01",
+      "duration_seconds": 7.11061432400129,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2022-05",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2022-05-01",
+      "duration_seconds": 7.112687160999485,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2022-04",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2022-04-01",
+      "duration_seconds": 7.438007482000103,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2022-04",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2022-04-01",
+      "duration_seconds": 7.484206119999726,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2022-05",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2022-05-01",
+      "duration_seconds": 7.40315203299906,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2022-06",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2022-06-01",
+      "duration_seconds": 6.811252904000867,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2022-05",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2022-05-01",
+      "duration_seconds": 7.40924750799968,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2022-06",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2022-06-01",
+      "duration_seconds": 7.042923183000312,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2022-07",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2022-07-01",
+      "duration_seconds": 6.6418773109999165,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2022-07",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2022-07-01",
+      "duration_seconds": 6.691922136000358,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2022-06",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2022-06-01",
+      "duration_seconds": 7.638239784999314,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2022-06",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2022-06-01",
+      "duration_seconds": 7.640031076000014,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2022-07",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2022-07-01",
+      "duration_seconds": 7.364803930000562,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2022-08",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2022-08-01",
+      "duration_seconds": 6.886803125998995,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2022-07",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2022-07-01",
+      "duration_seconds": 7.445318079999197,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2022-08",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2022-08-01",
+      "duration_seconds": 7.06775292599923,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2022-08",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2022-08-01",
+      "duration_seconds": 7.450199087999863,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2022-08",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2022-08-01",
+      "duration_seconds": 7.429435869000372,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2022-09",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2022-09-01",
+      "duration_seconds": 6.85025100600069,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2022-09",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2022-09-01",
+      "duration_seconds": 6.988064375998874,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2022-10",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2022-10-01",
+      "duration_seconds": 6.95844230199873,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2022-10",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2022-10-01",
+      "duration_seconds": 7.095762806000494,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2022-09",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2022-09-01",
+      "duration_seconds": 7.467696010000509,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2022-09",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2022-09-01",
+      "duration_seconds": 7.491765192000457,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2022-11",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2022-11-01",
+      "duration_seconds": 6.877765671999441,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2022-11",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2022-11-01",
+      "duration_seconds": 7.067078351999953,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2022-10",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2022-10-01",
+      "duration_seconds": 7.411117532001299,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2022-10",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2022-10-01",
+      "duration_seconds": 7.427518208000038,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2022-12",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2022-12-01",
+      "duration_seconds": 6.715753628999664,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2022-12",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2022-12-01",
+      "duration_seconds": 6.777848065999933,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2022-11",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2022-11-01",
+      "duration_seconds": 7.812283960000059,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2022-11",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2022-11-01",
+      "duration_seconds": 7.876869362000434,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2023-01",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2023-01-01",
+      "duration_seconds": 6.752027213000474,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2023-01",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2023-01-01",
+      "duration_seconds": 6.978634404000331,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2022-12",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2022-12-01",
+      "duration_seconds": 7.728484683999341,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2022-12",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2022-12-01",
+      "duration_seconds": 7.853312381999785,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2023-01",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2023-01-01",
+      "duration_seconds": 7.397609413001192,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2023-02",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2023-02-01",
+      "duration_seconds": 6.874746520999906,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2023-01",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2023-01-01",
+      "duration_seconds": 7.636770121000154,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2023-02",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2023-02-01",
+      "duration_seconds": 7.093358737000017,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2023-03",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2023-03-01",
+      "duration_seconds": 6.882718516999375,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2023-02",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2023-02-01",
+      "duration_seconds": 7.6016622749993985,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2023-03",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2023-03-01",
+      "duration_seconds": 7.100425362999886,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2023-02",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2023-02-01",
+      "duration_seconds": 7.768512163998821,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2023-04",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2023-04-01",
+      "duration_seconds": 6.842640453000058,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2023-03",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2023-03-01",
+      "duration_seconds": 7.542823310999665,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2023-04",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2023-04-01",
+      "duration_seconds": 7.17145776399957,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2023-03",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2023-03-01",
+      "duration_seconds": 7.84808280300058,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2023-04",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2023-04-01",
+      "duration_seconds": 7.4818557020007574,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2023-04",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2023-04-01",
+      "duration_seconds": 7.444407101000252,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2023-05",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2023-05-01",
+      "duration_seconds": 6.945287247999659,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2023-05",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2023-05-01",
+      "duration_seconds": 7.035714593001103,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2023-05",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2023-05-01",
+      "duration_seconds": 7.3906969529998605,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2023-06",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2023-06-01",
+      "duration_seconds": 7.136148667999805,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2023-05",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2023-05-01",
+      "duration_seconds": 7.544514260998767,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2023-06",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2023-06-01",
+      "duration_seconds": 7.016104970000015,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2023-07",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2023-07-01",
+      "duration_seconds": 6.867998941999758,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2023-07",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2023-07-01",
+      "duration_seconds": 7.09108119099983,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2023-06",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2023-06-01",
+      "duration_seconds": 7.431962961998579,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2023-06",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2023-06-01",
+      "duration_seconds": 7.780065666000155,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2023-08",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2023-08-01",
+      "duration_seconds": 6.86202649400002,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2023-08",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2023-08-01",
+      "duration_seconds": 6.88915234399974,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2023-07",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2023-07-01",
+      "duration_seconds": 7.500209862000702,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2023-07",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2023-07-01",
+      "duration_seconds": 7.839202232999014,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2023-09",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2023-09-01",
+      "duration_seconds": 6.757512181000493,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2023-08",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2023-08-01",
+      "duration_seconds": 7.4322252980000485,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2023-09",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2023-09-01",
+      "duration_seconds": 7.219138951999412,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2023-08",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2023-08-01",
+      "duration_seconds": 7.908345665000525,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2023-10",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2023-10-01",
+      "duration_seconds": 6.785747789001107,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2023-09",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2023-09-01",
+      "duration_seconds": 7.493645250000554,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2023-10",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2023-10-01",
+      "duration_seconds": 7.067311970000446,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2023-09",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2023-09-01",
+      "duration_seconds": 7.956572667999353,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2023-10",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2023-10-01",
+      "duration_seconds": 7.589034223001363,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2023-10",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2023-10-01",
+      "duration_seconds": 7.767232779999176,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2023-11",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2023-11-01",
+      "duration_seconds": 7.239311984998494,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2023-11",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2023-11-01",
+      "duration_seconds": 7.577870330998849,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2023-11",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2023-11-01",
+      "duration_seconds": 7.5134370980013045,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2023-12",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2023-12-01",
+      "duration_seconds": 6.74950966400138,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2023-11",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2023-11-01",
+      "duration_seconds": 7.532969269001114,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2023-12",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2023-12-01",
+      "duration_seconds": 7.263718072999836,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2023-12",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2023-12-01",
+      "duration_seconds": 7.505530472999453,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2024-01",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2024-01-01",
+      "duration_seconds": 7.138447162000375,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2023-12",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2023-12-01",
+      "duration_seconds": 7.8126577919993,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2024-01",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2024-01-01",
+      "duration_seconds": 7.364484667999932,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2024-01",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2024-01-01",
+      "duration_seconds": 7.393499947000237,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2024-02",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2024-02-01",
+      "duration_seconds": 6.861860603999958,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2024-01",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2024-01-01",
+      "duration_seconds": 7.363223441001537,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2024-02",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2024-02-01",
+      "duration_seconds": 6.989395822000006,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2024-02",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2024-02-01",
+      "duration_seconds": 7.711788427001011,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2024-03",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2024-03-01",
+      "duration_seconds": 7.130434736998723,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2024-04",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2024-04-01",
+      "duration_seconds": 6.757116282000425,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2024-03",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2024-03-01",
+      "duration_seconds": 7.186401147999277,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2024-02",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2024-02-01",
+      "duration_seconds": 7.767488462999609,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2024-03",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2024-03-01",
+      "duration_seconds": 7.339270635000503,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2024-04",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2024-04-01",
+      "duration_seconds": 6.988635970001269,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2024-03",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2024-03-01",
+      "duration_seconds": 7.510719114001404,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2024-05",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2024-05-01",
+      "duration_seconds": 6.785051025000939,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2024-05",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2024-05-01",
+      "duration_seconds": 7.150950405999538,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2024-04",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2024-04-01",
+      "duration_seconds": 7.386236243000894,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2024-06",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2024-06-01",
+      "duration_seconds": 6.921827633999783,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2024-06",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2024-06-01",
+      "duration_seconds": 6.736600862001069,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2024-04",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2024-04-01",
+      "duration_seconds": 7.783155433000502,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2024-05",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2024-05-01",
+      "duration_seconds": 7.48635230400032,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2024-05",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2024-05-01",
+      "duration_seconds": 7.862647014000686,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2024-07",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2024-07-01",
+      "duration_seconds": 6.781192426999041,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2024-07",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2024-07-01",
+      "duration_seconds": 6.880143680000401,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2024-06",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2024-06-01",
+      "duration_seconds": 7.6247650450004585,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2024-08",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2024-08-01",
+      "duration_seconds": 6.95296111099924,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2024-08",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2024-08-01",
+      "duration_seconds": 6.844309030999284,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2024-06",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2024-06-01",
+      "duration_seconds": 7.815690824998455,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2024-07",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2024-07-01",
+      "duration_seconds": 7.7268366730004345,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2024-07",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2024-07-01",
+      "duration_seconds": 7.743354696000097,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2024-09",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2024-09-01",
+      "duration_seconds": 6.822308779001105,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2024-08",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2024-08-01",
+      "duration_seconds": 7.455327055000453,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2024-09",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2024-09-01",
+      "duration_seconds": 6.975462361000609,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2024-08",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2024-08-01",
+      "duration_seconds": 7.6293484549987625,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2024-10",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2024-10-01",
+      "duration_seconds": 6.920306710000659,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2024-09",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2024-09-01",
+      "duration_seconds": 7.634686967998277,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2024-10",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2024-10-01",
+      "duration_seconds": 7.0367577859997255,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2024-09",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2024-09-01",
+      "duration_seconds": 7.721663436999734,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2024-11",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2024-11-01",
+      "duration_seconds": 6.805363560000842,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2024-11",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2024-11-01",
+      "duration_seconds": 6.741815588000463,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2024-10",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2024-10-01",
+      "duration_seconds": 7.492666266000015,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2024-10",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2024-10-01",
+      "duration_seconds": 7.503684518000227,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2024-11",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2024-11-01",
+      "duration_seconds": 7.43453877599859,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2024-12",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2024-12-01",
+      "duration_seconds": 7.119628829999783,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2024-12",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2024-12-01",
+      "duration_seconds": 7.1239452740010165,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2024-11",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2024-11-01",
+      "duration_seconds": 7.7327685479995125,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2025-01",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2025-01-01",
+      "duration_seconds": 6.794480135999038,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2024-12",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2024-12-01",
+      "duration_seconds": 7.433968952000214,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2025-01",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2025-01-01",
+      "duration_seconds": 7.113379297999927,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2024-12",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2024-12-01",
+      "duration_seconds": 7.874431194999488,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2025-02",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2025-02-01",
+      "duration_seconds": 6.7814072239998495,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2025-02",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2025-02-01",
+      "duration_seconds": 7.3013017580015,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2025-01",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2025-01-01",
+      "duration_seconds": 7.9504767899998114,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2025-01",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2025-01-01",
+      "duration_seconds": 8.054946254000242,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2025-02",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2025-02-01",
+      "duration_seconds": 7.613179747000686,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2025-03",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2025-03-01",
+      "duration_seconds": 7.025488798000879,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2025-03",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2025-03-01",
+      "duration_seconds": 6.861667928998941,
+      "worker_pid": 147508,
+      "worker_peak_rss_kib": 627772,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2025-02",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2025-02-01",
+      "duration_seconds": 7.519631526998637,
+      "worker_pid": 147556,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:total_energy_mwh:2025-04",
+      "experiment": "E4",
+      "target": "total_energy_mwh",
+      "origin": "2025-04-01",
+      "duration_seconds": 7.048164734000238,
+      "worker_pid": 147639,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2025-03",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2025-03-01",
+      "duration_seconds": 7.561458977999791,
+      "worker_pid": 147578,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E4:peak_demand_mw:2025-04",
+      "experiment": "E4",
+      "target": "peak_demand_mw",
+      "origin": "2025-04-01",
+      "duration_seconds": 7.083017410999673,
+      "worker_pid": 147575,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2025-03",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2025-03-01",
+      "duration_seconds": 7.73526916999981,
+      "worker_pid": 147536,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:total_energy_mwh:2025-04",
+      "experiment": "E5",
+      "target": "total_energy_mwh",
+      "origin": "2025-04-01",
+      "duration_seconds": 7.263720121998631,
+      "worker_pid": 147533,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    },
+    {
+      "key": "E5:peak_demand_mw:2025-04",
+      "experiment": "E5",
+      "target": "peak_demand_mw",
+      "origin": "2025-04-01",
+      "duration_seconds": 7.252741268999671,
+      "worker_pid": 147623,
+      "worker_peak_rss_kib": 627908,
+      "rows": 108
+    }
+  ]
+}

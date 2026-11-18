@@ -1,0 +1,37 @@
+{
+  "mode": "oracle-mixed",
+  "metrics": [
+    {
+      "scope": "system",
+      "target_name": "peak_demand_mw",
+      "observations": 636,
+      "wape": 5.403129440422211,
+      "mae": 3748.763579121635,
+      "bias": -2946.857637244816
+    },
+    {
+      "scope": "system",
+      "target_name": "total_energy_mwh",
+      "observations": 636,
+      "wape": 3.2471673552996205,
+      "mae": 1210754.8911713434,
+      "bias": -1104412.517202545
+    },
+    {
+      "scope": "all_regions",
+      "target_name": "peak_demand_mw",
+      "observations": 5724,
+      "wape": 5.190772494021047,
+      "mae": 812.4036294558866,
+      "bias": -534.8218195063364
+    },
+    {
+      "scope": "all_regions",
+      "target_name": "total_energy_mwh",
+      "observations": 5724,
+      "wape": 3.6096369096776444,
+      "mae": 299090.4629272597,
+      "bias": -239607.65921065176
+    }
+  ]
+}
