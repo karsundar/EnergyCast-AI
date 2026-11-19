@@ -237,7 +237,15 @@ manual execution procedures rather than redistributing upstream datasets.
 
 ## License and source terms
 
-No project license has been declared yet. Upstream data and model artifacts
-remain subject to their respective provider terms, including ERCOT, EIA, FRED,
-ECMWF Copernicus, NOAA/NCEP, New York Fed and Hugging Face model licenses.
+Original EnergyCast AI source code and documentation are licensed under the
+[Apache License 2.0](LICENSE). This project license does **not** grant rights to
+redistribute third-party datasets or model artifacts.
+
+- [Third-party software and model notices](THIRD_PARTY_NOTICES.md)
+- [Dataset licenses, source terms and attribution](DATA_LICENSES.md)
+- [Apache NOTICE](NOTICE)
+
+The local production bundle is excluded from Git and is not approved for public
+download until its distribution includes the complete applicable upstream
+license texts, notices, model card and pinned-revision provenance.
 

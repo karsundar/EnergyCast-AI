@@ -236,6 +236,26 @@ Holt-Winters remained difficult to beat. TFT and direct LightGBM experiments wer
 
 A metric in a notebook is not a deployable forecast. Frozen artifacts, dependency records, immutable history, checksum validation, failure recovery, and non-publishing dry runs were necessary to bridge research and operation.
 
+## Licensing, data sources, and attribution
+
+Original EnergyCast code and documentation are available under the **Apache
+License 2.0**. That permissive license includes an express patent grant, but it
+does not relicense the project's inputs. ERCOT, EIA, FRED, New York Fed,
+Copernicus/ECMWF, NOAA/NCEP, Census, research datasets, and model artifacts each
+retain their own applicable terms.
+
+Amazon Chronos-2 is distributed upstream under Apache 2.0. Any public
+EnergyCast production bundle containing the vendored checkpoint must also
+preserve its upstream license, notices, model card, citation, source URL, and
+pinned revision. At this milestone the approximately 503 MB production bundle
+remains excluded from Git and is not offered as a public download.
+
+The repository records these boundaries in [the EnergyCast license](https://github.com/karsundar/EnergyCast-AI/blob/main/LICENSE),
+[third-party notices](https://github.com/karsundar/EnergyCast-AI/blob/main/THIRD_PARTY_NOTICES.md),
+and [dataset licensing and attribution inventory](https://github.com/karsundar/EnergyCast-AI/blob/main/DATA_LICENSES.md).
+Downloading or transforming a public dataset does not by itself grant broader
+redistribution rights.
+
 ## Conclusion
 
 EnergyCast AI demonstrates a practical form of AI-assisted engineering: a human can coordinate substantially more technical work when ChatGPT maintains the research architecture and a coding agent performs disciplined implementation inside a real repository.
