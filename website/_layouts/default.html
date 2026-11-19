@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#09111f" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f4f7fb" media="(prefers-color-scheme: light)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+    {% seo %}
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="shell nav-shell">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="EnergyCast AI home">
+          <span class="brand-mark" aria-hidden="true">EC</span>
+          <span>EnergyCast AI</span>
+        </a>
+        <nav aria-label="Primary navigation">
+          <a href="{{ '/' | relative_url }}">Journal</a>
+          <a href="{{ '/about/' | relative_url }}">About</a>
+          <a href="https://github.com/{{ site.repository }}">GitHub <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content">{{ content }}</main>
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div>
+          <strong>EnergyCast AI</strong>
+          <p>Reproducible electricity-demand forecasting, engineered in public.</p>
+        </div>
+        <div class="footer-meta">
+          <span>Built locally on AMD ROCm</span>
+          <span>Research results, not operational guidance</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

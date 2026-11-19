@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">EnergyCast AI orchestration workflow</title>
+  <desc id="desc">Human direction flows to ChatGPT orchestration, coding-agent implementation, local execution, and evidence. Results return to ChatGPT and the human for the next supervised decision.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08111f"/><stop offset="1" stop-color="#102a48"/></linearGradient>
+    <linearGradient id="human" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#43dfd1"/><stop offset="1" stop-color="#1eb7ad"/></linearGradient>
+    <linearGradient id="ai" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#68a0ff"/><stop offset="1" stop-color="#386fe2"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity=".28"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8398b2"/></marker>
+  </defs>
+  <rect width="1200" height="560" rx="24" fill="url(#bg)"/>
+  <text x="64" y="62" fill="#7f96b2" font-family="DM Mono, monospace" font-size="14" letter-spacing="2">HUMAN-SUPERVISED ENGINEERING LOOP</text>
+
+  <g fill="none" stroke="#8398b2" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M260 224 H336"/><path d="M528 224 H604"/><path d="M796 224 H872"/>
+    <path d="M968 300 V378 H794"/><path d="M604 422 H462"/><path d="M368 378 V322"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="64" y="150" width="196" height="148" rx="18" fill="#102238" stroke="#43dfd1"/>
+    <circle cx="100" cy="188" r="18" fill="url(#human)"/>
+    <text x="128" y="194" fill="#f4f8ff" font-family="Manrope, sans-serif" font-weight="700" font-size="21">Human</text>
+    <text x="92" y="235" fill="#aabbd0" font-family="Manrope, sans-serif" font-size="14">Direction · approvals</text>
+    <text x="92" y="258" fill="#aabbd0" font-family="Manrope, sans-serif" font-size="14">Oversight · access</text>
+
+    <rect x="336" y="150" width="192" height="148" rx="18" fill="#102238" stroke="#68a0ff"/>
+    <circle cx="372" cy="188" r="18" fill="url(#ai)"/>
+    <text x="400" y="194" fill="#f4f8ff" font-family="Manrope, sans-serif" font-weight="700" font-size="21">ChatGPT</text>
+    <text x="364" y="235" fill="#aabbd0" font-family="Manrope, sans-serif" font-size="14">Architecture · research</text>
+    <text x="364" y="258" fill="#aabbd0" font-family="Manrope, sans-serif" font-size="14">Interpretation · gates</text>
+
+    <rect x="604" y="150" width="192" height="148" rx="18" fill="#102238" stroke="#ff9f6d"/>
+    <circle cx="640" cy="188" r="18" fill="#ff9f6d"/>
+    <text x="668" y="194" fill="#f4f8ff" font-family="Manrope, sans-serif" font-weight="700" font-size="21">Coding agent</text>
+    <text x="632" y="235" fill="#aabbd0" font-family="Manrope, sans-serif" font-size="14">Implement · test</text>
+    <text x="632" y="258" fill="#aabbd0" font-family="Manrope, sans-serif" font-size="14">Execute · report</text>
+
+    <rect x="872" y="150" width="264" height="148" rx="18" fill="#102238" stroke="#6d8098"/>
+    <circle cx="908" cy="188" r="18" fill="#6d8098"/>
+    <text x="936" y="194" fill="#f4f8ff" font-family="Manrope, sans-serif" font-weight="700" font-size="21">Local execution</text>
+    <text x="900" y="235" fill="#aabbd0" font-family="Manrope, sans-serif" font-size="14">AMD ROCm · CPU</text>
+    <text x="900" y="258" fill="#aabbd0" font-family="Manrope, sans-serif" font-size="14">Data · models · reports</text>
+
+    <rect x="604" y="378" width="190" height="88" rx="15" fill="#0d1d31" stroke="#43dfd1"/>
+    <text x="634" y="416" fill="#f4f8ff" font-family="Manrope, sans-serif" font-weight="700" font-size="18">Evidence</text>
+    <text x="634" y="442" fill="#9fb1c7" font-family="DM Mono, monospace" font-size="12">metrics · failures · audits</text>
+
+    <rect x="272" y="378" width="190" height="88" rx="15" fill="#0d1d31" stroke="#68a0ff"/>
+    <text x="302" y="416" fill="#f4f8ff" font-family="Manrope, sans-serif" font-weight="700" font-size="18">Next decision</text>
+    <text x="302" y="442" fill="#9fb1c7" font-family="DM Mono, monospace" font-size="12">review · approve · revise</text>
+  </g>
+  <text x="64" y="516" fill="#7188a4" font-family="DM Mono, monospace" font-size="13">No autonomous deployment · consequential actions remain human-controlled</text>
+</svg>

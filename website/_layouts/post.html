@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<article class="article">
+  <header class="article-hero">
+    <div class="shell article-head">
+      <p class="eyebrow">Engineering field note · {{ page.date | date: "%B %-d, %Y" }}</p>
+      <h1>{{ page.title }}</h1>
+      {% if page.subtitle %}<p class="article-subtitle">{{ page.subtitle }}</p>{% endif %}
+      <div class="byline">
+        <span>By {{ page.author | default: site.author.name }}</span>
+        <span aria-hidden="true">•</span>
+        <span>{{ page.reading_time | default: "18 min read" }}</span>
+      </div>
+    </div>
+  </header>
+  <div class="shell article-layout">
+    <aside class="toc" aria-label="Article contents">
+      <p class="toc-title">On this page</p>
+      <ol>
+        <li><a href="#the-experiment">The experiment</a></li>
+        <li><a href="#development-architecture">Development architecture</a></li>
+        <li><a href="#manual-versus-automated-work">Manual vs automated</a></li>
+        <li><a href="#local-infrastructure">Local infrastructure</a></li>
+        <li><a href="#data-engineering">Data engineering</a></li>
+        <li><a href="#forecasting-research">Forecasting research</a></li>
+        <li><a href="#amazon-chronos-2-the-time-series-foundation-model">Amazon Chronos-2</a></li>
+        <li><a href="#validated-results">Validated results</a></li>
+        <li><a href="#probabilistic-calibration">Calibration</a></li>
+        <li><a href="#production-engineering">Production engineering</a></li>
+        <li><a href="#lessons-learned">Lessons learned</a></li>
+      </ol>
+    </aside>
+    <div class="prose">{{ content }}</div>
+  </div>
+</article>

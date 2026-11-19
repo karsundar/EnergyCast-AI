@@ -7,6 +7,8 @@ for guarded production inference.
 
 Repository: [github.com/karsundar/EnergyCast-AI](https://github.com/karsundar/EnergyCast-AI)
 
+Technical blog: [karsundar.github.io/EnergyCast-AI](https://karsundar.github.io/EnergyCast-AI/)
+
 > Status: deterministic V1 is implemented and validated, but no live forecast
 > has been published and unattended scheduling is disabled. Probabilistic
 > intervals remain research-only pending independent prospective validation.

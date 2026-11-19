@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">Validated model WAPE comparison</title>
+  <desc id="desc">Energy E14 has 4.409 percent WAPE versus Holt-Winters at 4.765. Peak E24-B has 6.201 percent WAPE versus Holt-Winters at 6.305. Lower values are better.</desc>
+  <defs>
+    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08111f"/><stop offset="1" stop-color="#102947"/></linearGradient>
+    <linearGradient id="winner" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#43dfd1"/><stop offset="1" stop-color="#68a0ff"/></linearGradient>
+  </defs>
+  <rect width="1200" height="650" rx="24" fill="url(#b)"/>
+  <text x="64" y="58" fill="#7f96b2" font-family="DM Mono, monospace" font-size="14" letter-spacing="2">SYSTEM-WIDE HISTORICAL BACKTEST · WAPE (%)</text>
+  <text x="64" y="104" fill="#f4f8ff" font-family="Manrope, sans-serif" font-size="30" font-weight="700">Selected operational models vs. statistical baselines</text>
+  <text x="1055" y="104" fill="#8398b2" font-family="DM Mono, monospace" font-size="13">LOWER ↓</text>
+
+  <g font-family="Manrope, sans-serif">
+    <text x="64" y="184" fill="#43dfd1" font-family="DM Mono, monospace" font-size="13">MONTHLY ENERGY</text>
+    <text x="64" y="231" fill="#f4f8ff" font-size="17" font-weight="700">E14 ensemble</text>
+    <rect x="292" y="206" width="670" height="34" rx="7" fill="#172a42"/><rect x="292" y="206" width="422" height="34" rx="7" fill="url(#winner)"/>
+    <text x="980" y="231" fill="#f4f8ff" font-family="DM Mono, monospace" font-size="20" font-weight="700">4.409%</text>
+    <text x="64" y="287" fill="#aebdd0" font-size="17">Holt-Winters</text>
+    <rect x="292" y="262" width="670" height="34" rx="7" fill="#172a42"/><rect x="292" y="262" width="456" height="34" rx="7" fill="#63758c"/>
+    <text x="980" y="287" fill="#cad5e2" font-family="DM Mono, monospace" font-size="20">4.765%</text>
+
+    <line x1="64" y1="345" x2="1136" y2="345" stroke="#2b3e56"/>
+
+    <text x="64" y="404" fill="#ff9f6d" font-family="DM Mono, monospace" font-size="13">MONTHLY PEAK DEMAND</text>
+    <text x="64" y="451" fill="#f4f8ff" font-size="17" font-weight="700">E24-B log-ratio</text>
+    <rect x="292" y="426" width="670" height="34" rx="7" fill="#172a42"/><rect x="292" y="426" width="594" height="34" rx="7" fill="url(#winner)"/>
+    <text x="980" y="451" fill="#f4f8ff" font-family="DM Mono, monospace" font-size="20" font-weight="700">6.201%</text>
+    <text x="64" y="507" fill="#aebdd0" font-size="17">Holt-Winters</text>
+    <rect x="292" y="482" width="670" height="34" rx="7" fill="#172a42"/><rect x="292" y="482" width="603" height="34" rx="7" fill="#63758c"/>
+    <text x="980" y="507" fill="#cad5e2" font-family="DM Mono, monospace" font-size="20">6.305%</text>
+  </g>
+  <g fill="#7188a4" font-family="DM Mono, monospace" font-size="12">
+    <text x="292" y="560">0</text><text x="388" y="560">1</text><text x="484" y="560">2</text><text x="580" y="560">3</text><text x="676" y="560">4</text><text x="772" y="560">5</text><text x="868" y="560">6</text><text x="952" y="560">7</text>
+  </g>
+  <text x="64" y="612" fill="#8398b2" font-family="DM Mono, monospace" font-size="12">Identical-observation rolling evaluation · not compared with official ERCOT forecasts</text>
+</svg>

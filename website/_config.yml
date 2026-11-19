@@ -1,0 +1,32 @@
+title: EnergyCast AI
+description: AI-Orchestrated Electricity Demand Forecasting
+author:
+  name: Karthik Sundaramoorthy
+url: "https://karsundar.github.io"
+baseurl: "/EnergyCast-AI"
+repository: karsundar/EnergyCast-AI
+lang: en-US
+timezone: America/Chicago
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:title/
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - scripts
+  - vendor
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      image: /assets/images/architecture.svg
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

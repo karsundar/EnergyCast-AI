@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">EnergyCast V1 hybrid model architecture</title>
+  <desc id="desc">The energy path combines Holt-Winters, SARIMA, Holt-Winters with LightGBM residual correction, and zero-shot Amazon Chronos-2 using frozen validation weights in E14. The peak path combines Holt-Winters and LightGBM log-ratio correction in E24-B.</desc>
+  <defs>
+    <linearGradient id="bgm" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08111f"/><stop offset="1" stop-color="#102947"/></linearGradient>
+    <linearGradient id="mix" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#43dfd1"/><stop offset="1" stop-color="#68a0ff"/></linearGradient>
+    <filter id="sm"><feDropShadow dx="0" dy="9" stdDeviation="12" flood-color="#000" flood-opacity=".28"/></filter>
+    <marker id="am" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" fill="#7d92ac"/></marker>
+  </defs>
+  <rect width="1200" height="760" rx="24" fill="url(#bgm)"/>
+  <text x="58" y="54" fill="#7f96b2" font-family="DM Mono, monospace" font-size="14" letter-spacing="2">FROZEN ENERGYCAST V1 · HYBRID MODEL PATHS</text>
+
+  <text x="58" y="110" fill="#43dfd1" font-family="DM Mono, monospace" font-size="13">MONTHLY ENERGY</text>
+  <g fill="none" stroke="#7d92ac" stroke-width="3" marker-end="url(#am)">
+    <path d="M302 174 H382"/><path d="M302 268 H382"/><path d="M302 362 H382"/><path d="M302 456 H382"/>
+    <path d="M650 315 H742"/><path d="M934 315 H1030"/>
+  </g>
+  <g filter="url(#sm)" font-family="Manrope, sans-serif">
+    <g><rect x="58" y="132" width="244" height="82" rx="14" fill="#102238" stroke="#43dfd1"/><text x="82" y="166" fill="#f3f7ff" font-size="18" font-weight="700">E0 · Holt-Winters</text><text x="82" y="192" fill="#8fa5be" font-family="DM Mono, monospace" font-size="12">weight 0.014669</text></g>
+    <g><rect x="58" y="226" width="244" height="82" rx="14" fill="#102238" stroke="#68a0ff"/><text x="82" y="260" fill="#f3f7ff" font-size="18" font-weight="700">E8 · SARIMA</text><text x="82" y="286" fill="#8fa5be" font-family="DM Mono, monospace" font-size="12">weight 0.062276</text></g>
+    <g><rect x="58" y="320" width="244" height="82" rx="14" fill="#102238" stroke="#ff9f6d"/><text x="82" y="351" fill="#f3f7ff" font-size="17" font-weight="700">E9 · HW + LightGBM</text><text x="82" y="374" fill="#a8b9ce" font-size="12">residual correction</text><text x="198" y="388" fill="#8fa5be" font-family="DM Mono, monospace" font-size="11">0.110263</text></g>
+    <g><rect x="58" y="414" width="244" height="82" rx="14" fill="#102238" stroke="#a797ff"/><text x="82" y="445" fill="#f3f7ff" font-size="17" font-weight="700">E11 · Amazon Chronos-2</text><text x="82" y="468" fill="#a8b9ce" font-size="12">pretrained · zero-shot</text><text x="198" y="482" fill="#8fa5be" font-family="DM Mono, monospace" font-size="11">0.812792</text></g>
+
+    <rect x="382" y="214" width="268" height="202" rx="18" fill="#102238" stroke="url(#mix)" stroke-width="2"/>
+    <text x="414" y="264" fill="#43dfd1" font-family="DM Mono, monospace" font-size="12">VALIDATION-WEIGHTED</text>
+    <text x="414" y="307" fill="#f3f7ff" font-size="28" font-weight="800">E14 ensemble</text>
+    <text x="414" y="342" fill="#a8b9ce" font-size="14">All four components required</text>
+    <text x="414" y="370" fill="#a8b9ce" font-size="14">Weather-independent path</text>
+
+    <rect x="742" y="257" width="192" height="116" rx="17" fill="url(#mix)"/>
+    <text x="774" y="300" fill="#06101b" font-family="DM Mono, monospace" font-size="12">OUTPUT</text>
+    <text x="774" y="335" fill="#06101b" font-size="21" font-weight="800">Energy forecast</text>
+    <text x="774" y="357" fill="#163044" font-size="12">12 monthly horizons</text>
+
+    <rect x="1030" y="272" width="112" height="86" rx="14" fill="#0d1d31" stroke="#526a84"/>
+    <text x="1055" y="307" fill="#8fa5be" font-family="DM Mono, monospace" font-size="11">WAPE</text>
+    <text x="1053" y="336" fill="#f3f7ff" font-size="20" font-weight="800">4.409%</text>
+  </g>
+
+  <line x1="58" y1="545" x2="1142" y2="545" stroke="#2b3e56"/>
+  <text x="58" y="592" fill="#ff9f6d" font-family="DM Mono, monospace" font-size="13">MONTHLY PEAK DEMAND</text>
+  <g fill="none" stroke="#7d92ac" stroke-width="3" marker-end="url(#am)"><path d="M302 658 H390"/><path d="M664 658 H752"/><path d="M944 658 H1030"/></g>
+  <g filter="url(#sm)" font-family="Manrope, sans-serif">
+    <rect x="58" y="616" width="244" height="82" rx="14" fill="#102238" stroke="#43dfd1"/>
+    <text x="82" y="650" fill="#f3f7ff" font-size="18" font-weight="700">Holt-Winters baseline</text><text x="82" y="677" fill="#a8b9ce" font-size="12">seasonal statistical forecast</text>
+    <rect x="390" y="603" width="274" height="108" rx="17" fill="#102238" stroke="#ff9f6d"/>
+    <text x="418" y="637" fill="#ff9f6d" font-family="DM Mono, monospace" font-size="12">E24-B</text><text x="418" y="668" fill="#f3f7ff" font-size="19" font-weight="700">LightGBM log-ratio</text><text x="418" y="692" fill="#a8b9ce" font-size="12">multiplicative correction</text>
+    <rect x="752" y="616" width="192" height="82" rx="14" fill="#ff9f6d"/>
+    <text x="782" y="649" fill="#211007" font-family="DM Mono, monospace" font-size="12">OUTPUT</text><text x="782" y="678" fill="#211007" font-size="19" font-weight="800">Peak forecast</text>
+    <rect x="1030" y="616" width="112" height="82" rx="14" fill="#0d1d31" stroke="#526a84"/>
+    <text x="1055" y="648" fill="#8fa5be" font-family="DM Mono, monospace" font-size="11">WAPE</text><text x="1053" y="678" fill="#f3f7ff" font-size="20" font-weight="800">6.201%</text>
+  </g>
+  <text x="58" y="738" fill="#7088a4" font-family="DM Mono, monospace" font-size="11">E14 weights: frozen production manifest · Chronos-2 is E11 zero-shot, not E13 fine-tuning</text>
+</svg>

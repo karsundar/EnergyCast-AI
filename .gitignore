@@ -16,6 +16,11 @@ venv*/
 env*/
 .pytest_cache/
 .ruff_cache/
+website/_site/
+website/.bundle/
+website/.jekyll-cache/
+website/.jekyll-metadata
+website/vendor/
 
 # Runtime state (reports and reproducible model artifacts remain tracked)
 logs/

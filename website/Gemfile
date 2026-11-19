@@ -1,0 +1,10 @@
+source "https://rubygems.org"
+
+# Jekyll 3.10 is the current GitHub Pages-compatible engine. The site uses
+# local layouts, so the large github-pages meta-gem and remote-theme stack are
+# unnecessary for local or Actions builds.
+gem "jekyll", "~> 3.10.0"
+gem "jekyll-feed", "~> 0.17"
+gem "jekyll-seo-tag", "~> 2.8"
+gem "kramdown-parser-gfm", "~> 1.1"
+gem "webrick", "~> 1.8"
